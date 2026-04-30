@@ -43,16 +43,18 @@ export default function AcademyPage() {
   }, []);
 
   const curriculum = [
-    "Introduction to Fashion Design",
+    "Introduction to Fashion Designing - Pattern Sets (Basic bodices for half length, gown)",
+    "Neckline & Sleeve Variations",
     "Pattern Drafting & Dart Manipulation",
     "Beading & Embellishment",
-    "Cage Art & Corsetry",
-    "Skirt Variations & Structure",
-    "Bustier Construction",
-    "Fashion Illustration",
-    "Blazers & Trousers",
-    "Streetwear Design",
-    "Bridal Dress Creation"
+    "Cage Art & Corsetry (Victorian, Underbust, and Cupped corset)",
+    "Skirts Variation & Hip Padding",
+    "Bustier Variations (Bustier, Off-shoulder princess, and with shoulder princess)",
+    "Fashion Illustration (Manual and Digital)",
+    "Blazers & Pants",
+    "Street Wear",
+    "Bridal Dress (Ball gown, Knee ball, and Back ball)",
+    "Creative Draping & Haute Couture Finishing"
   ];
 
   return (
@@ -178,8 +180,8 @@ export default function AcademyPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 { title: "Beginner", icon: Layers, desc: "Build a strong foundation and understand the basics of fashion design." },
-                { title: "Intermediate to Advanced", icon: Scissors, desc: "Refine your skills and create structured, professional designs." },
-                { title: "Advanced Bridal Masterclass", icon: Sparkles, desc: "Master luxury bridal wear, corsetry, and high-end finishing." }
+                { title: "Intermediate to Advance", icon: Scissors, desc: "Refine your skills and create structured, professional designs." },
+                { title: "Advanced and Bridal Master", icon: Sparkles, desc: "Master luxury bridal wear, corsetry, and high-end finishing." }
               ].map((tier, i) => (
                 <motion.div
                   key={i}
