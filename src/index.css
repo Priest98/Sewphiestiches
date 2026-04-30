@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sewphie Stitches — Luxury Editorial Design System
+   Bottle Green · Gold · Cream
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand */
+    --background: 40 33% 97%;          /* cream */
+    --foreground: 158 60% 12%;         /* bottle green deep */
+
+    --cream: 40 33% 97%;
+    --cream-deep: 38 30% 93%;
+    --bottle: 158 60% 14%;             /* #0F3D2E ish */
+    --bottle-deep: 158 65% 9%;
+    --bottle-soft: 158 30% 25%;
+    --gold: 43 65% 52%;                /* #D4AF37 */
+    --gold-soft: 43 50% 70%;
+    --gold-deep: 38 60% 38%;
+
+    --card: 40 33% 97%;
+    --card-foreground: 158 60% 12%;
+
+    --popover: 40 33% 97%;
+    --popover-foreground: 158 60% 12%;
+
+    --primary: 158 60% 14%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 38 30% 93%;
+    --secondary-foreground: 158 60% 14%;
+
+    --muted: 38 25% 90%;
+    --muted-foreground: 158 20% 35%;
+
+    --accent: 43 65% 52%;
+    --accent-foreground: 158 60% 12%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 40 33% 97%;
+
+    --border: 38 20% 85%;
+    --input: 38 20% 85%;
+    --ring: 43 65% 52%;
+
+    --radius: 0.125rem;
+
+    /* Gradients & shadows */
+    --gradient-hero: linear-gradient(180deg, hsl(158 60% 8% / 0.1) 0%, hsl(158 60% 8% / 0.55) 60%, hsl(158 60% 8% / 0.85) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 65% 52%) 0%, hsl(38 60% 38%) 100%);
+    --gradient-overlay-gold: linear-gradient(180deg, hsl(43 65% 52% / 0) 0%, hsl(43 65% 52% / 0.35) 100%);
+    --shadow-luxury: 0 30px 80px -20px hsl(158 60% 8% / 0.35);
+    --shadow-soft: 0 10px 40px -10px hsl(158 60% 8% / 0.15);
+
+    --transition-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+
+    --sidebar-background: 40 33% 97%;
+    --sidebar-foreground: 158 60% 14%;
+    --sidebar-primary: 158 60% 14%;
+    --sidebar-primary-foreground: 40 33% 97%;
+    --sidebar-accent: 38 30% 93%;
+    --sidebar-accent-foreground: 158 60% 14%;
+    --sidebar-border: 38 20% 85%;
+    --sidebar-ring: 43 65% 52%;
+  }
+
+  .dark {
+    --background: 158 65% 6%;
+    --foreground: 40 33% 95%;
+    --card: 158 65% 8%;
+    --card-foreground: 40 33% 95%;
+    --popover: 158 65% 8%;
+    --popover-foreground: 40 33% 95%;
+    --primary: 43 65% 52%;
+    --primary-foreground: 158 65% 8%;
+    --secondary: 158 40% 14%;
+    --secondary-foreground: 40 33% 95%;
+    --muted: 158 30% 14%;
+    --muted-foreground: 40 15% 70%;
+    --accent: 43 65% 52%;
+    --accent-foreground: 158 65% 8%;
+    --border: 158 30% 18%;
+    --input: 158 30% 18%;
+    --ring: 43 65% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "kern";
+  }
+  ::selection {
+    background: hsl(var(--gold) / 0.35);
+    color: hsl(var(--bottle-deep));
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  .font-sans {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .tracking-luxury {
+    letter-spacing: 0.32em;
+  }
+  .tracking-wider-luxury {
+    letter-spacing: 0.5em;
+  }
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+  }
+  .gold-line {
+    background: hsl(var(--gold));
+  }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hover-zoom img {
+    transition: transform 1.2s var(--transition-luxury);
+  }
+  .hover-zoom:hover img {
+    transform: scale(1.06);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 1s var(--transition-luxury), transform 1s var(--transition-luxury);
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hide-scrollbar {
+    overflow-x: auto;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;               /* Chrome / Safari */
+  }
+  .animate-pulse-soft {
+    animation: pulse-soft 2s var(--transition-luxury) infinite;
+  }
+  .glass-luxury {
+    @apply backdrop-blur-lg bg-cream/70 border-b border-gold/10;
+  }
+  .glass-luxury-dark {
+    @apply backdrop-blur-lg bg-bottle-deep/80 border-b border-white/5;
+  }
+  .btn-pill {
+    @apply rounded-full transition-all duration-300;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+/* Performance & Luxury Loading */
+img {
+  transition: opacity 1s var(--transition-luxury);
+  animation: imgFadeIn 1s var(--transition-luxury) forwards;
+}
+
+@keyframes imgFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ensure below-the-fold images start transparent */
+img[loading="lazy"] {
+  opacity: 0;
+}
+
