@@ -37,23 +37,39 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const subject = formData.get("inquiryType");
+    const message = formData.get("message");
+
     const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      subject: formData.get("inquiryType"),
-      message: formData.get("message"),
+      name,
+      email,
+      subject,
+      message,
     };
  
     try {
-      const { error } = await supabase.from('contact_inquiries').insert([data]);
+      // Still log to Supabase for records
+      await supabase.from('contact_inquiries').insert([data]);
       
-      if (error) throw error;
+      const whatsappMessage = `Hello Sewphie Stitches! I'd like to make an inquiry.
+
+*Name:* ${name}
+*Email:* ${email}
+*Subject:* ${subject}
+*Message:* ${message}
+
+I'm looking forward to hearing from you!`;
+
+      toast.info("Redirecting to WhatsApp...");
       
-      toast.success("Inquiry sent successfully. We will reach out soon.");
-      (e.target as HTMLFormElement).reset();
+      setTimeout(() => {
+        window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(whatsappMessage)}`;
+      }, 800);
     } catch (err: any) {
       console.error(err);
-      toast.error("Failed to send inquiry. Please try again or use WhatsApp.");
+      toast.error("An error occurred. Please try again or chat with us directly.");
     }
   };
 
