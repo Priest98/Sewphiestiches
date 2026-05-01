@@ -465,4 +465,69 @@ export const MOCK_PRODUCTS: Product[] = [
     images: ["/collections/Asoebi/IMG_6958.JPG.jpeg", "/collections/Asoebi/IMG_6959.JPG.jpeg"],
     measurements: ["Bust", "Waist", "Hip"]
   },
+  {
+    id: "aso-oke-luxury",
+    name: "Royal Heritage Aso Oke",
+    price: 350000,
+    category: "Aso Oke" as Category,
+    isCustom: true,
+    description: "A masterpiece of traditional weaving, featuring intricate patterns and premium threads.",
+    images: [
+      "/collections/Aso Oke/IMG_8305.JPG.jpeg",
+      "/collections/Aso Oke/IMG_8310.JPG.jpeg",
+      "/collections/Aso Oke/IMG_8313.JPG.jpeg"
+    ],
+    measurements: ["Bust", "Waist", "Hip", "Shoulder"]
+  },
+  {
+    id: "birthday-glam-1",
+    name: "Golden Jubilee Gown",
+    price: 180000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Celebrate your milestone in this breathtaking golden gown designed to turn heads.",
+    images: [
+      "/collections/Birthday Outfit/IMG_7786.JPG.jpeg",
+      "/collections/Birthday Outfit/IMG_7787.JPG.jpeg",
+      "/collections/Birthday Outfit/IMG_6907.JPG.jpeg"
+    ],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "pre-wedding-romance",
+    name: "Eternal Love Set",
+    price: 110000,
+    category: "Pre Wedding Look" as Category,
+    isCustom: true,
+    description: "Perfect for your pre-wedding shoot. Elegant, romantic, and timeless.",
+    images: [
+      "/collections/Pre-wedding/IMG_9033.JPG.jpeg",
+      "/collections/Pre-wedding/IMG_9019.JPG.jpeg"
+    ],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "reception-grand-entrance",
+    name: "Starlight Reception Gown",
+    price: 250000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Make a grand entrance in this shimmering reception gown that captures the light and everyone's attention.",
+    images: [
+      "/collections/Reception/IMG_9300.JPG.jpeg",
+      "/collections/Reception/IMG_9537.JPG.jpeg",
+      "/collections/Reception/IMG_9540.JPG.jpeg"
+    ],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "wedding-ball-gown-grand",
+    name: "Grand Cathedral Gown",
+    price: 2800000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "The pinnacle of our bridal collection. A voluminous, intricate ball gown designed for a royal wedding experience.",
+    images: ["/collections/Wedding Ball Gown/IMG_7004.JPG.jpeg"],
+    measurements: ["Bust", "Waist", "Hip", "Length"]
+  },
 ];
