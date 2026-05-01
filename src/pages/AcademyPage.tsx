@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Lenis from "lenis";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -7,6 +7,7 @@ import { Footer } from "@/components/sewphie/Footer";
 import { CustomCursor } from "@/components/sewphie/CustomCursor";
 import { ScrollProgress } from "@/components/sewphie/ScrollProgress";
 import { ShieldCheck, Sparkles, Scissors, Layers, CheckCircle2, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
+import { EnrollmentModal } from "@/components/sewphie/EnrollmentModal";
 
 import heroImg from "@/assets/A1.jpeg";
 import studio1 from "@/assets/img_6887.jpg";
@@ -18,6 +19,8 @@ import logoDarkImg from "@/assets/logo-dark.png";
 export default function AcademyPage() {
   const { scrollYProgress } = useScroll();
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedTier, setSelectedTier] = useState<string | undefined>();
 
   useEffect(() => {
     document.title = "Sewphie Academy — Luxury Fashion Mastery";
@@ -43,17 +46,24 @@ export default function AcademyPage() {
   }, []);
 
   const curriculum = [
-    "Introduction to Fashion Design",
+    "Introduction to Fashion Designing - Pattern Sets (Basic bodices for half length, gown)",
+    "Neckline & Sleeve Variations",
     "Pattern Drafting & Dart Manipulation",
     "Beading & Embellishment",
-    "Cage Art & Corsetry",
-    "Skirt Variations & Structure",
-    "Bustier Construction",
-    "Fashion Illustration",
-    "Blazers & Trousers",
-    "Streetwear Design",
-    "Bridal Dress Creation"
+    "Cage Art & Corsetry (Victorian, Underbust, and Cupped corset)",
+    "Skirts Variation & Hip Padding",
+    "Bustier Variations (Bustier, Off-shoulder princess, and with shoulder princess)",
+    "Fashion Illustration (Manual and Digital)",
+    "Blazers & Pants",
+    "Street Wear",
+    "Bridal Dress (Ball gown, Knee ball, and Back ball)",
+    "Creative Draping & Haute Couture Finishing"
   ];
+
+  const handleEnrollClick = (tier?: string) => {
+    setSelectedTier(tier);
+    setIsModalOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-cream text-bottle-deep font-sans selection:bg-gold/30">
@@ -104,15 +114,13 @@ export default function AcademyPage() {
                 </p>
 
                 <div className="relative z-10 flex flex-col sm:flex-row gap-5">
-                  <a
-                    href="https://wa.me/2349065368362"
-                    target="_blank"
-                    rel="noreferrer"
+                  <button
+                    onClick={() => handleEnrollClick()}
                     data-cursor="Enroll"
                     className="inline-flex items-center justify-center bg-gradient-gold text-bottle-deep px-10 py-5 text-xs uppercase tracking-luxury shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] hover:-translate-y-1 transition-all duration-500"
                   >
                     Enroll Now
-                  </a>
+                  </button>
                   <a
                     href="#curriculum"
                     data-cursor="View"
@@ -178,16 +186,17 @@ export default function AcademyPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 { title: "Beginner", icon: Layers, desc: "Build a strong foundation and understand the basics of fashion design." },
-                { title: "Intermediate to Advanced", icon: Scissors, desc: "Refine your skills and create structured, professional designs." },
-                { title: "Advanced Bridal Masterclass", icon: Sparkles, desc: "Master luxury bridal wear, corsetry, and high-end finishing." }
+                { title: "Intermediate to Advance", icon: Scissors, desc: "Refine your skills and create structured, professional designs." },
+                { title: "Advanced and Bridal Master", icon: Sparkles, desc: "Master luxury bridal wear, corsetry, and high-end finishing." }
               ].map((tier, i) => (
-                <motion.div
+                <motion.button
                   key={i}
+                  onClick={() => handleEnrollClick(tier.title)}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.2, duration: 0.8 }}
-                  className="group block relative bg-bottle p-10 flex flex-col items-center text-center border border-cream/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(212,175,55,0.1)] hover:border-gold/30"
+                  className="group block relative bg-bottle p-10 flex flex-col items-center text-center border border-cream/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(212,175,55,0.1)] hover:border-gold/30 w-full"
                 >
                   <div className="absolute inset-0 bg-gradient-to-b from-gold/0 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   <tier.icon className="w-10 h-10 text-gold mb-8 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" />
@@ -195,7 +204,10 @@ export default function AcademyPage() {
                   <p className="text-cream/60 text-sm font-light leading-relaxed relative z-10">
                     {tier.desc}
                   </p>
-                </motion.div>
+                  <span className="mt-8 text-gold text-[0.6rem] uppercase tracking-luxury font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                    Apply Now
+                  </span>
+                </motion.button>
               ))}
             </div>
           </div>
@@ -231,15 +243,13 @@ export default function AcademyPage() {
                 </div>
               </div>
 
-              <a
-                href="https://wa.me/2349065368362"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                onClick={() => handleEnrollClick()}
                 data-cursor="Secure"
                 className="relative z-10 inline-flex items-center justify-center bg-gradient-gold text-bottle-deep px-12 py-5 text-sm uppercase tracking-luxury shadow-luxury hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] hover:-translate-y-1 transition-all duration-500 mx-auto"
               >
                 Secure Your Spot
-              </a>
+              </button>
             </motion.div>
           </div>
         </section>
@@ -268,14 +278,12 @@ export default function AcademyPage() {
                 </p>
               </div>
               <div className="mt-10">
-                <a
-                  href="https://wa.me/2349065368362"
-                  target="_blank"
-                  rel="noreferrer"
+                <button
+                  onClick={() => handleEnrollClick()}
                   className="inline-flex items-center justify-center bg-bottle-deep text-cream px-10 py-4 text-[0.65rem] uppercase tracking-luxury hover:bg-gold hover:text-bottle-deep transition-all duration-500 btn-pill"
                 >
                   Enroll Now
-                </a>
+                </button>
               </div>
             </motion.div>
           </div>
@@ -387,14 +395,12 @@ export default function AcademyPage() {
               <p className="text-bottle-deep font-light italic text-2xl md:text-3xl mb-10">
                 “With the right training, this could be your work.”
               </p>
-              <a
-                href="https://wa.me/2349065368362"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                onClick={() => handleEnrollClick()}
                 className="inline-flex items-center justify-center bg-gradient-gold text-bottle-deep px-12 py-5 text-[0.7rem] uppercase tracking-luxury hover:-translate-y-1 transition-all duration-500 shadow-luxury font-medium"
               >
                 Enroll Now
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -599,14 +605,12 @@ export default function AcademyPage() {
                 The next chapter of your fashion career is one decision away. Join an elite community where precision meets passion.
               </p>
               
-              <a
-                href="https://wa.me/2349065368362"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                onClick={() => handleEnrollClick()}
                 className="inline-flex items-center justify-center bg-bottle-deep text-cream px-12 py-5 text-sm uppercase tracking-luxury hover:bg-gold hover:text-bottle-deep transition-all duration-500 shadow-xl"
               >
                 Enroll Now
-              </a>
+              </button>
             </motion.div>
           </div>
         </section>
@@ -614,6 +618,12 @@ export default function AcademyPage() {
       </main>
 
       <Footer />
+      
+      <EnrollmentModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        selectedCourse={selectedTier}
+      />
     </div>
   );
 }
