@@ -69,53 +69,53 @@ Please notify me when admissions reopen.`;
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-lg bg-white rounded-sm overflow-hidden shadow-2xl p-8 md:p-12 text-center"
+            className="relative w-full max-w-lg bg-bottle-deep rounded-[2rem] overflow-hidden shadow-luxury p-8 md:p-12 text-center border border-gold/10"
           >
             <button
               onClick={handleClose}
-              className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors"
+              className="absolute top-6 right-6 text-gold/60 hover:text-gold transition-colors"
             >
-              <X className="w-5 h-5" />
+              <X className="w-6 h-6" />
             </button>
 
             <div className="space-y-6">
               <div className="space-y-2">
-                <span className="text-[0.6rem] uppercase tracking-[0.3em] text-gray-400 font-medium">Waitlist Access</span>
-                <h2 className="font-display text-2xl md:text-3xl text-black leading-tight">
-                  Admissions Are <br /> Currently Closed
+                <span className="text-[0.6rem] uppercase tracking-[0.3em] text-gold font-medium">Waitlist Access</span>
+                <h2 className="font-display text-2xl md:text-4xl text-cream leading-tight">
+                  Admissions Are <br /> <span className="italic text-gold">Currently Closed</span>
                 </h2>
-                <p className="text-gray-500 text-sm font-light leading-relaxed max-w-xs mx-auto">
-                  We are not accepting new students at the moment. Join the waitlist to be the first to know when enrollment opens again.
+                <p className="text-cream/60 text-sm font-light leading-relaxed max-w-xs mx-auto">
+                  Join our exclusive waitlist to be the first to know when enrollment opens for our next intake.
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4 pt-4 text-left">
                 <div className="space-y-1">
-                  <label className="text-[0.55rem] uppercase tracking-widest text-gray-400">Full Name</label>
+                  <label className="text-[0.55rem] uppercase tracking-luxury text-gold/60">Full Name</label>
                   <input
                     required
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
                     placeholder="E.g. Jane Doe"
-                    className="w-full bg-gray-50 border-b border-gray-100 p-3 text-sm focus:border-black outline-none transition-all font-light"
+                    className="w-full bg-white/5 border-b border-gold/20 p-3 text-sm text-cream focus:border-gold outline-none transition-all font-light rounded-none"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <label className="text-[0.55rem] uppercase tracking-widest text-gray-400">Phone Number</label>
+                    <label className="text-[0.55rem] uppercase tracking-luxury text-gold/60">Phone Number</label>
                     <input
                       required
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder="+234..."
-                      className="w-full bg-gray-50 border-b border-gray-100 p-3 text-sm focus:border-black outline-none transition-all font-light"
+                      className="w-full bg-white/5 border-b border-gold/20 p-3 text-sm text-cream focus:border-gold outline-none transition-all font-light rounded-none"
                     />
                   </div>
                   <div className="space-y-1">
-                    <label className="text-[0.55rem] uppercase tracking-widest text-gray-400">Email Address</label>
+                    <label className="text-[0.55rem] uppercase tracking-luxury text-gold/60">Email Address</label>
                     <input
                       required
                       type="email"
@@ -123,29 +123,29 @@ Please notify me when admissions reopen.`;
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="jane@example.com"
-                      className="w-full bg-gray-50 border-b border-gray-100 p-3 text-sm focus:border-black outline-none transition-all font-light"
+                      className="w-full bg-white/5 border-b border-gold/20 p-3 text-sm text-cream focus:border-gold outline-none transition-all font-light rounded-none"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-[0.55rem] uppercase tracking-widest text-gray-400">Program of Interest</label>
+                  <label className="text-[0.55rem] uppercase tracking-luxury text-gold/60">Program of Interest</label>
                   <select
                     name="program"
                     value={formData.program}
                     onChange={handleInputChange}
-                    className="w-full bg-gray-50 border-b border-gray-100 p-3 text-sm focus:border-black outline-none transition-all font-light appearance-none"
+                    className="w-full bg-white/5 border-b border-gold/20 p-3 text-sm text-cream focus:border-gold outline-none transition-all font-light appearance-none rounded-none"
                   >
-                    <option value="Beginner">Beginner's Program</option>
-                    <option value="Intermediate">Intermediate Level</option>
-                    <option value="Advanced/Bridal">Advanced / Bridal Masterclass</option>
+                    <option value="Beginner" className="bg-bottle-deep">Beginner's Program</option>
+                    <option value="Intermediate" className="bg-bottle-deep">Intermediate Level</option>
+                    <option value="Advanced/Bridal" className="bg-bottle-deep">Advanced / Bridal Masterclass</option>
                   </select>
                 </div>
 
                 <button
                   type="submit"
                   disabled={isRedirecting}
-                  className="w-full bg-black text-white py-4 text-[0.65rem] uppercase tracking-[0.2em] font-medium hover:bg-gray-900 transition-all flex items-center justify-center gap-2 group"
+                  className="w-full bg-gradient-gold text-bottle-deep py-4 text-[0.65rem] uppercase tracking-luxury font-bold shadow-luxury hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all flex items-center justify-center gap-2 group mt-4"
                 >
                   {isRedirecting ? (
                     <>
@@ -158,7 +158,7 @@ Please notify me when admissions reopen.`;
                 </button>
               </form>
 
-              <p className="text-[0.5rem] uppercase tracking-widest text-gray-300">
+              <p className="text-[0.5rem] uppercase tracking-luxury text-gold/40">
                 Limited slots will be available for the next intake.
               </p>
             </div>
