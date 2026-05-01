@@ -48,10 +48,8 @@ Please notify me when admissions reopen.`;
     const whatsappUrl = `https://wa.me/2349065368362?text=${encodedMessage}`;
 
     setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
-      setIsRedirecting(false);
-      handleClose();
-    }, 1500);
+      window.location.href = whatsappUrl;
+    }, 1000);
   };
 
   return (

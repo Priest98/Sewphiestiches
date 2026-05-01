@@ -152,7 +152,7 @@ ${Object.entries(measurements).map(([k, v]) => `- ${k}: ${v}`).join("\n")}
 
 I'd like to pay via WhatsApp. Looking forward to your response!`;
     
-    window.open(`https://wa.me/2349065368362?text=${encodeURIComponent(message)}`, "_blank");
+    window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
   };
 
   return (
