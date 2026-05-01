@@ -14,7 +14,7 @@ import { CheckoutModal } from "./components/shop/CheckoutModal.tsx";
 import { PageTransition } from "./components/ui/PageTransition.tsx";
 import { AiConcierge } from "@/components/sewphie/AiConcierge";
 import Contact from "./pages/Contact.tsx";
-import { AcademyPopup } from "@/components/sewphie/AcademyPopup";
+import { WaitlistPopup } from "@/components/sewphie/WaitlistPopup";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +23,7 @@ const AnimatedRoutes = () => {
   
   return (
     <>
-      {location.pathname === "/" && <AcademyPopup />}
+      {location.pathname === "/" && <WaitlistPopup />}
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<PageTransition><Index /></PageTransition>} />
