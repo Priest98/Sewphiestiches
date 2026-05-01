@@ -9,6 +9,7 @@ const looks = [
   { img: "/lookbook/IMG_5464.PNG", title: "Bridal Heritage", code: "SS·003" },
   { img: "/lookbook/IMG_6887.JPG.jpeg", title: "Owambe Royale", code: "SS·004" },
   { img: "/lookbook/IMG_7700.JPG.jpeg", title: "Midnight Glamour", code: "SS·005" },
+  { img: "/lookbook/IMG_5431.JPG.jpeg", title: "Majestic Traditional", code: "SS·006" },
 ];
 
 export const Lookbook = () => {

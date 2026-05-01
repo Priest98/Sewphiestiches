@@ -108,17 +108,22 @@ export const CheckoutModal = () => {
       setPendingOrderId(order.id);
       return order.id;
     } catch (err) {
-      console.error(err);
-      toast.error("Failed to initialize luxury order. Please try again.");
-      return null;
+      console.warn("Supabase order tracking skipped (check configuration):", err);
+      // Fallback to local reference if Supabase is not yet configured
+      const localRef = `REF_${Date.now()}`;
+      setPendingOrderId(localRef);
+      return localRef;
     }
   };
 
   const startPaymentFlow = async () => {
+    if (!import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || import.meta.env.VITE_PAYSTACK_PUBLIC_KEY === 'your_paystack_public_key') {
+      toast.error("Paystack Public Key is missing or invalid in .env file");
+      return;
+    }
+
     const orderId = await createPendingOrder();
     if (orderId) {
-      // We wrap initializePayment to ensure the state has updated with orderId
-      // In a real app, you might pass the reference directly to the hook or used a generated UUID client-side.
       initializePayment({ onSuccess, onClose });
     }
   };

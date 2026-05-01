@@ -1,4 +1,4 @@
-export type Category = 'Aso Oke' | 'Asoebi' | 'Birthday Outfit' | 'Civil Wedding Dress' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready To Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look';
+export type Category = 'Aso Oke' | 'Asoebi' | 'Birthday Outfit' | 'Civil Wedding Dress' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready To Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look' | 'Streetwear';
 
 export interface Product {
   id: string;
@@ -419,13 +419,50 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust", "Waist", "Hip"]
   },
   {
-    id: "reception-dress-8",
-    name: "Reception Dress 8",
-    price: 500000,
-    category: "Reception Dress" as Category,
+    id: "ready-to-wear-5",
+    name: "Luxury Silk Set",
+    price: 45000,
+    category: "Ready To Wear" as Category,
+    isCustom: false,
+    description: "Elegant silk set for effortless sophistication.",
+    images: ["/collections/Ready to wear/C1.PNG", "/collections/Ready to wear/C2.PNG", "/collections/Ready to wear/C3.PNG"],
+  },
+  {
+    id: "ready-to-wear-6",
+    name: "Velvet Evening Gown",
+    price: 120000,
+    category: "Ready To Wear" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_7700.JPG.jpeg"],
+    description: "Stunning velvet gown for your most special occasions.",
+    images: ["/collections/Ready to wear/B1.jpeg", "/collections/Ready to wear/B2.jpeg", "/collections/Ready to wear/B3.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "streetwear-1",
+    name: "Urban Graffiti Hoodie",
+    price: 35000,
+    category: "Streetwear" as Category,
+    isCustom: false,
+    description: "High-end streetwear hoodie with signature artistry.",
+    images: ["/collections/Streetwear/IMG_7566.JPG.jpeg", "/collections/Streetwear/IMG_7571.JPG.jpeg"],
+  },
+  {
+    id: "streetwear-2",
+    name: "Signature Cargo Pants",
+    price: 40000,
+    category: "Streetwear" as Category,
+    isCustom: false,
+    description: "Durable and stylish cargo pants for the urban designer.",
+    images: ["/collections/Streetwear/IMG_7575.JPG.jpeg", "/collections/Streetwear/IMG_7576.JPG.jpeg"],
+  },
+  {
+    id: "asoebi-new-1",
+    name: "Premium Lace Asoebi",
+    price: 95000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Exquisite lace asoebi for a regal presence.",
+    images: ["/collections/Asoebi/IMG_6958.JPG.jpeg", "/collections/Asoebi/IMG_6959.JPG.jpeg"],
     measurements: ["Bust", "Waist", "Hip"]
   },
 ];
