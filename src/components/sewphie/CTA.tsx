@@ -46,15 +46,15 @@ export const CTA = () => {
         </motion.p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/2349065368362?text=I'd like to book an appointment"
             data-cursor="Book"
             className="inline-flex items-center justify-center bg-gradient-gold text-bottle-deep px-10 py-4 text-[0.7rem] uppercase tracking-luxury shadow-luxury hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] btn-pill transition-all duration-500"
           >
             <motion.span whileTap={{ scale: 0.96 }}>Book Appointment</motion.span>
-          </Link>
+          </a>
           <a
-            href="https://wa.me/2348000000000"
+            href="https://wa.me/2349065368362?text=Hello, I have a question about your collections"
             target="_blank"
             rel="noreferrer"
             data-cursor="Chat"

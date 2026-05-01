@@ -83,7 +83,7 @@ export const AiConcierge = () => {
       case "custom_style_corporate":
         addBotMessage("For professional elegance, a bespoke suit or a structured midi dress is ideal. Shall we explore the collection?", [
           { label: "View Corporate Suit", action: () => { navigate("/collection"); setIsOpen(false); } },
-          { label: "Book Consultation", action: () => window.open("https://wa.me/2349065368362?text=I'd like to book a corporate suit consultation") }
+          { label: "Book Consultation", action: () => { window.location.href = "https://wa.me/2349065368362?text=I'd like to book a corporate suit consultation"; } }
         ]);
         break;
 

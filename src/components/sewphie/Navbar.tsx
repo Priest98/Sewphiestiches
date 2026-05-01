@@ -81,12 +81,12 @@ export const Navbar = () => {
               </span>
             )}
           </button>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/2349065368362?text=I'd like to book a consultation"
             className="inline-flex text-[0.6rem] uppercase tracking-luxury border border-gold/40 px-6 py-2.5 btn-pill text-gold hover:bg-gold hover:text-bottle-deep transition-all"
           >
             Book Consultation
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Actions */}
@@ -181,13 +181,13 @@ export const Navbar = () => {
                   transition={{ delay: 0.5 }}
                   className="mt-12"
                 >
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://wa.me/2349065368362?text=I'd like to book a consultation"
                     onClick={() => setOpen(false)}
                     className="w-full text-center text-[0.65rem] uppercase tracking-luxury border border-gold text-gold p-5 btn-pill hover:bg-gold hover:text-bottle-deep transition-all block"
                   >
                     Book Consultation
-                  </Link>
+                  </a>
                 </motion.div>
               </nav>
 

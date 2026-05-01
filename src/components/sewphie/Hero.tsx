@@ -13,7 +13,7 @@ const slides = [
     description: "Luxury pieces designed for women who understand the power of presence. Every stitch is intentional. Every design, unforgettable.",
     ctas: [
       { text: "Explore Collections", href: "#collections", variant: "primary", cursor: "Discover" },
-      { text: "Book Consultation", href: "#contact", variant: "secondary", cursor: "Book" }
+      { text: "Book Consultation", href: "https://wa.me/2349065368362?text=I'd like to book a luxury fashion consultation", variant: "secondary", cursor: "Book" }
     ]
   },
   {
