@@ -97,6 +97,7 @@ export default function ProductDetails() {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.8 }}
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </AnimatePresence>
                   
@@ -124,7 +125,7 @@ export default function ProductDetails() {
                         activeImage === i ? "border-gold" : "border-transparent"
                       }`}
                     >
-                      <img src={img} className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity" />
+                      <img src={img} className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity" loading="lazy" />
                     </button>
                   ))}
                 </div>
