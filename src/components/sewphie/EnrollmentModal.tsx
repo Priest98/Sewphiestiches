@@ -17,33 +17,23 @@ export const EnrollmentModal = ({ isOpen, onClose, selectedCourse }: EnrollmentM
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      subject: `Academy Enrollment: ${selectedCourse || formData.get("course")}`,
-      message: `Preferred Course: ${selectedCourse || formData.get("course")}\nAdditional Details: ${formData.get("notes") || "None"}`,
-    };
 
-    try {
-      const { error } = await supabase.from('contact_inquiries').insert([data]);
-      
-      if (error) throw error;
-      
-      setIsSuccess(true);
-      toast.success("Enrollment request sent!");
-      setTimeout(() => {
-        setIsSuccess(false);
-        onClose();
-      }, 3000);
-    } catch (err: any) {
-      console.error(err);
-      toast.error("Failed to send request. Please try again or use WhatsApp.");
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Show loading state briefly before redirect
+    setTimeout(() => {
+      const formData = new FormData(e.currentTarget);
+      const name = formData.get("name") as string;
+      const email = formData.get("email") as string;
+      const phone = formData.get("phone") as string;
+      const program = selectedCourse || formData.get("course") as string;
+      const notes = formData.get("notes") as string;
+
+      // Format WhatsApp message
+      const message = `Hello, I just joined the waitlist. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nProgram: ${program}${notes ? `\nAdditional Info: ${notes}` : ''}\n\nI would like more information.`;
+
+      // Redirect to WhatsApp
+      const whatsappUrl = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+      window.location.href = whatsappUrl;
+    }, 1500);
   };
 
   return (
