@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useShopStore } from "@/store/useShopStore";
 import { useForm } from "react-hook-form";
@@ -25,6 +25,7 @@ export const CheckoutModal = () => {
   const [measurements, setMeasurements] = useState<Record<string, string>>({});
   const [isVerifying, setIsVerifying] = useState(false);
   const [pendingOrderId, setPendingOrderId] = useState<string | null>(null);
+  const orderIdRef = useRef<string | null>(null);
   
   const cartTotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
@@ -37,17 +38,17 @@ export const CheckoutModal = () => {
 
   // Paystack Config
   const paystackConfig = {
-    reference: pendingOrderId || (new Date()).getTime().toString(),
+    reference: orderIdRef.current || (new Date()).getTime().toString(),
     email: getValues("email") || "customer@sewphiestitches.com",
     amount: cartTotal * 100,
     publicKey: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY,
   };
 
-  const handleVerification = async (reference: any) => {
+  const handleVerification = async (reference: any, currentOrderId: string | null) => {
     setIsVerifying(true);
     try {
       const { data, error } = await supabase.functions.invoke('verify-payment', {
-        body: { reference: reference.reference, order_id: pendingOrderId }
+        body: { reference: reference.reference, order_id: currentOrderId }
       });
 
       if (error || !data.success) throw new Error(error?.message || "Verification failed");
@@ -62,7 +63,7 @@ export const CheckoutModal = () => {
   };
 
   const onSuccess = (reference: any) => {
-    handleVerification(reference);
+    handleVerification(reference, orderIdRef.current);
   };
 
   const onClose = () => {
@@ -105,12 +106,14 @@ export const CheckoutModal = () => {
 
       if (itemError) throw itemError;
 
+      orderIdRef.current = order.id;
       setPendingOrderId(order.id);
       return order.id;
     } catch (err) {
       console.warn("Supabase order tracking skipped (check configuration):", err);
       // Fallback to local reference if Supabase is not yet configured
       const localRef = `REF_${Date.now()}`;
+      orderIdRef.current = localRef;
       setPendingOrderId(localRef);
       return localRef;
     }
@@ -124,7 +127,10 @@ export const CheckoutModal = () => {
 
     const orderId = await createPendingOrder();
     if (orderId) {
-      initializePayment({ onSuccess, onClose });
+      // Small timeout to ensure the paystackConfig ref is picked up if initializePayment is hook-based
+      setTimeout(() => {
+        initializePayment({ onSuccess, onClose });
+      }, 100);
     }
   };
 

@@ -473,9 +473,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "A masterpiece of traditional weaving, featuring intricate patterns and premium threads.",
     images: [
-      "/collections/Aso Oke/IMG_8305.JPG.jpeg",
-      "/collections/Aso Oke/IMG_8310.JPG.jpeg",
-      "/collections/Aso Oke/IMG_8313.JPG.jpeg"
+      "/collections/Aso oke/IMG_8305.JPG.jpeg",
+      "/collections/Aso oke/IMG_8310.JPG.jpeg",
+      "/collections/Aso oke/IMG_8313.JPG.jpeg"
     ],
     measurements: ["Bust", "Waist", "Hip", "Shoulder"]
   },
@@ -487,9 +487,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Celebrate your milestone in this breathtaking golden gown designed to turn heads.",
     images: [
-      "/collections/Birthday Outfit/IMG_7786.JPG.jpeg",
-      "/collections/Birthday Outfit/IMG_7787.JPG.jpeg",
-      "/collections/Birthday Outfit/IMG_6907.JPG.jpeg"
+      "/collections/Birthday outfit/IMG_7786.JPG.jpeg",
+      "/collections/Birthday outfit/IMG_7787.JPG.jpeg",
+      "/collections/Birthday outfit/IMG_6907.JPG.jpeg"
     ],
     measurements: ["Bust", "Waist", "Hip"]
   },
@@ -501,8 +501,8 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Perfect for your pre-wedding shoot. Elegant, romantic, and timeless.",
     images: [
-      "/collections/Pre-wedding/IMG_9033.JPG.jpeg",
-      "/collections/Pre-wedding/IMG_9019.JPG.jpeg"
+      "/collections/Pre wedding look/IMG_9033.JPG.jpeg",
+      "/collections/Pre wedding look/IMG_9019.JPG.jpeg"
     ],
     measurements: ["Bust", "Waist", "Hip"]
   },
@@ -514,9 +514,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Make a grand entrance in this shimmering reception gown that captures the light and everyone's attention.",
     images: [
-      "/collections/Reception/IMG_9300.JPG.jpeg",
-      "/collections/Reception/IMG_9537.JPG.jpeg",
-      "/collections/Reception/IMG_9540.JPG.jpeg"
+      "/collections/Reception Dress/IMG_9300.JPG.jpeg",
+      "/collections/Reception Dress/IMG_9537.JPG.jpeg",
+      "/collections/Reception Dress/IMG_9540.JPG.jpeg"
     ],
     measurements: ["Bust", "Waist", "Hip"]
   },
@@ -527,7 +527,7 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "The pinnacle of our bridal collection. A voluminous, intricate ball gown designed for a royal wedding experience.",
-    images: ["/collections/Wedding Ball Gown/IMG_7004.JPG.jpeg"],
+    images: ["/collections/Wedding ball gown/IMG_7004.JPG.jpeg"],
     measurements: ["Bust", "Waist", "Hip", "Length"]
   },
 ];
