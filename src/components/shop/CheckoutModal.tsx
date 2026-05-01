@@ -111,7 +111,6 @@ export const CheckoutModal = () => {
       return order.id;
     } catch (err) {
       console.warn("Supabase order tracking skipped (check configuration):", err);
-      // Fallback to local reference if Supabase is not yet configured
       const localRef = `REF_${Date.now()}`;
       orderIdRef.current = localRef;
       setPendingOrderId(localRef);
@@ -127,7 +126,6 @@ export const CheckoutModal = () => {
 
     const orderId = await createPendingOrder();
     if (orderId) {
-      // Small timeout to ensure the paystackConfig ref is picked up if initializePayment is hook-based
       setTimeout(() => {
         initializePayment({ onSuccess, onClose });
       }, 100);
@@ -135,6 +133,7 @@ export const CheckoutModal = () => {
   };
 
   const handleWhatsAppOrder = async (data: FormData) => {
+    setIsVerifying(true);
     await createPendingOrder(); // Persist even for manual orders
     const message = `Hello Sewphie Stitches! I'd like to order:
 ${cart.map(item => `* ${item.quantity}x ${item.name} (₦${item.price.toLocaleString()} each)`).join('\n')}
@@ -150,9 +149,11 @@ ${cart.map(item => `* ${item.quantity}x ${item.name} (₦${item.price.toLocaleSt
 *Measurements:*
 ${Object.entries(measurements).map(([k, v]) => `- ${k}: ${v}`).join("\n")}
 
-I'd like to pay via WhatsApp. Looking forward to your response!`;
+I'd like to finalize this order. Looking forward to your response!`;
     
-    window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+    setTimeout(() => {
+      window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+    }, 1000);
   };
 
   return (

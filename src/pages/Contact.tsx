@@ -42,17 +42,7 @@ export default function Contact() {
     const subject = formData.get("inquiryType");
     const message = formData.get("message");
 
-    const data = {
-      name,
-      email,
-      subject,
-      message,
-    };
- 
     try {
-      // Still log to Supabase for records
-      await supabase.from('contact_inquiries').insert([data]);
-      
       const whatsappMessage = `Hello Sewphie Stitches! I'd like to make an inquiry.
 
 *Name:* ${name}
