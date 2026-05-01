@@ -19,6 +19,8 @@ export default function ProductDetails() {
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
 
+  const [isLiked, setIsLiked] = useState(false);
+
   useEffect(() => {
     const found = MOCK_PRODUCTS.find((p) => p.id === id);
     if (found) {
@@ -37,6 +39,32 @@ export default function ProductDetails() {
     addToCart(product);
     toast.success("Added to cart");
     setCartOpen(true);
+  };
+
+  const handleLike = () => {
+    setIsLiked(!isLiked);
+    if (!isLiked) {
+      toast.success("Added to your wishlist", {
+        icon: "❤️"
+      });
+    }
+  };
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `Sewphie Stitches — ${product.name}`,
+          text: product.description,
+          url: window.location.href,
+        });
+      } catch (err) {
+        console.log("Share failed:", err);
+      }
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      toast.success("Link copied to clipboard");
+    }
   };
 
   return (
@@ -113,8 +141,20 @@ export default function ProductDetails() {
                   </h1>
                 </div>
                 <div className="flex gap-4">
-                  <button className="p-3 rounded-full bg-white shadow-soft hover:text-gold transition-colors"><Heart className="w-5 h-5" /></button>
-                  <button className="p-3 rounded-full bg-white shadow-soft hover:text-gold transition-colors"><Share2 className="w-5 h-5" /></button>
+                  <button 
+                    onClick={handleLike}
+                    className={`p-3 rounded-full bg-white shadow-soft transition-all duration-300 ${
+                      isLiked ? "text-red-500 scale-110" : "text-bottle-deep hover:text-gold"
+                    }`}
+                  >
+                    <Heart className={`w-5 h-5 ${isLiked ? "fill-current" : ""}`} />
+                  </button>
+                  <button 
+                    onClick={handleShare}
+                    className="p-3 rounded-full bg-white shadow-soft text-bottle-deep hover:text-gold transition-all duration-300 hover:scale-110"
+                  >
+                    <Share2 className="w-5 h-5" />
+                  </button>
                 </div>
               </div>
 
