@@ -232,14 +232,47 @@ I'd like to finalize this order. Looking forward to your response!`;
               ) : (
                 <>
                   {step === 1 && (
-                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <InputField label="Full Name" name="fullName" register={register} error={errors.fullName} />
-                        <InputField label="Email Address" name="email" type="email" register={register} error={errors.email} />
-                        <InputField label="Phone Number" name="phone" placeholder="090..." register={register} error={errors.phone} />
-                        <InputField label="Delivery Address" name="address" register={register} error={errors.address} />
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div className="space-y-6">
+                          <InputField label="Full Name" name="fullName" register={register} error={errors.fullName} />
+                          <InputField label="Email Address" name="email" type="email" register={register} error={errors.email} />
+                          <InputField label="Phone Number" name="phone" placeholder="090..." register={register} error={errors.phone} />
+                          <InputField label="Delivery Address" name="address" register={register} error={errors.address} />
+                        </div>
+                        
+                        {/* Order Review in Step 1 */}
+                        <div className="bg-cream/50 p-6 rounded-sm border border-gold/5 flex flex-col h-full">
+                          <h4 className="text-[0.6rem] uppercase tracking-luxury text-gold mb-4 font-bold">Review Your Selection</h4>
+                          <div className="flex-1 space-y-4 max-h-[250px] overflow-y-auto pr-2 custom-scrollbar">
+                            {cart.map(item => (
+                              <div key={item.id} className="flex justify-between items-center gap-4 bg-white p-3 shadow-sm border border-gold/5">
+                                <div className="flex gap-3 items-center">
+                                  <div className="w-10 h-12 bg-bottle-deep/5 shrink-0">
+                                    <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" />
+                                  </div>
+                                  <div>
+                                    <p className="text-[0.6rem] font-bold text-bottle-deep leading-tight">{item.name}</p>
+                                    <p className="text-[0.55rem] text-gold">{item.quantity}x — ₦{(item.price * item.quantity).toLocaleString()}</p>
+                                  </div>
+                                </div>
+                                <button 
+                                  onClick={() => useShopStore.getState().removeFromCart(item.id)}
+                                  className="text-red-400 hover:text-red-600 transition-colors"
+                                >
+                                  <X className="w-4 h-4" />
+                                </button>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="mt-6 pt-4 border-t border-gold/10">
+                            <div className="flex justify-between items-center text-bottle-deep">
+                              <span className="text-[0.6rem] uppercase tracking-widest">Subtotal</span>
+                              <span className="font-display text-xl">₦{cartTotal.toLocaleString()}</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div className="pt-8">
+                      <div className="pt-4">
                         <button 
                           disabled={!isValid}
                           onClick={() => setStep(2)}

@@ -86,10 +86,11 @@ export const CartDrawer = () => {
                         </div>
                         <button 
                           onClick={() => removeFromCart(item.id)}
-                          className="p-2 text-red-400 hover:bg-red-50 hover:text-red-600 transition-colors rounded-full"
+                          className="flex items-center gap-1.5 px-3 py-1.5 text-[0.6rem] uppercase tracking-luxury text-red-500 hover:bg-red-50 transition-all rounded-sm border border-red-100"
                           title="Remove item"
                         >
-                          <Trash2 className="w-4 h-4" />
+                          <Trash2 className="w-3 h-3" />
+                          <span>Remove</span>
                         </button>
                       </div>
                     </div>
