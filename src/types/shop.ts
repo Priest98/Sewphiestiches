@@ -454,23 +454,5 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Exquisite lace asoebi for a regal presence.",
     images: ["/collections/Asoebi/IMG_6958.JPG.jpeg", "/collections/Asoebi/IMG_6959.JPG.jpeg"],
     measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "aso-oke-luxury",
-    name: "Royal Heritage Aso Oke",
-    price: 1000,
-    category: "Aso Oke" as Category,
-    isCustom: true,
-    description: "A masterpiece of traditional weaving, featuring intricate patterns and premium threads.",
-    images: [
-      "/collections/Aso oke/IMG_8305.JPG.jpeg",
-      "/collections/Aso oke/IMG_8310.JPG.jpeg",
-      "/collections/Aso oke/IMG_8313.JPG.jpeg"
-    ],
-    measurements: ["Bust", "Waist", "Hip", "Shoulder"]
-  },
-
-
-
-
+  }
 ];
