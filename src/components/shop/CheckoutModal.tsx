@@ -25,6 +25,7 @@ export const CheckoutModal = () => {
   const [measurements, setMeasurements] = useState<Record<string, string>>({});
   const [isVerifying, setIsVerifying] = useState(false);
   const [pendingOrderId, setPendingOrderId] = useState<string | null>(null);
+  const [paidOrderDetails, setPaidOrderDetails] = useState<{ name: string; total: number; items: typeof cart } | null>(null);
   const orderIdRef = useRef<string | null>(null);
   
   const cartTotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -47,17 +48,30 @@ export const CheckoutModal = () => {
   const handleVerification = async (reference: any, currentOrderId: string | null) => {
     setIsVerifying(true);
     
+    // Snapshot the cart details BEFORE clearing it
+    const orderSnapshot = {
+      name: getValues("fullName"),
+      total: cartTotal,
+      items: [...cart],
+    };
+
     // Always move to success step once Paystack confirms client-side
-    // This prevents users from getting stuck if the edge function is slow or misconfigured
     setStep(4);
+    setPaidOrderDetails(orderSnapshot);
     clearCart();
     resetOrder();
+
+    // Redirect to WhatsApp after 3 seconds with order details
+    const waMessage = `✅ *Payment Confirmed — Sewphie Stitches*\n\nHello! I just completed payment for my order:\n\n${orderSnapshot.items.map(i => `• ${i.quantity}x ${i.name} — ₦${(i.price * i.quantity).toLocaleString()}`).join('\n')}\n\n*Total Paid:* ₦${orderSnapshot.total.toLocaleString()}\n\nKindly confirm receipt and proceed with my order. Thank you! 🙏`;
+    
+    setTimeout(() => {
+      window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(waMessage)}`;
+    }, 3000);
     
     try {
       const { data, error } = await supabase.functions.invoke('verify-payment', {
         body: { reference: reference.reference, order_id: currentOrderId }
       });
-
       if (error) console.warn("Background verification note:", error);
     } catch (err: any) {
       console.error("Verification background error:", err);
@@ -296,11 +310,26 @@ I'd like to finalize this order. Looking forward to your response!`;
                       </div>
                       <h2 className="font-display text-4xl text-bottle-deep">Your Presence is Secured.</h2>
                       <p className="text-sm font-light text-bottle-soft max-w-xs mx-auto leading-relaxed">
-                        Your order has been received and is now in the hands of our master artisans. Expect a reach-out from our team within 24 hours.
+                        Payment confirmed! You'll be redirected to WhatsApp in a moment to complete your order confirmation.
                       </p>
+                      {paidOrderDetails && (
+                        <div className="bg-cream px-8 py-4 w-full text-left space-y-2">
+                          <p className="text-[0.6rem] uppercase tracking-widest text-gold">Order Summary</p>
+                          {paidOrderDetails.items.map((item, i) => (
+                            <p key={i} className="text-sm text-bottle-deep">{item.quantity}x {item.name} — ₦{(item.price * item.quantity).toLocaleString()}</p>
+                          ))}
+                          <p className="font-bold text-bottle-deep border-t border-gold/20 pt-2 mt-2">Total Paid: ₦{paidOrderDetails.total.toLocaleString()}</p>
+                        </div>
+                      )}
+                      <a 
+                        href={`https://wa.me/2349065368362?text=${encodeURIComponent(`✅ *Payment Confirmed — Sewphie Stitches*\n\nHello! I just completed payment.\n\n*Total Paid:* ₦${paidOrderDetails?.total?.toLocaleString() || ''}\n\nKindly confirm receipt and proceed with my order. Thank you! 🙏`)}`}
+                        className="mt-4 px-12 py-5 bg-[#25D366] text-white text-[0.65rem] uppercase tracking-luxury font-bold flex items-center gap-3"
+                      >
+                        <Send className="w-4 h-4" /> Confirm on WhatsApp Now
+                      </a>
                       <button 
-                        onClick={() => { resetOrder(); clearCart(); setCheckoutOpen(false); setStep(1); }}
-                        className="mt-8 px-12 py-5 bg-gradient-gold text-bottle-deep text-[0.65rem] uppercase tracking-luxury font-bold"
+                        onClick={() => { resetOrder(); clearCart(); setCheckoutOpen(false); setStep(1); setPaidOrderDetails(null); }}
+                        className="px-12 py-4 border border-bottle-deep/10 text-bottle-deep text-[0.65rem] uppercase tracking-luxury"
                       >
                         Return to House
                       </button>
