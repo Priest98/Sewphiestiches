@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Loader2 } from "lucide-react";
+import { useShopStore } from "@/store/useShopStore";
 
 export const WaitlistPopup = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isWaitlistOpen: isOpen, setWaitlistOpen: setIsOpen } = useShopStore();
   const [isRedirecting, setIsRedirecting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -13,12 +14,16 @@ export const WaitlistPopup = () => {
   });
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      setIsOpen(true);
-    }, 4000); 
-
-    return () => window.clearTimeout(timer);
-  }, []);
+    // Only auto-show on landing page if not already shown this session
+    const hasShown = sessionStorage.getItem("waitlist-shown");
+    if (window.location.pathname === "/" && !hasShown) {
+      const timer = window.setTimeout(() => {
+        setIsOpen(true);
+        sessionStorage.setItem("waitlist-shown", "true");
+      }, 4000); 
+      return () => window.clearTimeout(timer);
+    }
+  }, [setIsOpen]);
 
   const handleClose = () => {
     setIsOpen(false);

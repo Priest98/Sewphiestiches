@@ -33,7 +33,7 @@ const AnimatedRoutes = () => {
   
   return (
     <>
-      {location.pathname === "/" && <WaitlistPopup />}
+      <WaitlistPopup />
       <AnimatePresence mode="wait">
         <Suspense fallback={<LoadingFallback />}>
           <Routes location={location} key={location.pathname}>

@@ -7,7 +7,7 @@ import { Footer } from "@/components/sewphie/Footer";
 import { CustomCursor } from "@/components/sewphie/CustomCursor";
 import { ScrollProgress } from "@/components/sewphie/ScrollProgress";
 import { ShieldCheck, Sparkles, Scissors, Layers, CheckCircle2, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
-import { EnrollmentModal } from "@/components/sewphie/EnrollmentModal";
+import { useShopStore } from "@/store/useShopStore";
 
 import heroImg from "@/assets/A1.jpeg";
 import studio1 from "@/assets/img_6887.jpg";
@@ -19,8 +19,7 @@ import logoDarkImg from "@/assets/logo-dark.png";
 export default function AcademyPage() {
   const { scrollYProgress } = useScroll();
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedTier, setSelectedTier] = useState<string | undefined>();
+  const { setWaitlistOpen } = useShopStore();
 
   useEffect(() => {
     document.title = "Sewphie Academy — Luxury Fashion Mastery";
@@ -60,9 +59,8 @@ export default function AcademyPage() {
     "Creative Draping & Haute Couture Finishing"
   ];
 
-  const handleEnrollClick = (tier?: string) => {
-    setSelectedTier(tier);
-    setIsModalOpen(true);
+  const handleEnrollClick = () => {
+    setWaitlistOpen(true);
   };
 
   return (
@@ -191,7 +189,7 @@ export default function AcademyPage() {
               ].map((tier, i) => (
                 <motion.button
                   key={i}
-                  onClick={() => handleEnrollClick(tier.title)}
+                  onClick={() => handleEnrollClick()}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -618,12 +616,6 @@ export default function AcademyPage() {
       </main>
 
       <Footer />
-      
-      <EnrollmentModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        selectedCourse={selectedTier}
-      />
     </div>
   );
 }

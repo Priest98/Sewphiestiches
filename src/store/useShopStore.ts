@@ -14,6 +14,9 @@ interface ShopState {
   // Cart
   cart: CartItem[];
   isCartOpen: boolean;
+
+  // Waitlist
+  isWaitlistOpen: boolean;
   
   setSelectedProduct: (product: Product | null) => void;
   setOrderDetails: (details: Partial<OrderDetails>) => void;
@@ -26,7 +29,9 @@ interface ShopState {
   removeFromCart: (productId: string) => void;
   updateQuantity: (productId: string, quantity: number) => void;
   clearCart: () => void;
-}
+
+  // Waitlist Actions
+  setWaitlistOpen: (isOpen: boolean) => void;}
 
 export const useShopStore = create<ShopState>()(
   persist(
@@ -36,6 +41,7 @@ export const useShopStore = create<ShopState>()(
       isCheckoutOpen: false,
       cart: [],
       isCartOpen: false,
+      isWaitlistOpen: false,
 
       setSelectedProduct: (product) => set({ selectedProduct: product }),
       setOrderDetails: (details) => set((state) => ({ 
@@ -45,6 +51,7 @@ export const useShopStore = create<ShopState>()(
       resetOrder: () => set({ selectedProduct: null, orderDetails: {}, isCheckoutOpen: false }),
       
       setCartOpen: (isOpen) => set({ isCartOpen: isOpen }),
+      setWaitlistOpen: (isOpen) => set({ isWaitlistOpen: isOpen }),
       
       addToCart: (product) => {
         const { cart } = get();
