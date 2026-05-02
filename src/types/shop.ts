@@ -479,20 +479,7 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     measurements: ["Bust", "Waist", "Hip", "Shoulder"]
   },
-  {
-    id: "birthday-glam-1",
-    name: "Golden Jubilee Gown",
-    price: 180000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Celebrate your milestone in this breathtaking golden gown designed to turn heads.",
-    images: [
-      "/collections/Birthday outfit/IMG_7786.JPG.jpeg",
-      "/collections/Birthday outfit/IMG_7787.JPG.jpeg",
-      "/collections/Birthday outfit/IMG_6907.JPG.jpeg"
-    ],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
+
   {
     id: "pre-wedding-romance",
     name: "Eternal Love Set",
