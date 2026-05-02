@@ -321,12 +321,12 @@ I'd like to finalize this order. Looking forward to your response!`;
                           <p className="font-bold text-bottle-deep border-t border-gold/20 pt-2 mt-2">Total Paid: ₦{paidOrderDetails.total.toLocaleString()}</p>
                         </div>
                       )}
-                      <a 
-                        href={`https://wa.me/2349065368362?text=${encodeURIComponent(`✅ *Payment Confirmed — Sewphie Stitches*\n\nHello! I just completed payment.\n\n*Total Paid:* ₦${paidOrderDetails?.total?.toLocaleString() || ''}\n\nKindly confirm receipt and proceed with my order. Thank you! 🙏`)}`}
-                        className="mt-4 px-12 py-5 bg-[#25D366] text-white text-[0.65rem] uppercase tracking-luxury font-bold flex items-center gap-3"
-                      >
-                        <Send className="w-4 h-4" /> Confirm on WhatsApp Now
-                      </a>
+                       <a 
+                         href={`https://wa.me/2349065368362?text=${encodeURIComponent(`✅ *Payment Confirmed — Sewphie Stitches*\n\nHello! I just completed payment for my order:\n\n${paidOrderDetails?.items.map(i => `• ${i.quantity}x ${i.name} — ₦${(i.price * i.quantity).toLocaleString()}`).join('\n')}\n\n*Total Paid:* ₦${paidOrderDetails?.total?.toLocaleString()}\n\nKindly confirm receipt and proceed with my order. Thank you! 🙏`)}`}
+                         className="mt-4 px-12 py-5 bg-[#25D366] text-white text-[0.65rem] uppercase tracking-luxury font-bold flex items-center gap-3"
+                       >
+                         <Send className="w-4 h-4" /> Confirm on WhatsApp Now
+                       </a>
                       <button 
                         onClick={() => { resetOrder(); clearCart(); setCheckoutOpen(false); setStep(1); setPaidOrderDetails(null); }}
                         className="px-12 py-4 border border-bottle-deep/10 text-bottle-deep text-[0.65rem] uppercase tracking-luxury"
