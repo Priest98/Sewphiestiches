@@ -426,16 +426,7 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Elegant silk set for effortless sophistication.",
     images: ["/collections/Ready to wear/C1.PNG", "/collections/Ready to wear/C2.PNG", "/collections/Ready to wear/C3.PNG"],
   },
-  {
-    id: "ready-to-wear-6",
-    name: "Velvet Evening Gown",
-    price: 120000,
-    category: "Ready To Wear" as Category,
-    isCustom: true,
-    description: "Stunning velvet gown for your most special occasions.",
-    images: ["/collections/Ready to wear/B1.jpeg", "/collections/Ready to wear/B2.jpeg", "/collections/Ready to wear/B3.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
+
   {
     id: "streetwear-1",
     name: "Urban Graffiti Hoodie",
@@ -479,41 +470,7 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust", "Waist", "Hip", "Shoulder"]
   },
 
-  {
-    id: "pre-wedding-romance",
-    name: "Eternal Love Set",
-    price: 110000,
-    category: "Pre Wedding Look" as Category,
-    isCustom: true,
-    description: "Perfect for your pre-wedding shoot. Elegant, romantic, and timeless.",
-    images: [
-      "/collections/Pre wedding look/IMG_9033.JPG.jpeg",
-      "/collections/Pre wedding look/IMG_9019.JPG.jpeg"
-    ],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "reception-grand-entrance",
-    name: "Starlight Reception Gown",
-    price: 250000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Make a grand entrance in this shimmering reception gown that captures the light and everyone's attention.",
-    images: [
-      "/collections/Reception Dress/IMG_9300.JPG.jpeg",
-      "/collections/Reception Dress/IMG_9537.JPG.jpeg",
-      "/collections/Reception Dress/IMG_9540.JPG.jpeg"
-    ],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "wedding-ball-gown-grand",
-    name: "Grand Cathedral Gown",
-    price: 2800000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "The pinnacle of our bridal collection. A voluminous, intricate ball gown designed for a royal wedding experience.",
-    images: ["/collections/Wedding ball gown/IMG_7004.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip", "Length"]
-  },
+
+
+
 ];
