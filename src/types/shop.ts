@@ -468,7 +468,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "aso-oke-luxury",
     name: "Royal Heritage Aso Oke",
-    price: 5000,
+    price: 1000,
     category: "Aso Oke" as Category,
     isCustom: true,
     description: "A masterpiece of traditional weaving, featuring intricate patterns and premium threads.",
