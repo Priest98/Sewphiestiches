@@ -50,6 +50,8 @@ export const CheckoutModal = () => {
     // Always move to success step once Paystack confirms client-side
     // This prevents users from getting stuck if the edge function is slow or misconfigured
     setStep(4);
+    clearCart();
+    resetOrder();
     
     try {
       const { data, error } = await supabase.functions.invoke('verify-payment', {
