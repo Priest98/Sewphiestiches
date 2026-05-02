@@ -132,7 +132,7 @@ export const MOCK_PRODUCTS: Product[] = [
     id: "birthday-outfit-7",
     name: "Birthday Outfit 7",
     price: 300000,
-    category: "Birthday Outfit" as Category,
+    category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
     images: [
