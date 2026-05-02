@@ -20,12 +20,6 @@ const ProductDetails = lazy(() => import("./pages/ProductDetails.tsx"));
 const Contact = lazy(() => import("./pages/Contact.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
-const LoadingFallback = () => (
-  <div className="fixed inset-0 bg-bottle-deep flex flex-col items-center justify-center text-gold z-[9999]">
-    <Loader2 className="w-12 h-12 animate-spin mb-4" />
-    <p className="text-[0.65rem] uppercase tracking-[0.4em] animate-pulse">Loading Artistry...</p>
-  </div>
-);
 const queryClient = new QueryClient();
 
 const AnimatedRoutes = () => {
@@ -35,7 +29,7 @@ const AnimatedRoutes = () => {
     <>
       <WaitlistPopup />
       <AnimatePresence mode="wait">
-        <Suspense fallback={<LoadingFallback />}>
+        <Suspense fallback={null}>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<PageTransition><Index /></PageTransition>} />
             <Route path="/academy" element={<PageTransition><AcademyPage /></PageTransition>} />
