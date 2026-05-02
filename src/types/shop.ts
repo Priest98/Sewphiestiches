@@ -458,7 +458,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-new-1",
     name: "Premium Lace Asoebi",
-    price: 95000,
+    price: 120000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Exquisite lace asoebi for a regal presence.",
