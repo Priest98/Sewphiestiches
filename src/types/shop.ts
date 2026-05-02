@@ -151,8 +151,8 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom corporate suit crafted to perfection.",
     images: [
-      "/collections/Corporate Suit/A1.jpeg",
-      "/collections/Corporate Suit/A2.jpeg"
+      "/collections/Corporate Suit/Corporate suit 1.PNG",
+      "/collections/Corporate Suit/Corporate suit 2.jpeg"
     ],
     measurements: ["Bust", "Waist", "Hip"]
   },
