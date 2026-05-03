@@ -57,7 +57,10 @@ for (const folder of foldersToSync) {
   const destFolder = path.join(destDir, folder);
   if (!fs.existsSync(destFolder)) fs.mkdirSync(destFolder, { recursive: true });
 
-  const files = fs.readdirSync(sourceFolder).filter(f => f.endsWith('.jpg') || f.endsWith('.jpeg') || f.endsWith('.png'));
+  const files = fs.readdirSync(sourceFolder).filter(f => {
+    const ext = path.extname(f).toLowerCase();
+    return ['.jpg', '.jpeg', '.png', '.webp'].includes(ext);
+  });
   const imagePaths = [];
 
   for (const file of files) {

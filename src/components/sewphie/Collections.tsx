@@ -4,7 +4,7 @@ import { SectionHeader } from "./SectionHeader";
 
 const items = [
   { img: "/collections/Aso oke/IMG_9706.JPG.jpeg", title: "Aso Oke", caption: "Traditional elegance redefined.", tall: false },
-  { img: "/collections/Birthday outfit/IMG_5423.JPG.jpeg", title: "Birthday Outfit", caption: "Celebrate in stunning style.", tall: true },
+  { img: "/collections/Birthday outfit/birthday outfit 1.PNG", title: "Birthday Outfit", caption: "Celebrate in stunning style.", tall: true },
   { img: "/collections/Corporate Suit/Corporate suit 1.PNG", title: "Corporate Suit", caption: "Power, structure, and authority.", tall: false },
   { img: "/collections/Pre wedding look/IMG_9033.JPG.jpeg", title: "Pre Wedding Look", caption: "Start your journey beautifully.", tall: true },
   { img: "/collections/Ready to wear/A1.jpeg", title: "Ready To Wear", caption: "Effortless luxury, ready to go.", tall: false },
