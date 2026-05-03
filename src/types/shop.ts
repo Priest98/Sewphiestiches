@@ -160,42 +160,17 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: "birthday-outfit-1",
-    name: "Birthday Outfit 5",
+    name: "Birthday Outfit 1",
     price: 70000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_1.png"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-2",
-    name: "Birthday Outfit 6",
-    price: 67000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_10.png"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-3",
-    name: "Birthday Outfit 7",
-    price: 53000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_11.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-4",
-    name: "Birthday Outfit 8",
-    price: 58000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_12.jpg"],
+    images: [
+      "/collections/birthday_outfit/birthday_outfit_1.png",
+      "/collections/birthday_outfit/birthday_outfit_10.png",
+      "/collections/birthday_outfit/birthday_outfit_11.jpg",
+      "/collections/birthday_outfit/birthday_outfit_12.jpg"
+    ],
     measurements: ["Bust","Waist","Hip"]
   },
   {
