@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Lenis from "lenis";
 import { Navbar } from "@/components/sewphie/Navbar";
@@ -14,9 +14,16 @@ import { ScrollProgress } from "@/components/sewphie/ScrollProgress";
 
 const Index = () => {
   const location = useLocation();
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    // Basic SEO
+    setIsDesktop(window.innerWidth >= 768);
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
     document.title = "Sewphie Stitches — Luxury Nigerian Couture & Fashion Academy";
 
     const setMeta = (name: string, content: string) => {
@@ -33,7 +40,6 @@ const Index = () => {
       "Sewphie Stitches — luxury Nigerian fashion house. Bespoke gowns, asoebi, ball gowns, suits and the Sewphie Fashion Academy in Kwara State."
     );
 
-    // Dynamic canonical with www.sewphiestitches.com
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");
@@ -42,7 +48,6 @@ const Index = () => {
     }
     canonical.setAttribute("href", "https://www.sewphiestitches.com/");
 
-    // Only initialize Lenis on desktop for performance
     if (window.innerWidth >= 1024) {
       const lenis = new Lenis({
         duration: 1.2,
@@ -79,8 +84,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <LoadingScreen />
-      <CustomCursor />
-      <ScrollProgress />
+      {isDesktop && <CustomCursor />}
+      {isDesktop && <ScrollProgress />}
       <Navbar />
       <main>
         <Hero />

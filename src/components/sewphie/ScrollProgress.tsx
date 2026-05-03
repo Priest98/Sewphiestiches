@@ -2,6 +2,7 @@ import { motion, useScroll } from "framer-motion";
 
 export const ScrollProgress = () => {
   const { scrollYProgress } = useScroll();
+  if (typeof window !== "undefined" && window.innerWidth < 768) return null;
 
   return (
     <motion.div

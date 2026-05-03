@@ -50,7 +50,7 @@ export const CustomCursor = () => {
     };
   }, []);
 
-  if (typeof window !== "undefined" && window.innerWidth < 768) return null;
+  if (typeof window !== "undefined" && ("ontouchstart" in window || navigator.maxTouchPoints > 0)) return null;
 
   return (
     <motion.div

@@ -6,12 +6,11 @@ export const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Disable scroll while loading
     document.body.style.overflow = "hidden";
     const timer = setTimeout(() => {
       setIsLoading(false);
       document.body.style.overflow = "";
-    }, 2000);
+    }, 1200);
     return () => {
       clearTimeout(timer);
       document.body.style.overflow = "";
