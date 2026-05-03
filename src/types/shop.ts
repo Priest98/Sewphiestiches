@@ -914,5 +914,315 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Custom wedding look crafted to perfection.",
     images: ["/collections/wedding_look/wedding_look_5.jpg"],
     measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794915335-106",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_5424.png"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794915446-128",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_5433.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794920804-903",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_5464.png"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794924713-694",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_5466.png"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794929237-321",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_5467.png"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794930000-597",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_9802.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794931966-843",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_9804.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-1777794934609-329",
+    name: "Birthday Outfit New",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit couture.",
+    images: ["/collections/birthday_outfit/img_9807.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "corporate-suit-new-1777794936246-723",
+    name: "Corporate Suit New",
+    price: 75000,
+    category: "Corporate Suit" as Category,
+    isCustom: true,
+    description: "Luxury corporate suit couture.",
+    images: ["/collections/corporate_suit/img_5818.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "corporate-suit-new-1777794937610-84",
+    name: "Corporate Suit New",
+    price: 75000,
+    category: "Corporate Suit" as Category,
+    isCustom: true,
+    description: "Luxury corporate suit couture.",
+    images: ["/collections/corporate_suit/img_5822.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "pre-wedding-look-new-1777794938749-434",
+    name: "Pre Wedding Look New",
+    price: 75000,
+    category: "Pre Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury pre wedding look couture.",
+    images: ["/collections/pre_wedding_look/img_6973.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "pre-wedding-look-new-1777794939900-209",
+    name: "Pre Wedding Look New",
+    price: 75000,
+    category: "Pre Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury pre wedding look couture.",
+    images: ["/collections/pre_wedding_look/img_6989.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "ready-to-wear-new-1777794941626-265",
+    name: "Ready to Wear New",
+    price: 75000,
+    category: "Ready to Wear" as Category,
+    isCustom: true,
+    description: "Luxury ready to wear couture.",
+    images: ["/collections/ready_to_wear/img_5498.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "ready-to-wear-new-1777794943283-471",
+    name: "Ready to Wear New",
+    price: 75000,
+    category: "Ready to Wear" as Category,
+    isCustom: true,
+    description: "Luxury ready to wear couture.",
+    images: ["/collections/ready_to_wear/img_5505.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "reception-dress-new-1777794945865-592",
+    name: "Reception Dress New",
+    price: 75000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Luxury reception dress couture.",
+    images: ["/collections/reception_dress/img_7694.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "reception-dress-new-1777794947792-416",
+    name: "Reception Dress New",
+    price: 75000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Luxury reception dress couture.",
+    images: ["/collections/reception_dress/img_7698.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "reception-dress-new-1777794949799-138",
+    name: "Reception Dress New",
+    price: 75000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Luxury reception dress couture.",
+    images: ["/collections/reception_dress/img_7700.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "reception-dress-new-1777794951615-765",
+    name: "Reception Dress New",
+    price: 75000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Luxury reception dress couture.",
+    images: ["/collections/reception_dress/img_7701.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794952501-599",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_2257.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794953620-306",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_6970.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794954755-968",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_6974.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794955753-313",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_6979.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794956945-844",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_6985.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794958012-28",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_6990.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-ball-gown-new-1777794959102-92",
+    name: "Wedding Ball Gown New",
+    price: 75000,
+    category: "Wedding Ball Gown" as Category,
+    isCustom: true,
+    description: "Luxury wedding ball gown couture.",
+    images: ["/collections/wedding_ball_gown/img_7002.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-look-new-1777794960300-823",
+    name: "Wedding Look New",
+    price: 75000,
+    category: "Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury wedding look couture.",
+    images: ["/collections/wedding_look/img_2252.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-look-new-1777794961206-453",
+    name: "Wedding Look New",
+    price: 75000,
+    category: "Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury wedding look couture.",
+    images: ["/collections/wedding_look/img_2255.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-look-new-1777794962216-990",
+    name: "Wedding Look New",
+    price: 75000,
+    category: "Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury wedding look couture.",
+    images: ["/collections/wedding_look/img_6971.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-look-new-1777794963281-185",
+    name: "Wedding Look New",
+    price: 75000,
+    category: "Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury wedding look couture.",
+    images: ["/collections/wedding_look/img_6994.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-look-new-1777794964296-947",
+    name: "Wedding Look New",
+    price: 75000,
+    category: "Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury wedding look couture.",
+    images: ["/collections/wedding_look/img_7003.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "wedding-look-new-1777794965499-98",
+    name: "Wedding Look New",
+    price: 75000,
+    category: "Wedding Look" as Category,
+    isCustom: true,
+    description: "Luxury wedding look couture.",
+    images: ["/collections/wedding_look/img_7004.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   }
 ];
