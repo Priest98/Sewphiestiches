@@ -1,3 +1,4 @@
+// Product catalog for Sewphie Stitches - Last updated: 2026-05-03
 export type Category = 'Aso oke' | 'Asoebi' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready to Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look' | 'Civil Wedding Dress' | 'Street Wear';
 
 export interface Product {
