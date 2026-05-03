@@ -722,42 +722,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury street wear crafted to perfection.",
     images: [
-  "/collections/street_wear/img_7566.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "street-wear-2",
-    name: "Street Wear 2",
-    price: 75000,
-    category: "Street Wear" as Category,
-    isCustom: true,
-    description: "Luxury street wear crafted to perfection.",
-    images: [
-  "/collections/street_wear/img_7571.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "street-wear-3",
-    name: "Street Wear 3",
-    price: 75000,
-    category: "Street Wear" as Category,
-    isCustom: true,
-    description: "Luxury street wear crafted to perfection.",
-    images: [
-  "/collections/street_wear/img_7576.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "street-wear-4",
-    name: "Street Wear 4",
-    price: 75000,
-    category: "Street Wear" as Category,
-    isCustom: true,
-    description: "Luxury street wear crafted to perfection.",
-    images: [
+  "/collections/street_wear/img_7566.jpg",
+  "/collections/street_wear/img_7571.jpg",
+  "/collections/street_wear/img_7576.jpg",
   "/collections/street_wear/img_7579.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
