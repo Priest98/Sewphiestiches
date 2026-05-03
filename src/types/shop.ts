@@ -193,6 +193,19 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
+    id: "corporate-suit-3",
+    name: "Corporate Suit 3",
+    price: 75000,
+    category: "Corporate Suit" as Category,
+    isCustom: true,
+    description: "Luxury corporate suit crafted to perfection.",
+    images: [
+  "/collections/corporate_suit/img_5818.jpg",
+  "/collections/corporate_suit/img_5822.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
     id: "pre-wedding-look-1",
     name: "Pre Wedding Look 1",
     price: 84000,
