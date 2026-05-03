@@ -223,7 +223,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-1",
     name: "Pre Wedding Look 1",
-    price: 84000,
+    price: 150000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -235,7 +235,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-2",
     name: "Pre Wedding Look 2",
-    price: 92000,
+    price: 200000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -247,7 +247,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-3",
     name: "Pre Wedding Look 3",
-    price: 77000,
+    price: 70000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -259,7 +259,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-4",
     name: "Pre Wedding Look 4",
-    price: 54000,
+    price: 70000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -271,7 +271,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-5",
     name: "Pre Wedding Look 5",
-    price: 62000,
+    price: 70000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -283,7 +283,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-6",
     name: "Pre Wedding Look 6",
-    price: 87000,
+    price: 70000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -295,7 +295,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-7",
     name: "Pre Wedding Look 7",
-    price: 50000,
+    price: 70000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -307,7 +307,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-8",
     name: "Pre Wedding Look 8",
-    price: 68000,
+    price: 70000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
@@ -516,7 +516,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "pre-wedding-look-9",
     name: "Pre Wedding Look 9",
-    price: 75000,
+    price: 1500000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
