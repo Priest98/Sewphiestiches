@@ -4,7 +4,7 @@ import { SectionHeader } from "./SectionHeader";
 
 const items = [
   { img: "/collections/aso_oke/img_9706.jpg", title: "Aso oke", caption: "Traditional elegance redefined.", tall: false },
-  { img: "/collections/asoebi/img_9537.jpg", title: "Asoebi", caption: "Unity in style and tradition.", tall: true },
+  { img: "/collections/asoebi/img_4500.jpg", title: "Asoebi", caption: "Unity in style and tradition.", tall: true },
   { img: "/collections/birthday_outfit/birthday_outfit_1.png", title: "Birthday Outfit", caption: "Celebrate in stunning style.", tall: true },
   { img: "/collections/corporate_suit/corporate_suit_1.png", title: "Corporate Suit", caption: "Power, structure, and authority.", tall: false },
   { img: "/collections/pre_wedding_look/img_9033.jpg", title: "Pre Wedding Look", caption: "Start your journey beautifully.", tall: true },
