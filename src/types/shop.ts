@@ -666,25 +666,14 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "pre-wedding-look-new-1777794938749-434",
-    name: "Pre Wedding Look New",
+    id: "pre-wedding-look-9",
+    name: "Pre Wedding Look 9",
     price: 75000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Luxury pre wedding look crafted to perfection.",
     images: [
-  "/collections/pre_wedding_look/img_6973.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "pre-wedding-look-new-1777794939900-209",
-    name: "Pre Wedding Look New",
-    price: 75000,
-    category: "Pre Wedding Look" as Category,
-    isCustom: true,
-    description: "Luxury pre wedding look crafted to perfection.",
-    images: [
+  "/collections/pre_wedding_look/img_6973.jpg",
   "/collections/pre_wedding_look/img_6989.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
