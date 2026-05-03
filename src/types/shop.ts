@@ -570,7 +570,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-1",
     name: "Birthday Outfit 1",
-    price: 75000,
+    price: 130000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -584,7 +584,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-2",
     name: "Birthday Outfit 2",
-    price: 75000,
+    price: 150000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -600,7 +600,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-3",
     name: "Birthday Outfit 3",
-    price: 75000,
+    price: 130000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -615,7 +615,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-4",
     name: "Birthday Outfit 4",
-    price: 75000,
+    price: 150000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -628,7 +628,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-5",
     name: "Birthday Outfit 5",
-    price: 75000,
+    price: 150000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -641,7 +641,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-6",
     name: "Birthday Outfit 6",
-    price: 75000,
+    price: 130000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -655,7 +655,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-7",
     name: "Birthday Outfit 7",
-    price: 75000,
+    price: 130000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
