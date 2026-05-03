@@ -33,6 +33,11 @@ const quotes = [
     name: "Fashion Enthusiast",
     role: "Red Carpet Client",
   },
+  {
+    q: "I have not had time to thank youuuu. Thank you very much for the cloth. Even after the rush, it was perfect. I am really grateful.",
+    name: "Happy Client",
+    role: "Bespoke Couture",
+  },
 ];
 
 export const Testimonials = () => {
