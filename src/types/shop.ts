@@ -408,7 +408,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
     images: [
-  "/collections/reception_dress/reception_dress_5.jpg"
+  "/collections/reception_dress/reception_dress_5.jpg",
+  "/collections/reception_dress/img_7701.jpg",
+  "/collections/reception_dress/img_7694.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
@@ -578,30 +580,6 @@ export const MOCK_PRODUCTS: Product[] = [
     images: [
   "/collections/pre_wedding_look/img_6973.jpg",
   "/collections/pre_wedding_look/img_6989.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "reception-dress-10",
-    name: "Reception Dress 10",
-    price: 75000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Luxury reception dress crafted to perfection.",
-    images: [
-  "/collections/reception_dress/img_7694.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "reception-dress-13",
-    name: "Reception Dress 13",
-    price: 75000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Luxury reception dress crafted to perfection.",
-    images: [
-  "/collections/reception_dress/img_7701.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
