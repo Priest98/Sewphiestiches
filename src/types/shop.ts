@@ -33,11 +33,11 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
     images: [
-      "/collections/aso_oke/img_8305.jpg",
-      "/collections/aso_oke/img_8308.jpg",
-      "/collections/aso_oke/img_8310.jpg",
-      "/collections/aso_oke/img_8313.jpg"
-    ],
+  "/collections/aso_oke/img_8305.jpg",
+  "/collections/aso_oke/img_8308.jpg",
+  "/collections/aso_oke/img_8310.jpg",
+  "/collections/aso_oke/img_8313.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -47,7 +47,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_8971.jpg"],
+    images: [
+  "/collections/aso_oke/img_8971.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -58,9 +60,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
     images: [
-      "/collections/aso_oke/img_9584.jpg",
-      "/collections/aso_oke/img_9585.jpg"
-    ],
+  "/collections/aso_oke/img_9584.jpg",
+  "/collections/aso_oke/img_9585.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -71,12 +73,12 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
     images: [
-      "/collections/aso_oke/img_9706.jpg",
-      "/collections/aso_oke/img_9707.jpg",
-      "/collections/aso_oke/img_9718.jpg",
-      "/collections/aso_oke/img_9719.jpg",
-      "/collections/aso_oke/img_9730.jpg"
-    ],
+  "/collections/aso_oke/img_9706.jpg",
+  "/collections/aso_oke/img_9707.jpg",
+  "/collections/aso_oke/img_9718.jpg",
+  "/collections/aso_oke/img_9719.jpg",
+  "/collections/aso_oke/img_9730.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -86,7 +88,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
-    images: ["/collections/asoebi/img_0333.jpg"],
+    images: [
+  "/collections/asoebi/img_0333.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -96,7 +100,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
-    images: ["/collections/asoebi/img_4453.jpg"],
+    images: [
+  "/collections/asoebi/img_4453.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -106,7 +112,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
-    images: ["/collections/asoebi/img_4490.jpg"],
+    images: [
+  "/collections/asoebi/img_4490.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -117,9 +125,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
     images: [
-      "/collections/asoebi/img_4500.jpg",
-      "/collections/asoebi/img_4502.jpg"
-    ],
+  "/collections/asoebi/img_4500.jpg",
+  "/collections/asoebi/img_4502.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -129,7 +137,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
-    images: ["/collections/asoebi/img_9429.jpg"],
+    images: [
+  "/collections/asoebi/img_9429.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -140,9 +150,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
     images: [
-      "/collections/asoebi/img_9537.jpg",
-      "/collections/asoebi/img_9540.jpg"
-    ],
+  "/collections/asoebi/img_9537.jpg",
+  "/collections/asoebi/img_9540.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -153,124 +163,45 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
     images: [
-      "/collections/asoebi/img_9733.jpg",
-      "/collections/asoebi/img_9734.jpg"
-    ],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-1",
-    name: "Birthday Outfit 1",
-    price: 70000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: [
-      "/collections/birthday_outfit/birthday_outfit_1.png",
-      "/collections/birthday_outfit/birthday_outfit_10.png",
-      "/collections/birthday_outfit/birthday_outfit_11.jpg",
-      "/collections/birthday_outfit/birthday_outfit_12.jpg"
-    ],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-5",
-    name: "Birthday Outfit 9",
-    price: 84000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_13.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-6",
-    name: "Birthday Outfit 10",
-    price: 92000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_14.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-7",
-    name: "Birthday Outfit 11",
-    price: 84000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_2.png"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-8",
-    name: "Birthday Outfit 12",
-    price: 68000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_3.png"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-9",
-    name: "Birthday Outfit 13",
-    price: 89000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_4.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-10",
-    name: "Birthday Outfit 14",
-    price: 50000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_5.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-11",
-    name: "Birthday Outfit 1",
-    price: 96000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_6.jpg"],
+  "/collections/asoebi/img_9733.jpg",
+  "/collections/asoebi/img_9734.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "birthday-outfit-12",
-    name: "Birthday Outfit 2",
+    name: "Birthday Outfit 7",
     price: 74000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_7.png"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-13",
-    name: "Birthday Outfit 3",
-    price: 85000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_8.png"],
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_7.png",
+  "/collections/birthday_outfit/birthday_outfit_8.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "birthday-outfit-14",
-    name: "Birthday Outfit 4",
+    name: "Birthday Outfit 9",
     price: 80000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/birthday_outfit/birthday_outfit_9.png"],
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_9.png",
+  "/collections/birthday_outfit/birthday_outfit_5.jpg",
+  "/collections/birthday_outfit/birthday_outfit_1.png",
+  "/collections/birthday_outfit/birthday_outfit_10.png",
+  "/collections/birthday_outfit/birthday_outfit_11.jpg",
+  "/collections/birthday_outfit/birthday_outfit_12.jpg",
+  "/collections/birthday_outfit/birthday_outfit_2.png",
+  "/collections/birthday_outfit/birthday_outfit_3.png",
+  "/collections/birthday_outfit/birthday_outfit_4.jpg",
+  "/collections/birthday_outfit/birthday_outfit_6.jpg",
+  "/collections/birthday_outfit/birthday_outfit_13.jpg",
+  "/collections/birthday_outfit/birthday_outfit_14.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -280,7 +211,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Custom corporate suit crafted to perfection.",
-    images: ["/collections/corporate_suit/corporate_suit_1.png"],
+    images: [
+  "/collections/corporate_suit/corporate_suit_1.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -290,7 +223,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Custom corporate suit crafted to perfection.",
-    images: ["/collections/corporate_suit/corporate_suit_2.jpg"],
+    images: [
+  "/collections/corporate_suit/corporate_suit_2.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -300,7 +235,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_1751.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_1751.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -310,7 +247,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9033.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9033.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -320,7 +259,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9054.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9054.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -330,7 +271,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9055.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9055.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -340,7 +283,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9056.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9056.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -350,7 +295,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9057.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9057.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -360,7 +307,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9058.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9058.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -370,7 +319,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/pre_wedding_look/img_9059.jpg"],
+    images: [
+  "/collections/pre_wedding_look/img_9059.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -380,7 +331,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/a1.jpg"],
+    images: [
+  "/collections/ready_to_wear/a1.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -390,7 +343,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/a2.jpg"],
+    images: [
+  "/collections/ready_to_wear/a2.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -400,7 +355,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/a3.jpg"],
+    images: [
+  "/collections/ready_to_wear/a3.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -410,7 +367,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/a4.jpg"],
+    images: [
+  "/collections/ready_to_wear/a4.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -420,7 +379,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/a5.jpg"],
+    images: [
+  "/collections/ready_to_wear/a5.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -430,7 +391,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/b1.jpg"],
+    images: [
+  "/collections/ready_to_wear/b1.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -440,7 +403,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/b2.jpg"],
+    images: [
+  "/collections/ready_to_wear/b2.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -450,7 +415,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/b3.jpg"],
+    images: [
+  "/collections/ready_to_wear/b3.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -460,7 +427,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/b4.jpg"],
+    images: [
+  "/collections/ready_to_wear/b4.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -470,7 +439,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/b5.jpg"],
+    images: [
+  "/collections/ready_to_wear/b5.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -480,7 +451,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/c1.png"],
+    images: [
+  "/collections/ready_to_wear/c1.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -490,7 +463,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/c2.png"],
+    images: [
+  "/collections/ready_to_wear/c2.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -500,7 +475,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/c3.png"],
+    images: [
+  "/collections/ready_to_wear/c3.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -510,7 +487,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/d1.jpg"],
+    images: [
+  "/collections/ready_to_wear/d1.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -520,7 +499,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/d2.jpg"],
+    images: [
+  "/collections/ready_to_wear/d2.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -530,7 +511,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/img_1383.jpg"],
+    images: [
+  "/collections/ready_to_wear/img_1383.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -540,7 +523,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/img_5464.png"],
+    images: [
+  "/collections/ready_to_wear/img_5464.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -550,7 +535,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/ready_to_wear_5.jpg"],
+    images: [
+  "/collections/ready_to_wear/ready_to_wear_5.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -560,7 +547,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/ready_to_wear_6.jpg"],
+    images: [
+  "/collections/ready_to_wear/ready_to_wear_6.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -570,7 +559,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/ready_to_wear_7.jpg"],
+    images: [
+  "/collections/ready_to_wear/ready_to_wear_7.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -580,7 +571,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/ready_to_wear/ready_to_wear_8.jpg"],
+    images: [
+  "/collections/ready_to_wear/ready_to_wear_8.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -590,7 +583,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/img_9300.jpg"],
+    images: [
+  "/collections/reception_dress/img_9300.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -600,7 +595,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/img_9574.jpg"],
+    images: [
+  "/collections/reception_dress/img_9574.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -610,7 +607,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/img_9685.jpg"],
+    images: [
+  "/collections/reception_dress/img_9685.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -620,7 +619,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/img_9687.jpg"],
+    images: [
+  "/collections/reception_dress/img_9687.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -630,7 +631,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/img_9689.jpg"],
+    images: [
+  "/collections/reception_dress/img_9689.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -640,7 +643,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/img_9690.jpg"],
+    images: [
+  "/collections/reception_dress/img_9690.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -650,7 +655,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/reception_dress_3.jpg"],
+    images: [
+  "/collections/reception_dress/reception_dress_3.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -660,7 +667,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/reception_dress_4.jpg"],
+    images: [
+  "/collections/reception_dress/reception_dress_4.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -670,7 +679,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/reception_dress/reception_dress_5.jpg"],
+    images: [
+  "/collections/reception_dress/reception_dress_5.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -680,7 +691,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/wedding_ball_gown/img_2246.jpg"],
+    images: [
+  "/collections/wedding_ball_gown/img_2246.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -690,7 +703,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/wedding_ball_gown/img_2247.jpg"],
+    images: [
+  "/collections/wedding_ball_gown/img_2247.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -700,7 +715,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/wedding_ball_gown/img_2248.jpg"],
+    images: [
+  "/collections/wedding_ball_gown/img_2248.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -710,7 +727,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/wedding_ball_gown/img_2253.jpg"],
+    images: [
+  "/collections/wedding_ball_gown/img_2253.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -720,7 +739,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/wedding_ball_gown/img_7004.jpg"],
+    images: [
+  "/collections/wedding_ball_gown/img_7004.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -730,7 +751,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_1748.jpg"],
+    images: [
+  "/collections/wedding_look/img_1748.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -740,7 +763,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_1749.jpg"],
+    images: [
+  "/collections/wedding_look/img_1749.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -750,7 +775,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_2177.jpg"],
+    images: [
+  "/collections/wedding_look/img_2177.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -760,7 +787,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_2246.jpg"],
+    images: [
+  "/collections/wedding_look/img_2246.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -770,7 +799,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_2247.jpg"],
+    images: [
+  "/collections/wedding_look/img_2247.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -780,7 +811,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_2248.jpg"],
+    images: [
+  "/collections/wedding_look/img_2248.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -790,7 +823,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/img_2253.jpg"],
+    images: [
+  "/collections/wedding_look/img_2253.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -800,7 +835,9 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/wedding_look/wedding_look_5.jpg"],
+    images: [
+  "/collections/wedding_look/wedding_look_5.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -809,8 +846,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_5424.png"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5424.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -819,8 +858,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_5433.jpg"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5433.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -829,8 +870,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_5464.png"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5464.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -839,8 +882,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_5466.png"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5466.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -849,8 +894,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_5467.png"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5467.png"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -859,8 +906,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_9802.jpg"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_9802.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -869,8 +918,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_9804.jpg"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_9804.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -879,8 +930,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Luxury birthday outfit couture.",
-    images: ["/collections/birthday_outfit/img_9807.jpg"],
+    description: "Custom birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_9807.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -889,8 +942,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Corporate Suit" as Category,
     isCustom: true,
-    description: "Luxury corporate suit couture.",
-    images: ["/collections/corporate_suit/img_5818.jpg"],
+    description: "Custom corporate suit crafted to perfection.",
+    images: [
+  "/collections/corporate_suit/img_5818.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -899,8 +954,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Corporate Suit" as Category,
     isCustom: true,
-    description: "Luxury corporate suit couture.",
-    images: ["/collections/corporate_suit/img_5822.jpg"],
+    description: "Custom corporate suit crafted to perfection.",
+    images: [
+  "/collections/corporate_suit/img_5822.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -909,8 +966,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury pre wedding look couture.",
-    images: ["/collections/pre_wedding_look/img_6973.jpg"],
+    description: "Custom pre wedding look crafted to perfection.",
+    images: [
+  "/collections/pre_wedding_look/img_6973.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -919,8 +978,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury pre wedding look couture.",
-    images: ["/collections/pre_wedding_look/img_6989.jpg"],
+    description: "Custom pre wedding look crafted to perfection.",
+    images: [
+  "/collections/pre_wedding_look/img_6989.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -929,8 +990,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Luxury ready to wear couture.",
-    images: ["/collections/ready_to_wear/img_5498.jpg"],
+    description: "Custom ready to wear crafted to perfection.",
+    images: [
+  "/collections/ready_to_wear/img_5498.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -939,8 +1002,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Luxury ready to wear couture.",
-    images: ["/collections/ready_to_wear/img_5505.jpg"],
+    description: "Custom ready to wear crafted to perfection.",
+    images: [
+  "/collections/ready_to_wear/img_5505.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -949,8 +1014,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Luxury reception dress couture.",
-    images: ["/collections/reception_dress/img_7694.jpg"],
+    description: "Custom reception dress crafted to perfection.",
+    images: [
+  "/collections/reception_dress/img_7694.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -959,8 +1026,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Luxury reception dress couture.",
-    images: ["/collections/reception_dress/img_7698.jpg"],
+    description: "Custom reception dress crafted to perfection.",
+    images: [
+  "/collections/reception_dress/img_7698.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -969,8 +1038,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Luxury reception dress couture.",
-    images: ["/collections/reception_dress/img_7700.jpg"],
+    description: "Custom reception dress crafted to perfection.",
+    images: [
+  "/collections/reception_dress/img_7700.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -979,8 +1050,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Luxury reception dress couture.",
-    images: ["/collections/reception_dress/img_7701.jpg"],
+    description: "Custom reception dress crafted to perfection.",
+    images: [
+  "/collections/reception_dress/img_7701.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -989,8 +1062,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_2257.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_2257.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -999,8 +1074,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_6970.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_6970.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1009,8 +1086,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_6974.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_6974.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1019,8 +1098,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_6979.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_6979.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1029,8 +1110,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_6985.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_6985.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1039,8 +1122,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_6990.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_6990.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1049,8 +1134,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Luxury wedding ball gown couture.",
-    images: ["/collections/wedding_ball_gown/img_7002.jpg"],
+    description: "Custom wedding ball gown crafted to perfection.",
+    images: [
+  "/collections/wedding_ball_gown/img_7002.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1059,8 +1146,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury wedding look couture.",
-    images: ["/collections/wedding_look/img_2252.jpg"],
+    description: "Custom wedding look crafted to perfection.",
+    images: [
+  "/collections/wedding_look/img_2252.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1069,8 +1158,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury wedding look couture.",
-    images: ["/collections/wedding_look/img_2255.jpg"],
+    description: "Custom wedding look crafted to perfection.",
+    images: [
+  "/collections/wedding_look/img_2255.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1079,8 +1170,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury wedding look couture.",
-    images: ["/collections/wedding_look/img_6971.jpg"],
+    description: "Custom wedding look crafted to perfection.",
+    images: [
+  "/collections/wedding_look/img_6971.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1089,8 +1182,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury wedding look couture.",
-    images: ["/collections/wedding_look/img_6994.jpg"],
+    description: "Custom wedding look crafted to perfection.",
+    images: [
+  "/collections/wedding_look/img_6994.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1099,8 +1194,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury wedding look couture.",
-    images: ["/collections/wedding_look/img_7003.jpg"],
+    description: "Custom wedding look crafted to perfection.",
+    images: [
+  "/collections/wedding_look/img_7003.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   },
   {
@@ -1109,8 +1206,10 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Luxury wedding look couture.",
-    images: ["/collections/wedding_look/img_7004.jpg"],
+    description: "Custom wedding look crafted to perfection.",
+    images: [
+  "/collections/wedding_look/img_7004.jpg"
+],
     measurements: ["Bust","Waist","Hip"]
   }
 ];
