@@ -454,5 +454,75 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Exquisite lace asoebi for a regal presence.",
     images: ["/collections/Asoebi/IMG_6958.JPG.jpeg", "/collections/Asoebi/IMG_6959.JPG.jpeg"],
     measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "reception-dress-3",
+    name: "Reception Dress 3",
+    price: 85000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Elegant reception dress for a stunning presence.",
+    images: ["/collections/Reception Dress/reception dress 3.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "reception-dress-4",
+    name: "Reception Dress 4",
+    price: 90000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Elegant reception dress for a stunning presence.",
+    images: ["/collections/Reception Dress/reception dress 4.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "reception-dress-5",
+    name: "Reception Dress 5",
+    price: 80000,
+    category: "Reception Dress" as Category,
+    isCustom: true,
+    description: "Elegant reception dress for a stunning presence.",
+    images: ["/collections/Reception Dress/reception dress 5.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "birthday-outfit-6",
+    name: "Birthday Outfit 6",
+    price: 140000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Stunning birthday outfit for your special day.",
+    images: ["/collections/Birthday outfit/birthday outfit  6.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "birthday-outfit-7-new",
+    name: "Birthday Outfit 7",
+    price: 160000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Stunning birthday outfit for your special day.",
+    images: ["/collections/Birthday outfit/birthday outfit  7.PNG"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "birthday-outfit-8",
+    name: "Birthday Outfit 8",
+    price: 145000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Stunning birthday outfit for your special day.",
+    images: ["/collections/Birthday outfit/birthday outfit  8.PNG"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "birthday-outfit-9",
+    name: "Birthday Outfit 9",
+    price: 155000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Stunning birthday outfit for your special day.",
+    images: ["/collections/Birthday outfit/birthday outfit  9.PNG"],
+    measurements: ["Bust", "Waist", "Hip"]
   }
 ];
