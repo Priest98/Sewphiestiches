@@ -393,18 +393,9 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
     images: [
-  "/collections/reception_dress/reception_dress_3.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "reception-dress-8",
-    name: "Reception Dress 8",
-    price: 66000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Luxury reception dress crafted to perfection.",
-    images: [
+  "/collections/reception_dress/reception_dress_3.jpg",
+  "/collections/reception_dress/img_7700.jpg",
+  "/collections/reception_dress/img_7698.jpg",
   "/collections/reception_dress/reception_dress_4.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
@@ -599,30 +590,6 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_7694.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "reception-dress-11",
-    name: "Reception Dress 11",
-    price: 75000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Luxury reception dress crafted to perfection.",
-    images: [
-  "/collections/reception_dress/img_7698.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "reception-dress-12",
-    name: "Reception Dress 12",
-    price: 75000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Luxury reception dress crafted to perfection.",
-    images: [
-  "/collections/reception_dress/img_7700.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
