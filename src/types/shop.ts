@@ -325,18 +325,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury ready to wear crafted to perfection.",
     images: [
-  "/collections/ready_to_wear/d1.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-15",
-    name: "Ready To Wear 15",
-    price: 80000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
+  "/collections/ready_to_wear/d1.jpg",
   "/collections/ready_to_wear/d2.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
