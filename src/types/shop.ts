@@ -32,37 +32,12 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_8305.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-2",
-    name: "Aso Oke 2",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_8308.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-3",
-    name: "Aso Oke 3",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_8310.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-4",
-    name: "Aso Oke 4",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_8313.jpg"],
+    images: [
+      "/collections/aso_oke/img_8305.jpg",
+      "/collections/aso_oke/img_8308.jpg",
+      "/collections/aso_oke/img_8310.jpg",
+      "/collections/aso_oke/img_8313.jpg"
+    ],
     measurements: ["Bust","Waist","Hip"]
   },
   {
