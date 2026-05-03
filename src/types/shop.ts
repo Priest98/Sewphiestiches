@@ -682,9 +682,9 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "street-wear-1",
+id: "street-wear-1",
     name: "Street Wear 1",
-    price: 75000,
+    price: 200000,
     category: "Street Wear" as Category,
     isCustom: true,
     description: "Luxury street wear crafted to perfection.",
