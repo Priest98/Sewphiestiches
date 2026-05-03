@@ -319,7 +319,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "ready-to-wear-1",
     name: "Ready to Wear 1",
-    price: 76000,
+    price: 50000,
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Luxury ready to wear crafted to perfection.",
@@ -335,7 +335,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "ready-to-wear-2",
     name: "Ready to Wear 2",
-    price: 87000,
+    price: 180000,
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Luxury ready to wear crafted to perfection.",
@@ -348,7 +348,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "ready-to-wear-3",
     name: "Ready to Wear 3",
-    price: 99000,
+    price: 60000,
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Luxury ready to wear crafted to perfection.",
@@ -360,7 +360,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "ready-to-wear-4",
     name: "Ready to Wear 4",
-    price: 92000,
+    price: 60000,
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Luxury ready to wear crafted to perfection.",
