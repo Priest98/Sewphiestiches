@@ -30,11 +30,11 @@ export const SectionHeader = ({
           <span className="h-px w-8 gold-line" />
         </p>
       )}
-      <h2 className={`font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] ${titleColor}`}>
+      <h2 className={`font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight sm:leading-[1.05] ${titleColor}`}>
         {title}
       </h2>
       {description && (
-        <p className={`mt-6 text-base md:text-lg leading-relaxed font-light ${descColor}`}>
+        <p className={`mt-4 sm:mt-6 text-sm sm:text-base md:text-lg leading-relaxed font-light ${descColor}`}>
           {description}
         </p>
       )}
