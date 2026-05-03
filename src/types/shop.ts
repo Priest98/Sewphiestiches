@@ -365,18 +365,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
     images: [
-  "/collections/reception_dress/img_9300.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "reception-dress-2",
-    name: "Reception Dress 2",
-    price: 64000,
-    category: "Reception Dress" as Category,
-    isCustom: true,
-    description: "Luxury reception dress crafted to perfection.",
-    images: [
+  "/collections/reception_dress/img_9300.jpg",
   "/collections/reception_dress/img_9574.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
