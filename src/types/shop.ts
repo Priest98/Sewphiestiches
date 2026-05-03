@@ -31,7 +31,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
+    description: "Luxury aso oke crafted to perfection.",
     images: [
   "/collections/aso_oke/img_8305.jpg",
   "/collections/aso_oke/img_8308.jpg",
@@ -46,7 +46,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
+    description: "Luxury aso oke crafted to perfection.",
     images: [
   "/collections/aso_oke/img_8971.jpg"
 ],
@@ -58,7 +58,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
+    description: "Luxury aso oke crafted to perfection.",
     images: [
   "/collections/aso_oke/img_9584.jpg",
   "/collections/aso_oke/img_9585.jpg"
@@ -71,7 +71,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
+    description: "Luxury aso oke crafted to perfection.",
     images: [
   "/collections/aso_oke/img_9706.jpg",
   "/collections/aso_oke/img_9707.jpg",
@@ -87,7 +87,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_0333.jpg"
 ],
@@ -99,7 +99,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_4453.jpg"
 ],
@@ -111,7 +111,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_4490.jpg"
 ],
@@ -123,7 +123,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_4500.jpg",
   "/collections/asoebi/img_4502.jpg"
@@ -136,7 +136,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_9429.jpg"
 ],
@@ -148,7 +148,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_9537.jpg",
   "/collections/asoebi/img_9540.jpg"
@@ -161,7 +161,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
+    description: "Luxury asoebi crafted to perfection.",
     images: [
   "/collections/asoebi/img_9733.jpg",
   "/collections/asoebi/img_9734.jpg"
@@ -174,7 +174,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 74000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/birthday_outfit_7.png",
   "/collections/birthday_outfit/birthday_outfit_8.png"
@@ -187,7 +187,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 80000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/birthday_outfit_9.png",
   "/collections/birthday_outfit/birthday_outfit_5.jpg",
@@ -210,7 +210,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 54000,
     category: "Corporate Suit" as Category,
     isCustom: true,
-    description: "Custom corporate suit crafted to perfection.",
+    description: "Luxury corporate suit crafted to perfection.",
     images: [
   "/collections/corporate_suit/corporate_suit_1.png"
 ],
@@ -222,7 +222,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 99000,
     category: "Corporate Suit" as Category,
     isCustom: true,
-    description: "Custom corporate suit crafted to perfection.",
+    description: "Luxury corporate suit crafted to perfection.",
     images: [
   "/collections/corporate_suit/corporate_suit_2.jpg"
 ],
@@ -234,7 +234,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 84000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_1751.jpg"
 ],
@@ -246,7 +246,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 92000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9033.jpg"
 ],
@@ -258,7 +258,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 77000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9054.jpg"
 ],
@@ -270,7 +270,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 54000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9055.jpg"
 ],
@@ -282,7 +282,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 62000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9056.jpg"
 ],
@@ -294,7 +294,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 87000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9057.jpg"
 ],
@@ -306,7 +306,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 50000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9058.jpg"
 ],
@@ -318,7 +318,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 68000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_9059.jpg"
 ],
@@ -330,56 +330,12 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 76000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
-  "/collections/ready_to_wear/a1.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-2",
-    name: "Ready To Wear 2",
-    price: 58000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/a2.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-3",
-    name: "Ready To Wear 3",
-    price: 53000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/a3.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-4",
-    name: "Ready To Wear 4",
-    price: 75000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/a4.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-5",
-    name: "Ready To Wear 5",
-    price: 95000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
-    images: [
+  "/collections/ready_to_wear/a1.jpg",
+  "/collections/ready_to_wear/a2.jpg",
+  "/collections/ready_to_wear/a3.jpg",
+  "/collections/ready_to_wear/a4.jpg",
   "/collections/ready_to_wear/a5.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
@@ -390,7 +346,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 60000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/b1.jpg"
 ],
@@ -402,7 +358,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 96000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/b2.jpg"
 ],
@@ -414,7 +370,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 90000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/b3.jpg"
 ],
@@ -426,7 +382,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/b4.jpg"
 ],
@@ -438,7 +394,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 88000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/b5.jpg"
 ],
@@ -450,7 +406,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 58000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/c1.png"
 ],
@@ -462,7 +418,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 54000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/c2.png"
 ],
@@ -474,7 +430,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 59000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/c3.png"
 ],
@@ -486,7 +442,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 87000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/d1.jpg"
 ],
@@ -498,7 +454,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 80000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/d2.jpg"
 ],
@@ -510,7 +466,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 99000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/img_1383.jpg"
 ],
@@ -522,7 +478,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 82000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/img_5464.png"
 ],
@@ -534,7 +490,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 92000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/ready_to_wear_5.jpg"
 ],
@@ -546,7 +502,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 55000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/ready_to_wear_6.jpg"
 ],
@@ -558,7 +514,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/ready_to_wear_7.jpg"
 ],
@@ -570,7 +526,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 91000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/ready_to_wear_8.jpg"
 ],
@@ -582,7 +538,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 90000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_9300.jpg"
 ],
@@ -594,7 +550,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 64000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_9574.jpg"
 ],
@@ -606,7 +562,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 73000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_9685.jpg"
 ],
@@ -618,7 +574,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 68000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_9687.jpg"
 ],
@@ -630,7 +586,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 67000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_9689.jpg"
 ],
@@ -642,7 +598,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 54000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_9690.jpg"
 ],
@@ -654,7 +610,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 87000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/reception_dress_3.jpg"
 ],
@@ -666,7 +622,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 66000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/reception_dress_4.jpg"
 ],
@@ -678,7 +634,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 98000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/reception_dress_5.jpg"
 ],
@@ -690,7 +646,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 93000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_2246.jpg"
 ],
@@ -702,7 +658,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 87000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_2247.jpg"
 ],
@@ -714,7 +670,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 97000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_2248.jpg"
 ],
@@ -726,7 +682,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 74000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_2253.jpg"
 ],
@@ -738,7 +694,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 67000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_7004.jpg"
 ],
@@ -750,7 +706,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 91000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_1748.jpg"
 ],
@@ -762,7 +718,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 52000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_1749.jpg"
 ],
@@ -774,7 +730,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 93000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2177.jpg"
 ],
@@ -786,7 +742,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 96000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2246.jpg"
 ],
@@ -798,7 +754,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2247.jpg"
 ],
@@ -810,7 +766,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 84000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2248.jpg"
 ],
@@ -822,7 +778,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 95000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2253.jpg"
 ],
@@ -834,7 +790,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 96000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/wedding_look_5.jpg"
 ],
@@ -846,7 +802,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_5424.png"
 ],
@@ -858,7 +814,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_5433.jpg"
 ],
@@ -870,7 +826,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_5464.png"
 ],
@@ -882,7 +838,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_5466.png"
 ],
@@ -894,7 +850,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_5467.png"
 ],
@@ -906,7 +862,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_9802.jpg"
 ],
@@ -918,7 +874,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_9804.jpg"
 ],
@@ -930,7 +886,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
+    description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/img_9807.jpg"
 ],
@@ -942,7 +898,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Corporate Suit" as Category,
     isCustom: true,
-    description: "Custom corporate suit crafted to perfection.",
+    description: "Luxury corporate suit crafted to perfection.",
     images: [
   "/collections/corporate_suit/img_5818.jpg"
 ],
@@ -954,7 +910,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Corporate Suit" as Category,
     isCustom: true,
-    description: "Custom corporate suit crafted to perfection.",
+    description: "Luxury corporate suit crafted to perfection.",
     images: [
   "/collections/corporate_suit/img_5822.jpg"
 ],
@@ -966,7 +922,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_6973.jpg"
 ],
@@ -978,7 +934,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Pre Wedding Look" as Category,
     isCustom: true,
-    description: "Custom pre wedding look crafted to perfection.",
+    description: "Luxury pre wedding look crafted to perfection.",
     images: [
   "/collections/pre_wedding_look/img_6989.jpg"
 ],
@@ -990,7 +946,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/img_5498.jpg"
 ],
@@ -1002,7 +958,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Ready to Wear" as Category,
     isCustom: true,
-    description: "Custom ready to wear crafted to perfection.",
+    description: "Luxury ready to wear crafted to perfection.",
     images: [
   "/collections/ready_to_wear/img_5505.jpg"
 ],
@@ -1014,7 +970,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_7694.jpg"
 ],
@@ -1026,7 +982,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_7698.jpg"
 ],
@@ -1038,7 +994,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_7700.jpg"
 ],
@@ -1050,7 +1006,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
-    description: "Custom reception dress crafted to perfection.",
+    description: "Luxury reception dress crafted to perfection.",
     images: [
   "/collections/reception_dress/img_7701.jpg"
 ],
@@ -1062,7 +1018,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_2257.jpg"
 ],
@@ -1074,7 +1030,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_6970.jpg"
 ],
@@ -1086,7 +1042,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_6974.jpg"
 ],
@@ -1098,7 +1054,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_6979.jpg"
 ],
@@ -1110,7 +1066,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_6985.jpg"
 ],
@@ -1122,7 +1078,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_6990.jpg"
 ],
@@ -1134,7 +1090,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
-    description: "Custom wedding ball gown crafted to perfection.",
+    description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_7002.jpg"
 ],
@@ -1146,7 +1102,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2252.jpg"
 ],
@@ -1158,7 +1114,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_2255.jpg"
 ],
@@ -1170,7 +1126,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_6971.jpg"
 ],
@@ -1182,7 +1138,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_6994.jpg"
 ],
@@ -1194,7 +1150,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_7003.jpg"
 ],
@@ -1206,7 +1162,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
-    description: "Custom wedding look crafted to perfection.",
+    description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_7004.jpg"
 ],
