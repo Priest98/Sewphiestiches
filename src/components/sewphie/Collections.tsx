@@ -12,6 +12,7 @@ const items = [
   { img: "/collections/reception_dress/reception_dress_3.jpg", title: "Reception Dress", caption: "Dazzle and dance the night away.", tall: true },
   { img: "/collections/wedding_ball_gown/img_2246.jpg", title: "Wedding Ball Gown", caption: "Classic, unforgettable silhouettes.", tall: true },
   { img: "/collections/wedding_look/img_6971.jpg", title: "Wedding Look", caption: "The perfect style for your big day.", tall: false },
+  { img: "/collections/civil_wedding_dress/IMG_1835.JPG.jpeg", title: "Civil Wedding Dress", caption: "Timeless elegance for your special day.", tall: true },
 ];
 
 export const Collections = () => {

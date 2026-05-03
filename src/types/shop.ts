@@ -1,4 +1,4 @@
-export type Category = 'Aso oke' | 'Asoebi' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready to Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look';
+export type Category = 'Aso oke' | 'Asoebi' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready to Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look' | 'Civil Wedding Dress';
 
 export interface Product {
   id: string;
@@ -648,6 +648,54 @@ export const MOCK_PRODUCTS: Product[] = [
   "/collections/birthday_outfit/img_9802.jpg",
   "/collections/birthday_outfit/img_9804.jpg",
   "/collections/birthday_outfit/img_9807.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "civil-wedding-dress-1",
+    name: "Civil Wedding Dress 1",
+    price: 75000,
+    category: "Civil Wedding Dress" as Category,
+    isCustom: true,
+    description: "Luxury civil wedding dress crafted to perfection.",
+    images: [
+  "/collections/civil_wedding_dress/IMG_1835.JPG.jpeg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "civil-wedding-dress-2",
+    name: "Civil Wedding Dress 2",
+    price: 75000,
+    category: "Civil Wedding Dress" as Category,
+    isCustom: true,
+    description: "Luxury civil wedding dress crafted to perfection.",
+    images: [
+  "/collections/civil_wedding_dress/IMG_1836.JPG.jpeg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "civil-wedding-dress-3",
+    name: "Civil Wedding Dress 3",
+    price: 75000,
+    category: "Civil Wedding Dress" as Category,
+    isCustom: true,
+    description: "Luxury civil wedding dress crafted to perfection.",
+    images: [
+  "/collections/civil_wedding_dress/IMG_1838.JPG.jpeg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "civil-wedding-dress-4",
+    name: "Civil Wedding Dress 4",
+    price: 75000,
+    category: "Civil Wedding Dress" as Category,
+    isCustom: true,
+    description: "Luxury civil wedding dress crafted to perfection.",
+    images: [
+  "/collections/civil_wedding_dress/IMG_1839.JPG.jpeg"
 ],
     measurements: ["Bust","Waist","Hip"]
   }
