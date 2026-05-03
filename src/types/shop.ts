@@ -584,8 +584,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794952501-599",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-6",
+    name: "Wedding Ball Gown 6",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -596,8 +596,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794953620-306",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-7",
+    name: "Wedding Ball Gown 7",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -608,8 +608,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794954755-968",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-8",
+    name: "Wedding Ball Gown 8",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -620,8 +620,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794955753-313",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-9",
+    name: "Wedding Ball Gown 9",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -632,8 +632,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794956945-844",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-10",
+    name: "Wedding Ball Gown 10",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -644,8 +644,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794958012-28",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-11",
+    name: "Wedding Ball Gown 11",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -656,8 +656,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-new-1777794959102-92",
-    name: "Wedding Ball Gown New",
+    id: "wedding-ball-gown-12",
+    name: "Wedding Ball Gown 12",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
