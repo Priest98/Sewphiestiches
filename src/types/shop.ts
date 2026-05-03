@@ -116,17 +116,10 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Custom asoebi crafted to perfection.",
-    images: ["/collections/asoebi/img_4500.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "asoebi-5",
-    name: "Asoebi 5",
-    price: 75000,
-    category: "Asoebi" as Category,
-    isCustom: true,
-    description: "Custom asoebi crafted to perfection.",
-    images: ["/collections/asoebi/img_4502.jpg"],
+    images: [
+      "/collections/asoebi/img_4500.jpg",
+      "/collections/asoebi/img_4502.jpg"
+    ],
     measurements: ["Bust","Waist","Hip"]
   },
   {
