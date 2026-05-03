@@ -524,5 +524,45 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Stunning birthday outfit for your special day.",
     images: ["/collections/Birthday outfit/birthday outfit  9.PNG"],
     measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "rtw-5",
+    name: "Ready To Wear 5",
+    price: 55000,
+    category: "Ready To Wear" as Category,
+    isCustom: true,
+    description: "Effortless luxury, ready for your next event.",
+    images: ["/collections/Ready to wear/ready to wear 5.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "rtw-6",
+    name: "Ready To Wear 6",
+    price: 65000,
+    category: "Ready To Wear" as Category,
+    isCustom: true,
+    description: "Effortless luxury, ready for your next event.",
+    images: ["/collections/Ready to wear/ready to wear 6.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "rtw-7",
+    name: "Ready To Wear 7",
+    price: 70000,
+    category: "Ready To Wear" as Category,
+    isCustom: true,
+    description: "Effortless luxury, ready for your next event.",
+    images: ["/collections/Ready to wear/ready to wear 7.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
+  },
+  {
+    id: "rtw-8",
+    name: "Ready To Wear 8",
+    price: 60000,
+    category: "Ready To Wear" as Category,
+    isCustom: true,
+    description: "Effortless luxury, ready for your next event.",
+    images: ["/collections/Ready to wear/ready to wear 8.jpeg"],
+    measurements: ["Bust", "Waist", "Hip"]
   }
 ];
