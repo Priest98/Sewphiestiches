@@ -19,6 +19,27 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
+const steps = [
+  { title: "Personal Details", icon: "01" },
+  { title: "Measurements", icon: "02" },
+  { title: "Payment Method", icon: "03" },
+];
+
+const InputField = ({ label, name, type = "text", register, error, placeholder }: any) => (
+  <div>
+    <label className="text-[0.6rem] uppercase tracking-widest text-gold block mb-2">{label}</label>
+    <input 
+      type={type}
+      placeholder={placeholder}
+      {...register(name)}
+      className={`w-full bg-cream border-b p-4 focus:border-gold outline-none text-sm transition-all ${
+        error ? "border-red-400" : "border-bottle-deep/10"
+      }`}
+    />
+    {error && <p className="text-[0.5rem] text-red-500 mt-1 uppercase tracking-widest">{error.message}</p>}
+  </div>
+);
+
 export const CheckoutModal = () => {
   const { isCheckoutOpen, setCheckoutOpen, cart, resetOrder, clearCart } = useShopStore();
   const [step, setStep] = useState(1);
@@ -232,6 +253,7 @@ I'd like to finalize this order. Looking forward to your response!`;
               ) : (
                 <>
                   {step === 1 && (
+                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div className="space-y-6">
                           <InputField label="Full Name" name="fullName" register={register} error={errors.fullName} />
@@ -377,24 +399,3 @@ I'd like to finalize this order. Looking forward to your response!`;
     </AnimatePresence>
   );
 };
-
-const InputField = ({ label, name, type = "text", register, error, placeholder }: any) => (
-  <div>
-    <label className="text-[0.6rem] uppercase tracking-widest text-gold block mb-2">{label}</label>
-    <input 
-      type={type}
-      placeholder={placeholder}
-      {...register(name)}
-      className={`w-full bg-cream border-b p-4 focus:border-gold outline-none text-sm transition-all ${
-        error ? "border-red-400" : "border-bottle-deep/10"
-      }`}
-    />
-    {error && <p className="text-[0.5rem] text-red-500 mt-1 uppercase tracking-widest">{error.message}</p>}
-  </div>
-);
-
-const steps = [
-  { title: "Personal Details", icon: "01" },
-  { title: "Measurements", icon: "02" },
-  { title: "Payment Method", icon: "03" },
-];
