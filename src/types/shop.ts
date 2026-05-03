@@ -1,4 +1,4 @@
-export type Category = 'Aso oke' | 'Asoebi' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready to Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look' | 'Civil Wedding Dress';
+export type Category = 'Aso oke' | 'Asoebi' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready to Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look' | 'Civil Wedding Dress' | 'Street Wear';
 
 export interface Product {
   id: string;
@@ -711,6 +711,54 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Luxury civil wedding dress crafted to perfection.",
     images: [
   "/collections/civil_wedding_dress/IMG_1839.JPG.jpeg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "street-wear-1",
+    name: "Street Wear 1",
+    price: 75000,
+    category: "Street Wear" as Category,
+    isCustom: true,
+    description: "Luxury street wear crafted to perfection.",
+    images: [
+  "/collections/street_wear/img_7566.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "street-wear-2",
+    name: "Street Wear 2",
+    price: 75000,
+    category: "Street Wear" as Category,
+    isCustom: true,
+    description: "Luxury street wear crafted to perfection.",
+    images: [
+  "/collections/street_wear/img_7571.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "street-wear-3",
+    name: "Street Wear 3",
+    price: 75000,
+    category: "Street Wear" as Category,
+    isCustom: true,
+    description: "Luxury street wear crafted to perfection.",
+    images: [
+  "/collections/street_wear/img_7576.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "street-wear-4",
+    name: "Street Wear 4",
+    price: 75000,
+    category: "Street Wear" as Category,
+    isCustom: true,
+    description: "Luxury street wear crafted to perfection.",
+    images: [
+  "/collections/street_wear/img_7579.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   }
