@@ -295,8 +295,8 @@ export default function AcademyPage() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               {[
-                { src: "/academy/IMG_2477.JPG.jpeg", badge: "1st Position Winner", caption: "Award Moment" },
-                { src: "/academy/IMG_2385.JPG.jpeg", caption: "Excellence in Craft" }
+                { src: "/academy/img_2477.jpg", badge: "1st Position Winner", caption: "Award Moment" },
+                { src: "/academy/img_2385.jpg", caption: "Excellence in Craft" }
               ].map((item, i) => (
                 <motion.div 
                   key={i}
@@ -351,12 +351,12 @@ export default function AcademyPage() {
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[
-                { src: "/academy/students/a1.jpeg", badge: "Student Work", caption: "Structured Silhouette" },
-                { src: "/academy/students/a2.jpeg", badge: "Final Project", caption: "Bridal Masterclass" },
-                { src: "/academy/students/IMG_5972.JPG.jpeg", badge: "Advanced Level", caption: "Corsetry & Beading" },
-                { src: "/academy/students/IMG_4927.JPG.jpeg", badge: "Student Work", caption: "Pattern Drafting" },
-                { src: "/academy/students/a3.jpeg", badge: "Final Project", caption: "Bespoke Finishing" },
-                { src: "/academy/students/IMG_9849.JPG.jpeg", badge: "Advanced Level", caption: "High-End Drapery" }
+                { src: "/academy/students/a1.jpg", badge: "Student Work", caption: "Structured Silhouette" },
+                { src: "/academy/students/a2.jpg", badge: "Final Project", caption: "Bridal Masterclass" },
+                { src: "/academy/students/img_5972.jpg", badge: "Advanced Level", caption: "Corsetry & Beading" },
+                { src: "/academy/students/img_4927.jpg", badge: "Student Work", caption: "Pattern Drafting" },
+                { src: "/academy/students/a3.jpg", badge: "Final Project", caption: "Bespoke Finishing" },
+                { src: "/academy/students/img_9849.jpg", badge: "Advanced Level", caption: "High-End Drapery" }
               ].map((item, i) => (
                 <motion.div 
                   key={i}

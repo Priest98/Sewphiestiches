@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import { SectionHeader } from "./SectionHeader";
 
 const items = [
-  { img: "/collections/Aso oke/IMG_9706.JPG.jpeg", title: "Aso Oke", caption: "Traditional elegance redefined.", tall: false },
-  { img: "/collections/Birthday outfit/birthday outfit 1.PNG", title: "Birthday Outfit", caption: "Celebrate in stunning style.", tall: true },
-  { img: "/collections/Corporate Suit/Corporate suit 1.PNG", title: "Corporate Suit", caption: "Power, structure, and authority.", tall: false },
-  { img: "/collections/Pre wedding look/IMG_9033.JPG.jpeg", title: "Pre Wedding Look", caption: "Start your journey beautifully.", tall: true },
-  { img: "/collections/Ready to wear/A1.jpeg", title: "Ready To Wear", caption: "Effortless luxury, ready to go.", tall: false },
-  { img: "/collections/Reception Dress/IMG_9733.JPG.jpeg", title: "Reception Dress", caption: "Dazzle and dance the night away.", tall: true },
-  { img: "/collections/Wedding ball gown/IMG_2246.JPG.jpeg", title: "Wedding Ball Gown", caption: "Classic, unforgettable silhouettes.", tall: true },
-  { img: "/collections/Wedding look/Wedding look 5.jpeg", title: "Wedding Look", caption: "The perfect style for your big day.", tall: false },
+  { img: "/collections/aso_oke/img_9706.jpg", title: "Aso oke", caption: "Traditional elegance redefined.", tall: false },
+  { img: "/collections/asoebi/img_9537.jpg", title: "Asoebi", caption: "Unity in style and tradition.", tall: true },
+  { img: "/collections/birthday_outfit/birthday_outfit_1.png", title: "Birthday Outfit", caption: "Celebrate in stunning style.", tall: true },
+  { img: "/collections/corporate_suit/corporate_suit_1.png", title: "Corporate Suit", caption: "Power, structure, and authority.", tall: false },
+  { img: "/collections/pre_wedding_look/img_9033.jpg", title: "Pre Wedding Look", caption: "Start your journey beautifully.", tall: true },
+  { img: "/collections/ready_to_wear/a1.jpg", title: "Ready to Wear", caption: "Effortless luxury, ready to go.", tall: false },
+  { img: "/collections/reception_dress/reception_dress_3.jpg", title: "Reception Dress", caption: "Dazzle and dance the night away.", tall: true },
+  { img: "/collections/wedding_ball_gown/img_2246.jpg", title: "Wedding Ball Gown", caption: "Classic, unforgettable silhouettes.", tall: true },
+  { img: "/collections/wedding_look/wedding_look_5.jpg", title: "Wedding Look", caption: "The perfect style for your big day.", tall: false },
 ];
 
 export const Collections = () => {

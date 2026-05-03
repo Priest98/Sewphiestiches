@@ -1,4 +1,4 @@
-export type Category = 'Aso Oke' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready To Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look';
+export type Category = 'Aso oke' | 'Asoebi' | 'Birthday Outfit' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready to Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look';
 
 export interface Product {
   id: string;
@@ -29,261 +29,361 @@ export const MOCK_PRODUCTS: Product[] = [
     id: "aso-oke-1",
     name: "Aso Oke 1",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_8305.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_8305.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-2",
     name: "Aso Oke 2",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_8308.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_8308.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-3",
     name: "Aso Oke 3",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_8310.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_8310.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-4",
     name: "Aso Oke 4",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_8313.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_8313.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-5",
     name: "Aso Oke 5",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_8971.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_8971.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-6",
     name: "Aso Oke 6",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9584.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9584.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-7",
     name: "Aso Oke 7",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9585.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9585.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-8",
     name: "Aso Oke 8",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9706.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9706.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-9",
     name: "Aso Oke 9",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9707.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9707.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-10",
     name: "Aso Oke 10",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9718.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9718.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-11",
     name: "Aso Oke 11",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9719.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9719.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "aso-oke-12",
     name: "Aso Oke 12",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/Aso oke/IMG_9730.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/aso_oke/img_9730.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-1",
+    name: "Asoebi 1",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_0333.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-2",
+    name: "Asoebi 2",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_4453.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-3",
+    name: "Asoebi 3",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_4490.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-4",
+    name: "Asoebi 4",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_4500.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-5",
+    name: "Asoebi 5",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_4502.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-6",
+    name: "Asoebi 6",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_9429.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-7",
+    name: "Asoebi 7",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_9537.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-8",
+    name: "Asoebi 8",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_9540.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-9",
+    name: "Asoebi 9",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_9733.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "asoebi-10",
+    name: "Asoebi 10",
+    price: 75000,
+    category: "Asoebi" as Category,
+    isCustom: true,
+    description: "Custom asoebi crafted to perfection.",
+    images: ["/collections/asoebi/img_9734.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "birthday-outfit-1",
-    name: "Birthday Outfit 1",
-    price: 96000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit  6.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "birthday-outfit-2",
-    name: "Birthday Outfit 2",
-    price: 74000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit  7.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "birthday-outfit-3",
-    name: "Birthday Outfit 3",
-    price: 85000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit  8.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "birthday-outfit-4",
-    name: "Birthday Outfit 4",
-    price: 80000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit  9.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
-  {
-    id: "birthday-outfit-5",
     name: "Birthday Outfit 5",
     price: 70000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 1.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_1.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-6",
+    id: "birthday-outfit-2",
     name: "Birthday Outfit 6",
     price: 67000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 10.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_10.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-7",
+    id: "birthday-outfit-3",
     name: "Birthday Outfit 7",
     price: 53000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 11.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_11.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-8",
+    id: "birthday-outfit-4",
     name: "Birthday Outfit 8",
     price: 58000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 12.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_12.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-9",
+    id: "birthday-outfit-5",
     name: "Birthday Outfit 9",
     price: 84000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 13.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_13.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-10",
+    id: "birthday-outfit-6",
     name: "Birthday Outfit 10",
     price: 92000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 14.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_14.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-11",
+    id: "birthday-outfit-7",
     name: "Birthday Outfit 11",
     price: 84000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 2.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_2.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-12",
+    id: "birthday-outfit-8",
     name: "Birthday Outfit 12",
     price: 68000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 3.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_3.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-13",
+    id: "birthday-outfit-9",
     name: "Birthday Outfit 13",
     price: 89000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 4.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_4.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-14",
+    id: "birthday-outfit-10",
     name: "Birthday Outfit 14",
     price: 50000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Custom birthday outfit crafted to perfection.",
-    images: ["/collections/Birthday outfit/birthday outfit 5.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/birthday_outfit/birthday_outfit_5.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-11",
+    name: "Birthday Outfit 1",
+    price: 96000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Custom birthday outfit crafted to perfection.",
+    images: ["/collections/birthday_outfit/birthday_outfit_6.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-12",
+    name: "Birthday Outfit 2",
+    price: 74000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Custom birthday outfit crafted to perfection.",
+    images: ["/collections/birthday_outfit/birthday_outfit_7.png"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-13",
+    name: "Birthday Outfit 3",
+    price: 85000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Custom birthday outfit crafted to perfection.",
+    images: ["/collections/birthday_outfit/birthday_outfit_8.png"],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-14",
+    name: "Birthday Outfit 4",
+    price: 80000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Custom birthday outfit crafted to perfection.",
+    images: ["/collections/birthday_outfit/birthday_outfit_9.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "corporate-suit-1",
@@ -292,8 +392,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Custom corporate suit crafted to perfection.",
-    images: ["/collections/Corporate Suit/Corporate suit 1.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/corporate_suit/corporate_suit_1.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "corporate-suit-2",
@@ -302,8 +402,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Custom corporate suit crafted to perfection.",
-    images: ["/collections/Corporate Suit/Corporate suit 2.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/corporate_suit/corporate_suit_2.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-1",
@@ -312,8 +412,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_1751.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_1751.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-2",
@@ -322,8 +422,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9033.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9033.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-3",
@@ -332,8 +432,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9054.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9054.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-4",
@@ -342,8 +442,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9055.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9055.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-5",
@@ -352,8 +452,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9056.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9056.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-6",
@@ -362,8 +462,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9057.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9057.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-7",
@@ -372,8 +472,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9058.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9058.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "pre-wedding-look-8",
@@ -382,218 +482,218 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Pre Wedding Look" as Category,
     isCustom: true,
     description: "Custom pre wedding look crafted to perfection.",
-    images: ["/collections/Pre wedding look/IMG_9059.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/pre_wedding_look/img_9059.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-1",
     name: "Ready To Wear 1",
     price: 76000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/A1.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/a1.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-2",
     name: "Ready To Wear 2",
     price: 58000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/A2.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/a2.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-3",
     name: "Ready To Wear 3",
     price: 53000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/A3.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/a3.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-4",
     name: "Ready To Wear 4",
     price: 75000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/A4.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/a4.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-5",
     name: "Ready To Wear 5",
     price: 95000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/A5.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/a5.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-6",
     name: "Ready To Wear 6",
     price: 60000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/B1.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/b1.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-7",
     name: "Ready To Wear 7",
     price: 96000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/B2.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/b2.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-8",
     name: "Ready To Wear 8",
     price: 90000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/B3.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/b3.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-9",
     name: "Ready To Wear 9",
     price: 85000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/B4.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/b4.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-10",
     name: "Ready To Wear 10",
     price: 88000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/B5.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/b5.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-11",
     name: "Ready To Wear 11",
     price: 58000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/C1.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/c1.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-12",
     name: "Ready To Wear 12",
     price: 54000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/C2.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/c2.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-13",
     name: "Ready To Wear 13",
     price: 59000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/C3.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/c3.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-14",
     name: "Ready To Wear 14",
     price: 87000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/D1.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/d1.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-15",
     name: "Ready To Wear 15",
     price: 80000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/D2.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/d2.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-16",
     name: "Ready To Wear 16",
     price: 99000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/IMG_1383.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/img_1383.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-17",
     name: "Ready To Wear 17",
     price: 82000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/IMG_5464.PNG"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/img_5464.png"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-18",
     name: "Ready To Wear 18",
     price: 92000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/ready to wear 5.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/ready_to_wear_5.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-19",
     name: "Ready To Wear 19",
     price: 55000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/ready to wear 6.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/ready_to_wear_6.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-20",
     name: "Ready To Wear 20",
     price: 75000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/ready to wear 7.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/ready_to_wear_7.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "ready-to-wear-21",
     name: "Ready To Wear 21",
     price: 91000,
-    category: "Ready To Wear" as Category,
+    category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Custom ready to wear crafted to perfection.",
-    images: ["/collections/Ready to wear/ready to wear 8.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/ready_to_wear/ready_to_wear_8.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-1",
@@ -602,8 +702,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/IMG_9300.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/img_9300.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-2",
@@ -612,8 +712,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/IMG_9574.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/img_9574.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-3",
@@ -622,8 +722,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/IMG_9685.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/img_9685.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-4",
@@ -632,8 +732,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/IMG_9687.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/img_9687.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-5",
@@ -642,8 +742,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/IMG_9689.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/img_9689.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-6",
@@ -652,8 +752,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/IMG_9690.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/img_9690.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-7",
@@ -662,8 +762,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/reception dress 3.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/reception_dress_3.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-8",
@@ -672,8 +772,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/reception dress 4.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/reception_dress_4.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "reception-dress-9",
@@ -682,8 +782,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Custom reception dress crafted to perfection.",
-    images: ["/collections/Reception Dress/reception dress 5.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/reception_dress/reception_dress_5.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-ball-gown-1",
@@ -692,8 +792,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/Wedding ball gown/IMG_2246.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_ball_gown/img_2246.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-ball-gown-2",
@@ -702,8 +802,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/Wedding ball gown/IMG_2247.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_ball_gown/img_2247.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-ball-gown-3",
@@ -712,8 +812,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/Wedding ball gown/IMG_2248.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_ball_gown/img_2248.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-ball-gown-4",
@@ -722,8 +822,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/Wedding ball gown/IMG_2253.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_ball_gown/img_2253.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-ball-gown-5",
@@ -732,8 +832,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
     description: "Custom wedding ball gown crafted to perfection.",
-    images: ["/collections/Wedding ball gown/IMG_7004.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_ball_gown/img_7004.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-1",
@@ -742,8 +842,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_1748.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_1748.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-2",
@@ -752,8 +852,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_1749.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_1749.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-3",
@@ -762,8 +862,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_2177.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_2177.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-4",
@@ -772,8 +872,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_2246.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_2246.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-5",
@@ -782,8 +882,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_2247.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_2247.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-6",
@@ -792,8 +892,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_2248.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_2248.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-7",
@@ -802,8 +902,8 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/IMG_2253.JPG.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
+    images: ["/collections/wedding_look/img_2253.jpg"],
+    measurements: ["Bust","Waist","Hip"]
   },
   {
     id: "wedding-look-8",
@@ -812,7 +912,7 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
-    images: ["/collections/Wedding look/Wedding look 5.jpeg"],
-    measurements: ["Bust", "Waist", "Hip"]
-  },
+    images: ["/collections/wedding_look/wedding_look_5.jpg"],
+    measurements: ["Bust","Waist","Hip"]
+  }
 ];
