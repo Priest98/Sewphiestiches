@@ -27,7 +27,7 @@ export interface OrderDetails {
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: "aso-oke-1",
-    name: "Aso Oke 1",
+    name: "Aso oke 1",
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
@@ -41,8 +41,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "aso-oke-5",
-    name: "Aso Oke 5",
+    id: "aso-oke-2",
+    name: "Aso oke 2",
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
@@ -53,8 +53,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "aso-oke-6",
-    name: "Aso Oke 6",
+    id: "aso-oke-3",
+    name: "Aso oke 3",
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
@@ -66,8 +66,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "aso-oke-8",
-    name: "Aso Oke 8",
+    id: "aso-oke-4",
+    name: "Aso oke 4",
     price: 250000,
     category: "Aso oke" as Category,
     isCustom: true,
@@ -131,8 +131,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "asoebi-6",
-    name: "Asoebi 6",
+    id: "asoebi-5",
+    name: "Asoebi 5",
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
@@ -143,8 +143,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "asoebi-7",
-    name: "Asoebi 7",
+    id: "asoebi-6",
+    name: "Asoebi 6",
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
@@ -156,8 +156,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "asoebi-9",
-    name: "Asoebi 9",
+    id: "asoebi-7",
+    name: "Asoebi 7",
     price: 75000,
     category: "Asoebi" as Category,
     isCustom: true,
@@ -318,8 +318,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "ready-to-wear-14",
-    name: "Ready To Wear 14",
+    id: "ready-to-wear-2",
+    name: "Ready to Wear 2",
     price: 87000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -331,8 +331,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "ready-to-wear-16",
-    name: "Ready To Wear 16",
+    id: "ready-to-wear-3",
+    name: "Ready to Wear 3",
     price: 99000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -343,8 +343,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "ready-to-wear-5",
-    name: "Ready to Wear 5",
+    id: "ready-to-wear-4",
+    name: "Ready to Wear 4",
     price: 92000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -371,8 +371,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-3",
-    name: "Reception Dress 3",
+    id: "reception-dress-2",
+    name: "Reception Dress 2",
     price: 73000,
     category: "Reception Dress" as Category,
     isCustom: true,
@@ -386,8 +386,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-7",
-    name: "Reception Dress 7",
+    id: "reception-dress-3",
+    name: "Reception Dress 3",
     price: 87000,
     category: "Reception Dress" as Category,
     isCustom: true,
@@ -401,8 +401,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-9",
-    name: "Reception Dress 9",
+    id: "reception-dress-4",
+    name: "Reception Dress 4",
     price: 98000,
     category: "Reception Dress" as Category,
     isCustom: true,
@@ -431,8 +431,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-5",
-    name: "Wedding Ball Gown 5",
+    id: "wedding-ball-gown-2",
+    name: "Wedding Ball Gown 2",
     price: 67000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -461,8 +461,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-3",
-    name: "Wedding Look 3",
+    id: "wedding-look-2",
+    name: "Wedding Look 2",
     price: 93000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -473,8 +473,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-4",
-    name: "Wedding Look 4",
+    id: "wedding-look-3",
+    name: "Wedding Look 3",
     price: 96000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -487,8 +487,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-8",
-    name: "Wedding Look 8",
+    id: "wedding-look-4",
+    name: "Wedding Look 4",
     price: 96000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -512,8 +512,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-10",
-    name: "Wedding Ball Gown 10",
+    id: "wedding-ball-gown-3",
+    name: "Wedding Ball Gown 3",
     price: 75000,
     category: "Wedding Ball Gown" as Category,
     isCustom: true,
@@ -524,8 +524,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-9",
-    name: "Wedding Look 9",
+    id: "wedding-look-5",
+    name: "Wedding Look 5",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -538,8 +538,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-11",
-    name: "Wedding Look 11",
+    id: "wedding-look-6",
+    name: "Wedding Look 6",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -567,8 +567,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-4",
-    name: "Birthday Outfit 4",
+    id: "birthday-outfit-2",
+    name: "Birthday Outfit 2",
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
@@ -583,8 +583,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-6",
-    name: "Birthday Outfit 6",
+    id: "birthday-outfit-3",
+    name: "Birthday Outfit 3",
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
@@ -598,8 +598,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-11",
-    name: "Birthday Outfit 11",
+    id: "birthday-outfit-4",
+    name: "Birthday Outfit 4",
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
@@ -611,8 +611,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-13",
-    name: "Birthday Outfit 13",
+    id: "birthday-outfit-5",
+    name: "Birthday Outfit 5",
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
@@ -624,8 +624,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-new-17",
-    name: "Birthday Outfit 17",
+    id: "birthday-outfit-6",
+    name: "Birthday Outfit 6",
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
@@ -638,8 +638,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-new-20",
-    name: "Birthday Outfit 20",
+    id: "birthday-outfit-7",
+    name: "Birthday Outfit 7",
     price: 75000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
