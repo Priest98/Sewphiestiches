@@ -455,18 +455,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury wedding look crafted to perfection.",
     images: [
-  "/collections/wedding_look/img_1748.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-look-2",
-    name: "Wedding Look 2",
-    price: 52000,
-    category: "Wedding Look" as Category,
-    isCustom: true,
-    description: "Luxury wedding look crafted to perfection.",
-    images: [
+  "/collections/wedding_look/img_1748.jpg",
   "/collections/wedding_look/img_1749.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
