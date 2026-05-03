@@ -666,30 +666,6 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "corporate-suit-new-1777794936246-723",
-    name: "Corporate Suit New",
-    price: 75000,
-    category: "Corporate Suit" as Category,
-    isCustom: true,
-    description: "Luxury corporate suit crafted to perfection.",
-    images: [
-  "/collections/corporate_suit/img_5818.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "corporate-suit-new-1777794937610-84",
-    name: "Corporate Suit New",
-    price: 75000,
-    category: "Corporate Suit" as Category,
-    isCustom: true,
-    description: "Luxury corporate suit crafted to perfection.",
-    images: [
-  "/collections/corporate_suit/img_5822.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
     id: "pre-wedding-look-new-1777794938749-434",
     name: "Pre Wedding Look New",
     price: 75000,
