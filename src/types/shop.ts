@@ -1,3 +1,4 @@
+// Shop Data - Last Updated: 2026-05-02
 export type Category = 'Aso Oke' | 'Asoebi' | 'Birthday Outfit' | 'Civil Wedding Dress' | 'Corporate Suit' | 'Pre Wedding Look' | 'Ready To Wear' | 'Reception Dress' | 'Wedding Ball Gown' | 'Wedding Look' | 'Streetwear';
 
 export interface Product {
