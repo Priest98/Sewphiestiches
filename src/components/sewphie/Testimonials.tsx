@@ -13,6 +13,11 @@ const quotes = [
     name: "Bridal Client",
     role: "Custom Bridal",
   },
+  {
+    q: "Compliments everywhere 🤭. Thank you so much for always doing a perfect job. ❤️ Our forever plug 😘.",
+    name: "Loyal Client",
+    role: "Regular Couture",
+  },
 ];
 
 export const Testimonials = () => {
