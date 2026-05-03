@@ -57,17 +57,10 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9584.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-7",
-    name: "Aso Oke 7",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9585.jpg"],
+    images: [
+      "/collections/aso_oke/img_9584.jpg",
+      "/collections/aso_oke/img_9585.jpg"
+    ],
     measurements: ["Bust","Waist","Hip"]
   },
   {
