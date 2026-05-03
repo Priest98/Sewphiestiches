@@ -569,8 +569,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-new-1777794960300-823",
-    name: "Wedding Look New",
+    id: "wedding-look-9",
+    name: "Wedding Look 9",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -581,8 +581,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-new-1777794961206-453",
-    name: "Wedding Look New",
+    id: "wedding-look-10",
+    name: "Wedding Look 10",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -593,8 +593,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-new-1777794962216-990",
-    name: "Wedding Look New",
+    id: "wedding-look-11",
+    name: "Wedding Look 11",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -605,8 +605,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-new-1777794963281-185",
-    name: "Wedding Look New",
+    id: "wedding-look-12",
+    name: "Wedding Look 12",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -617,8 +617,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-new-1777794964296-947",
-    name: "Wedding Look New",
+    id: "wedding-look-13",
+    name: "Wedding Look 13",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
@@ -629,8 +629,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-look-new-1777794965499-98",
-    name: "Wedding Look New",
+    id: "wedding-look-14",
+    name: "Wedding Look 14",
     price: 75000,
     category: "Wedding Look" as Category,
     isCustom: true,
