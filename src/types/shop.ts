@@ -669,47 +669,14 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "civil-wedding-dress-1",
     name: "Civil Wedding Dress 1",
-    price: 75000,
+    price: 70000,
     category: "Civil Wedding Dress" as Category,
     isCustom: true,
     description: "Luxury civil wedding dress crafted to perfection.",
     images: [
-  "/collections/civil_wedding_dress/IMG_1835.JPG.jpeg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "civil-wedding-dress-2",
-    name: "Civil Wedding Dress 2",
-    price: 75000,
-    category: "Civil Wedding Dress" as Category,
-    isCustom: true,
-    description: "Luxury civil wedding dress crafted to perfection.",
-    images: [
-  "/collections/civil_wedding_dress/IMG_1836.JPG.jpeg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "civil-wedding-dress-3",
-    name: "Civil Wedding Dress 3",
-    price: 75000,
-    category: "Civil Wedding Dress" as Category,
-    isCustom: true,
-    description: "Luxury civil wedding dress crafted to perfection.",
-    images: [
-  "/collections/civil_wedding_dress/IMG_1838.JPG.jpeg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "civil-wedding-dress-4",
-    name: "Civil Wedding Dress 4",
-    price: 75000,
-    category: "Civil Wedding Dress" as Category,
-    isCustom: true,
-    description: "Luxury civil wedding dress crafted to perfection.",
-    images: [
+  "/collections/civil_wedding_dress/IMG_1835.JPG.jpeg",
+  "/collections/civil_wedding_dress/IMG_1836.JPG.jpeg",
+  "/collections/civil_wedding_dress/IMG_1838.JPG.jpeg",
   "/collections/civil_wedding_dress/IMG_1839.JPG.jpeg"
 ],
     measurements: ["Bust","Waist","Hip"]
