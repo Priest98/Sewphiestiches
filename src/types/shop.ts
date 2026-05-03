@@ -438,7 +438,12 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury wedding ball gown crafted to perfection.",
     images: [
-  "/collections/wedding_ball_gown/img_7004.jpg"
+  "/collections/wedding_ball_gown/img_7004.jpg",
+  "/collections/wedding_ball_gown/img_6970.jpg",
+  "/collections/wedding_ball_gown/img_6974.jpg",
+  "/collections/wedding_ball_gown/img_6979.jpg",
+  "/collections/wedding_ball_gown/img_6990.jpg",
+  "/collections/wedding_ball_gown/img_7002.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
@@ -552,42 +557,6 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "wedding-ball-gown-7",
-    name: "Wedding Ball Gown 7",
-    price: 75000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_6970.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-8",
-    name: "Wedding Ball Gown 8",
-    price: 75000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_6974.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-9",
-    name: "Wedding Ball Gown 9",
-    price: 75000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_6979.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
     id: "wedding-ball-gown-10",
     name: "Wedding Ball Gown 10",
     price: 75000,
@@ -596,30 +565,6 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Luxury wedding ball gown crafted to perfection.",
     images: [
   "/collections/wedding_ball_gown/img_6985.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-11",
-    name: "Wedding Ball Gown 11",
-    price: 75000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_6990.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-12",
-    name: "Wedding Ball Gown 12",
-    price: 75000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_7002.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
