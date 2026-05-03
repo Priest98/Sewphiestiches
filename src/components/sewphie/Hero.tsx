@@ -66,7 +66,7 @@ export const Hero = () => {
     <section 
       ref={containerRef} 
       id="top" 
-      className="relative h-screen min-h-[700px] w-full overflow-hidden bg-bottle-deep"
+      className="relative h-screen min-h-[500px] sm:min-h-[600px] w-full overflow-hidden bg-bottle-deep"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -113,21 +113,21 @@ export const Hero = () => {
               <span className="h-px w-10 gold-line md:hidden" />
             </p>
             
-            <div className="min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex items-end justify-center md:justify-start">
-              <motion.h1 
-                className="font-display text-4xl md:text-6xl lg:text-7xl text-gold leading-[1.2] tracking-widest uppercase"
-                animate={{ opacity: typingComplete ? 0.8 : 1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <TypewriterText 
-                  phrases={current.phrases} 
-                  onComplete={() => setTypingComplete(true)} 
-                />
-              </motion.h1>
-            </div>
+<div className="min-h-[120px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex items-end justify-center md:justify-start">
+               <motion.h1 
+                 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gold leading-tight sm:leading-[1.2] tracking-widest uppercase"
+                 animate={{ opacity: typingComplete ? 0.8 : 1 }}
+                 transition={{ duration: 1.5 }}
+               >
+                 <TypewriterText 
+                   phrases={current.phrases} 
+                   onComplete={() => setTypingComplete(true)} 
+                 />
+               </motion.h1>
+             </div>
 
             <motion.p 
-              className="mt-8 text-cream/80 text-base md:text-lg max-w-xl font-light leading-relaxed"
+              className="mt-6 sm:mt-8 text-cream/80 text-sm sm:text-base md:text-lg max-w-xl font-light leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: typingComplete ? 1 : 0 }}
               transition={{ duration: 1.2, delay: 0.2 }}
@@ -165,50 +165,50 @@ export const Hero = () => {
         </AnimatePresence>
       </div>
 
-      {/* Slide Controls (Desktop) */}
-      <div className="absolute inset-y-0 left-0 right-0 z-20 pointer-events-none hidden md:flex items-center justify-between px-10">
-        <button 
-          onClick={handlePrev}
-          className="pointer-events-auto p-4 text-cream/20 hover:text-gold transition-colors"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="w-8 h-8" />
-        </button>
-        <button 
-          onClick={handleNext}
-          className="pointer-events-auto p-4 text-cream/20 hover:text-gold transition-colors"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="w-8 h-8" />
-        </button>
-      </div>
+{/* Slide Controls (Desktop) */}
+               <div className="absolute inset-y-0 left-0 right-0 z-20 pointer-events-none hidden sm:flex items-center justify-between px-4 sm:px-10">
+                 <button 
+                   onClick={handlePrev}
+                   className="pointer-events-auto p-3 sm:p-4 text-cream/20 hover:text-gold transition-colors"
+                   aria-label="Previous slide"
+                 >
+                   <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
+                 </button>
+                 <button 
+                   onClick={handleNext}
+                   className="pointer-events-auto p-3 sm:p-4 text-cream/20 hover:text-gold transition-colors"
+                   aria-label="Next slide"
+                 >
+                   <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
+                 </button>
+               </div>
 
-      {/* Slide Indicators (Dots) */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-4">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => { setTypingComplete(false); setActiveSlide(i); }}
-            className={`w-2 h-2 rounded-full transition-all duration-500 ${
-              activeSlide === i ? "bg-gold w-8" : "bg-cream/20"
-            }`}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
-      </div>
+               {/* Slide Indicators (Dots) */}
+               <div className="absolute bottom-8 sm:bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-3 sm:gap-4">
+                 {slides.map((_, i) => (
+                   <button
+                     key={i}
+                     onClick={() => { setTypingComplete(false); setActiveSlide(i); }}
+                     className={`w-2 h-2 rounded-full transition-all duration-500 ${
+                       activeSlide === i ? "bg-gold w-6 sm:w-8" : "bg-cream/20"
+                     }`}
+                     aria-label={`Go to slide ${i + 1}`}
+                   />
+                 ))}
+               </div>
 
-      {/* scroll cue (only on slide 0 or shared) */}
-      <motion.div 
-        className="absolute bottom-20 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-4 text-cream/50 pointer-events-none opacity-40"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: typingComplete ? 0.4 : 0 }}
-      >
-        <motion.div 
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="h-8 w-px bg-gradient-to-b from-gold/40 to-transparent" 
-        />
-      </motion.div>
+               {/* scroll cue (only on slide 0 or shared) */}
+               <motion.div 
+                 className="absolute bottom-16 sm:bottom-20 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-4 text-cream/50 pointer-events-none opacity-40"
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: typingComplete ? 0.4 : 0 }}
+               >
+                 <motion.div 
+                   animate={{ y: [0, 10, 0] }}
+                   transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                   className="h-6 w-px sm:h-8 bg-gradient-to-b from-gold/40 to-transparent" 
+                 />
+               </motion.div>
     </section>
   );
 };
