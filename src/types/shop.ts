@@ -169,41 +169,6 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-12",
-    name: "Birthday Outfit 7",
-    price: 74000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/birthday_outfit_7.png",
-  "/collections/birthday_outfit/birthday_outfit_8.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-14",
-    name: "Birthday Outfit 9",
-    price: 80000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/birthday_outfit_9.png",
-  "/collections/birthday_outfit/birthday_outfit_5.jpg",
-  "/collections/birthday_outfit/birthday_outfit_1.png",
-  "/collections/birthday_outfit/birthday_outfit_11.jpg",
-  "/collections/birthday_outfit/birthday_outfit_12.jpg",
-  "/collections/birthday_outfit/birthday_outfit_2.png",
-  "/collections/birthday_outfit/birthday_outfit_3.png",
-  "/collections/birthday_outfit/birthday_outfit_4.jpg",
-  "/collections/birthday_outfit/birthday_outfit_6.jpg",
-  "/collections/birthday_outfit/birthday_outfit_13.jpg",
-  "/collections/birthday_outfit/birthday_outfit_14.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
     id: "corporate-suit-1",
     name: "Corporate Suit 1",
     price: 54000,
@@ -688,102 +653,6 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "birthday-outfit-new-1777794915335-106",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_5424.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794915446-128",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_5433.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794920804-903",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_5464.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794924713-694",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_5466.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794929237-321",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_5467.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794930000-597",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_9802.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794931966-843",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_9804.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-new-1777794934609-329",
-    name: "Birthday Outfit New",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
-  "/collections/birthday_outfit/img_9807.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
     id: "corporate-suit-new-1777794936246-723",
     name: "Corporate Suit New",
     price: 75000,
@@ -1036,6 +905,114 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
+    id: "birthday-outfit-1",
+    name: "Birthday Outfit 1",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_1.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-2",
+    name: "Birthday Outfit 2",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_2.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-3",
+    name: "Birthday Outfit 3",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_3.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-4",
+    name: "Birthday Outfit 4",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_4.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-5",
+    name: "Birthday Outfit 5",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_5.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-6",
+    name: "Birthday Outfit 6",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_6.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-7",
+    name: "Birthday Outfit 7",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_7.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-8",
+    name: "Birthday Outfit 8",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_8.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-9",
+    name: "Birthday Outfit 9",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_9.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
     id: "birthday-outfit-10",
     name: "Birthday Outfit 10",
     price: 75000,
@@ -1044,6 +1021,150 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Luxury birthday outfit crafted to perfection.",
     images: [
   "/collections/birthday_outfit/birthday_outfit_10.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-11",
+    name: "Birthday Outfit 11",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_11.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-12",
+    name: "Birthday Outfit 12",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_12.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-13",
+    name: "Birthday Outfit 13",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_13.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-14",
+    name: "Birthday Outfit 14",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_14.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-15",
+    name: "Birthday Outfit 15",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5424.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-16",
+    name: "Birthday Outfit 16",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5433.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-17",
+    name: "Birthday Outfit 17",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5464.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-18",
+    name: "Birthday Outfit 18",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5466.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-19",
+    name: "Birthday Outfit 19",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_5467.png"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-20",
+    name: "Birthday Outfit 20",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_9802.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-21",
+    name: "Birthday Outfit 21",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_9804.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-new-22",
+    name: "Birthday Outfit 22",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/img_9807.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   }
