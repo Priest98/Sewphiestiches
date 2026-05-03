@@ -164,10 +164,10 @@ export const Navbar = () => {
                               target.scrollIntoView({ behavior: "smooth" });
                               window.history.pushState(null, "", getHref(l.href));
                             }
-                          }, 300); // Wait for mobile drawer to animate out
+                          }, 300);
                         }
                       }}
-                      className="font-display text-4xl text-cream hover:text-gold transition-colors flex items-center justify-between group"
+                      className="text-2xl md:text-3xl lg:text-4xl text-cream hover:text-gold transition-colors flex items-center justify-between group min-h-[60px]"
                     >
                       {l.label}
                       <span className="h-px w-0 bg-gold group-hover:w-12 transition-all duration-500" />

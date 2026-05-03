@@ -146,7 +146,7 @@ export const Hero = () => {
                   key={idx}
                   href={cta.href}
                   data-cursor={cta.cursor}
-                  className={`group inline-flex items-center justify-center px-10 py-5 text-[0.65rem] uppercase tracking-luxury btn-pill transition-all duration-500 ${
+                  className={`group inline-flex items-center justify-center px-8 py-4 text-[0.65rem] uppercase tracking-luxury btn-pill transition-all duration-500 min-h-[48px] ${
                     cta.variant === 'primary' 
                       ? "bg-gradient-gold text-bottle-deep shadow-luxury hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]" 
                       : "border border-gold/60 text-cream hover:bg-gold/10 hover:border-gold"
