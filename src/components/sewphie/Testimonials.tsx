@@ -18,6 +18,11 @@ const quotes = [
     name: "Loyal Client",
     role: "Regular Couture",
   },
+  {
+    q: "The tailor we gave the material to disappointed us, and I knew it was time to reach out to you. Thank you for making our dress so beautiful in just 3 days despite your tight schedule. We needed to look like classy sisters of the groom — and that’s exactly what you delivered.",
+    name: "Saeedat",
+    role: "Wedding Guest",
+  },
 ];
 
 export const Testimonials = () => {
@@ -31,7 +36,7 @@ export const Testimonials = () => {
           title={<>Worn by women of <span className="italic">presence</span></>}
         />
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {quotes.map((t, i) => (
             <motion.figure 
               key={t.name} 
