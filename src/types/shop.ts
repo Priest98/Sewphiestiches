@@ -957,18 +957,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
     images: [
-  "/collections/birthday_outfit/birthday_outfit_11.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "birthday-outfit-12",
-    name: "Birthday Outfit 12",
-    price: 75000,
-    category: "Birthday Outfit" as Category,
-    isCustom: true,
-    description: "Luxury birthday outfit crafted to perfection.",
-    images: [
+  "/collections/birthday_outfit/birthday_outfit_11.jpg",
   "/collections/birthday_outfit/birthday_outfit_12.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
