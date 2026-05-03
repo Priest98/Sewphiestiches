@@ -4,14 +4,14 @@ import logoDark from "@/assets/logo-dark.png";
 
 const quotes = [
   {
-    q: "Wearing Sewphie Stitches made me feel powerful, confident, and unforgettable.",
-    name: "Client",
-    role: "Bespoke Couture",
+    q: "I woke up this late night and wallahi I just want to thank you again for your honesty and commitment.",
+    name: "Happy Client",
+    role: "Couture Patron",
   },
   {
-    q: "The attention to detail is unmatched. Every stitch speaks luxury.",
-    name: "Client",
-    role: "Bridal Patron",
+    q: "I just want to say a big thank you for coming through for me despite your tight schedule. I truly appreciate the effort you put into finishing my dresses, especially with your graduation and project going on. Coming over early on the event day meant so much to me. May Allah bless the works of your hands and take you to greater heights in your fashion journey.❤️",
+    name: "Bridal Client",
+    role: "Custom Bridal",
   },
 ];
 
