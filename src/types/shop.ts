@@ -70,47 +70,13 @@ export const MOCK_PRODUCTS: Product[] = [
     category: "Aso oke" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9706.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-9",
-    name: "Aso Oke 9",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9707.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-10",
-    name: "Aso Oke 10",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9718.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-11",
-    name: "Aso Oke 11",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9719.jpg"],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "aso-oke-12",
-    name: "Aso Oke 12",
-    price: 250000,
-    category: "Aso oke" as Category,
-    isCustom: true,
-    description: "Custom aso oke crafted to perfection.",
-    images: ["/collections/aso_oke/img_9730.jpg"],
+    images: [
+      "/collections/aso_oke/img_9706.jpg",
+      "/collections/aso_oke/img_9707.jpg",
+      "/collections/aso_oke/img_9718.jpg",
+      "/collections/aso_oke/img_9719.jpg",
+      "/collections/aso_oke/img_9730.jpg"
+    ],
     measurements: ["Bust","Waist","Hip"]
   },
   {
