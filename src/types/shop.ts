@@ -395,7 +395,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "wedding-look-3",
     name: "Wedding Look 3",
-    price: 83000,
+    price: 130000,
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Custom wedding look crafted to perfection.",
