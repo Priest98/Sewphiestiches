@@ -197,12 +197,12 @@ I'd like to finalize this order. Looking forward to your response!`;
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="fixed inset-0 z-50 flex items-start md:items-center justify-center p-4 overflow-y-auto custom-scrollbar">
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="absolute inset-0 bg-bottle-deep/90 backdrop-blur-md"
+          className="fixed inset-0 bg-bottle-deep/90 backdrop-blur-md"
           onClick={() => setCheckoutOpen(false)}
         />
 
@@ -210,7 +210,7 @@ I'd like to finalize this order. Looking forward to your response!`;
           initial={{ scale: 0.9, opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.9, opacity: 0, y: 20 }}
-          className="relative bg-white w-full max-w-2xl overflow-hidden shadow-2xl rounded-sm"
+          className="relative bg-white w-full max-w-2xl shadow-2xl rounded-sm my-auto"
         >
           {/* Header */}
           <div className="bg-bottle-deep p-8 text-cream flex justify-between items-center border-b border-gold/20">
@@ -224,7 +224,7 @@ I'd like to finalize this order. Looking forward to your response!`;
             </button>
           </div>
 
-          <div className="p-8 md:p-12">
+          <div className="p-6 md:p-12">
             {/* Progress */}
             {step < 4 && (
               <div className="flex justify-between mb-12 relative">
@@ -254,7 +254,7 @@ I'd like to finalize this order. Looking forward to your response!`;
                 <>
                   {step === 1 && (
                     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                         <div className="space-y-6">
                           <InputField label="Full Name" name="fullName" register={register} error={errors.fullName} />
                           <InputField label="Email Address" name="email" type="email" register={register} error={errors.email} />
