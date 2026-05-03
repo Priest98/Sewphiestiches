@@ -375,7 +375,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-1",
     name: "Reception Dress 1",
-    price: 90000,
+    price: 200000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
@@ -388,7 +388,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-2",
     name: "Reception Dress 2",
-    price: 73000,
+    price: 300000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
@@ -403,7 +403,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-3",
     name: "Reception Dress 3",
-    price: 87000,
+    price: 700000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
@@ -418,7 +418,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-4",
     name: "Reception Dress 4",
-    price: 98000,
+    price: 500000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
