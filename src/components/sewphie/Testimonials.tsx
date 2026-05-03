@@ -23,6 +23,11 @@ const quotes = [
     name: "Saeedat",
     role: "Wedding Guest",
   },
+  {
+    q: "I am glad you were able to make not just the brides dress... I pray for more referrals, too. You out did yourself.",
+    name: "Client",
+    role: "Bridal Stylist",
+  },
 ];
 
 export const Testimonials = () => {
