@@ -422,43 +422,11 @@ export const MOCK_PRODUCTS: Product[] = [
     isCustom: true,
     description: "Luxury wedding ball gown crafted to perfection.",
     images: [
-  "/collections/wedding_ball_gown/img_2246.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-2",
-    name: "Wedding Ball Gown 2",
-    price: 87000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_2247.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-3",
-    name: "Wedding Ball Gown 3",
-    price: 97000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_2248.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-4",
-    name: "Wedding Ball Gown 4",
-    price: 74000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_2253.jpg"
+  "/collections/wedding_ball_gown/img_2246.jpg",
+  "/collections/wedding_ball_gown/img_2247.jpg",
+  "/collections/wedding_ball_gown/img_2248.jpg",
+  "/collections/wedding_ball_gown/img_2253.jpg",
+  "/collections/wedding_ball_gown/img_2257.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
@@ -580,18 +548,6 @@ export const MOCK_PRODUCTS: Product[] = [
     images: [
   "/collections/pre_wedding_look/img_6973.jpg",
   "/collections/pre_wedding_look/img_6989.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "wedding-ball-gown-6",
-    name: "Wedding Ball Gown 6",
-    price: 75000,
-    category: "Wedding Ball Gown" as Category,
-    isCustom: true,
-    description: "Luxury wedding ball gown crafted to perfection.",
-    images: [
-  "/collections/wedding_ball_gown/img_2257.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
