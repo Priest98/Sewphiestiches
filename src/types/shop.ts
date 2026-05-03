@@ -70,7 +70,7 @@ export const MOCK_PRODUCTS: Product[] = [
     id: "aso-oke-6",
     name: "Aso Oke 6",
     price: 250000,
-    category: "Aso Oke" as Category,
+    category: "Asoebi" as Category,
     isCustom: true,
     description: "Custom aso oke crafted to perfection.",
     images: ["/collections/Aso oke/IMG_9429.JPG.jpeg"],
