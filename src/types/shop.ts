@@ -186,7 +186,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "corporate-suit-1",
     name: "Corporate Suit 1",
-    price: 54000,
+    price: 100000,
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Luxury corporate suit crafted to perfection.",
@@ -198,7 +198,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "corporate-suit-2",
     name: "Corporate Suit 2",
-    price: 99000,
+    price: 120000,
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Luxury corporate suit crafted to perfection.",
@@ -210,7 +210,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "corporate-suit-3",
     name: "Corporate Suit 3",
-    price: 75000,
+    price: 120000,
     category: "Corporate Suit" as Category,
     isCustom: true,
     description: "Luxury corporate suit crafted to perfection.",
