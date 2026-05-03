@@ -192,7 +192,6 @@ export const MOCK_PRODUCTS: Product[] = [
   "/collections/birthday_outfit/birthday_outfit_9.png",
   "/collections/birthday_outfit/birthday_outfit_5.jpg",
   "/collections/birthday_outfit/birthday_outfit_1.png",
-  "/collections/birthday_outfit/birthday_outfit_10.png",
   "/collections/birthday_outfit/birthday_outfit_11.jpg",
   "/collections/birthday_outfit/birthday_outfit_12.jpg",
   "/collections/birthday_outfit/birthday_outfit_2.png",
@@ -326,7 +325,7 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: "ready-to-wear-1",
-    name: "Ready To Wear 1",
+    name: "Ready to Wear 1",
     price: 76000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -337,102 +336,6 @@ export const MOCK_PRODUCTS: Product[] = [
   "/collections/ready_to_wear/a3.jpg",
   "/collections/ready_to_wear/a4.jpg",
   "/collections/ready_to_wear/a5.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-6",
-    name: "Ready To Wear 6",
-    price: 60000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/b1.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-7",
-    name: "Ready To Wear 7",
-    price: 96000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/b2.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-8",
-    name: "Ready To Wear 8",
-    price: 90000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/b3.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-9",
-    name: "Ready To Wear 9",
-    price: 85000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/b4.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-10",
-    name: "Ready To Wear 10",
-    price: 88000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/b5.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-11",
-    name: "Ready To Wear 11",
-    price: 58000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/c1.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-12",
-    name: "Ready To Wear 12",
-    price: 54000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/c2.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-13",
-    name: "Ready To Wear 13",
-    price: 59000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/c3.png"
 ],
     measurements: ["Bust","Waist","Hip"]
   },
@@ -473,20 +376,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "ready-to-wear-17",
-    name: "Ready To Wear 17",
-    price: 82000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/img_5464.png"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
     id: "ready-to-wear-18",
-    name: "Ready To Wear 18",
+    name: "Ready to Wear 5",
     price: 92000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -498,7 +389,7 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: "ready-to-wear-19",
-    name: "Ready To Wear 19",
+    name: "Ready to Wear 6",
     price: 55000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -510,7 +401,7 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: "ready-to-wear-20",
-    name: "Ready To Wear 20",
+    name: "Ready to Wear 7",
     price: 75000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -522,7 +413,7 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: "ready-to-wear-21",
-    name: "Ready To Wear 21",
+    name: "Ready to Wear 8",
     price: 91000,
     category: "Ready to Wear" as Category,
     isCustom: true,
@@ -941,30 +832,6 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "ready-to-wear-new-1777794941626-265",
-    name: "Ready to Wear New",
-    price: 75000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/img_5498.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-new-1777794943283-471",
-    name: "Ready to Wear New",
-    price: 75000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/img_5505.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
     id: "reception-dress-new-1777794945865-592",
     name: "Reception Dress New",
     price: 75000,
@@ -1165,6 +1032,18 @@ export const MOCK_PRODUCTS: Product[] = [
     description: "Luxury wedding look crafted to perfection.",
     images: [
   "/collections/wedding_look/img_7004.jpg"
+],
+    measurements: ["Bust","Waist","Hip"]
+  },
+  {
+    id: "birthday-outfit-10",
+    name: "Birthday Outfit 10",
+    price: 75000,
+    category: "Birthday Outfit" as Category,
+    isCustom: true,
+    description: "Luxury birthday outfit crafted to perfection.",
+    images: [
+  "/collections/birthday_outfit/birthday_outfit_10.png"
 ],
     measurements: ["Bust","Waist","Hip"]
   }
