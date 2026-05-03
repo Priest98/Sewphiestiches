@@ -591,8 +591,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-new-1777794945865-592",
-    name: "Reception Dress New",
+    id: "reception-dress-10",
+    name: "Reception Dress 10",
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
@@ -603,8 +603,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-new-1777794947792-416",
-    name: "Reception Dress New",
+    id: "reception-dress-11",
+    name: "Reception Dress 11",
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
@@ -615,8 +615,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-new-1777794949799-138",
-    name: "Reception Dress New",
+    id: "reception-dress-12",
+    name: "Reception Dress 12",
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
@@ -627,8 +627,8 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "reception-dress-new-1777794951615-765",
-    name: "Reception Dress New",
+    id: "reception-dress-13",
+    name: "Reception Dress 13",
     price: 75000,
     category: "Reception Dress" as Category,
     isCustom: true,
