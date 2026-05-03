@@ -343,49 +343,16 @@ export const MOCK_PRODUCTS: Product[] = [
     measurements: ["Bust","Waist","Hip"]
   },
   {
-    id: "ready-to-wear-18",
+    id: "ready-to-wear-5",
     name: "Ready to Wear 5",
     price: 92000,
     category: "Ready to Wear" as Category,
     isCustom: true,
     description: "Luxury ready to wear crafted to perfection.",
     images: [
-  "/collections/ready_to_wear/ready_to_wear_5.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-19",
-    name: "Ready to Wear 6",
-    price: 55000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/ready_to_wear_6.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-20",
-    name: "Ready to Wear 7",
-    price: 75000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
-  "/collections/ready_to_wear/ready_to_wear_7.jpg"
-],
-    measurements: ["Bust","Waist","Hip"]
-  },
-  {
-    id: "ready-to-wear-21",
-    name: "Ready to Wear 8",
-    price: 91000,
-    category: "Ready to Wear" as Category,
-    isCustom: true,
-    description: "Luxury ready to wear crafted to perfection.",
-    images: [
+  "/collections/ready_to_wear/ready_to_wear_5.jpg",
+  "/collections/ready_to_wear/ready_to_wear_6.jpg",
+  "/collections/ready_to_wear/ready_to_wear_7.jpg",
   "/collections/ready_to_wear/ready_to_wear_8.jpg"
 ],
     measurements: ["Bust","Waist","Hip"]
