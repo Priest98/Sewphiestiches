@@ -20,7 +20,7 @@ export const WaitlistPopup = () => {
       const timer = window.setTimeout(() => {
         setIsOpen(true);
         sessionStorage.setItem("waitlist-shown", "true");
-      }, 4000); 
+      }, 9000); 
       return () => window.clearTimeout(timer);
     }
   }, [setIsOpen]);
