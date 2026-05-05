@@ -10,6 +10,7 @@ import { PageTransition } from "./components/ui/PageTransition.tsx";
 import { AiConcierge } from "@/components/sewphie/AiConcierge";
 import { WaitlistPopup } from "@/components/sewphie/WaitlistPopup";
 import { Loader2 } from "lucide-react";
+import { Layout } from "./components/sewphie/Layout";
 
 // Lazy loaded pages
 const Index = lazy(() => import("./pages/Index.tsx"));
@@ -26,7 +27,7 @@ const AnimatedRoutes = () => {
   const location = useLocation();
   
   return (
-    <>
+    <Layout>
       <WaitlistPopup />
       <AnimatePresence mode="wait">
         <Suspense fallback={null}>
@@ -41,7 +42,7 @@ const AnimatedRoutes = () => {
           </Routes>
         </Suspense>
       </AnimatePresence>
-    </>
+    </Layout>
   );
 };
 

@@ -1,14 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Navbar } from "@/components/sewphie/Navbar";
-import { Footer } from "@/components/sewphie/Footer";
 import { MOCK_PRODUCTS, Product } from "@/types/shop";
 import { useShopStore } from "@/store/useShopStore";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ShoppingBag } from "lucide-react";
 import { toast } from "sonner";
-import { CustomCursor } from "@/components/sewphie/CustomCursor";
-import { ScrollProgress } from "@/components/sewphie/ScrollProgress";
 import { useState, useMemo, useEffect } from "react";
+import { SectionHeader } from "@/components/sewphie/SectionHeader";
 
 export default function Collection() {
   const { setSelectedProduct, addToCart } = useShopStore();
@@ -41,29 +38,14 @@ export default function Collection() {
   };
 
   return (
-    <div className="min-h-screen bg-cream text-bottle-deep font-sans">
-      <CustomCursor />
-      <ScrollProgress />
-      <Navbar />
-
+    <div className="bg-cream selection:bg-gold/30">
       <main className="pt-32 pb-24">
         <div className="container">
-          <header className="mb-12 text-center">
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-[0.65rem] uppercase tracking-luxury text-gold mb-4"
-            >
-              The Curated Collection
-            </motion.p>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="font-display text-5xl md:text-7xl lg:text-8xl text-bottle-deep"
-            >
-              Essential <span className="italic text-bottle-soft">Elegance.</span>
-            </motion.h1>
+          <header className="mb-12">
+            <SectionHeader 
+              eyebrow="The Curated Collection"
+              title={<>Essential <span className="italic text-bottle-soft">Elegance.</span></>}
+            />
           </header>
 
           {/* Category Filter */}
@@ -88,7 +70,7 @@ export default function Collection() {
 
           <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
             <AnimatePresence>
-              {filteredProducts.map((product, i) => (
+              {filteredProducts.map((product) => (
                 <motion.div
                   key={product.id}
                   layout
@@ -148,8 +130,6 @@ export default function Collection() {
           </motion.div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

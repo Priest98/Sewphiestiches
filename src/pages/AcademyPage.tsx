@@ -1,20 +1,14 @@
 import { useState, useEffect } from "react";
-import Lenis from "lenis";
-import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Navbar } from "@/components/sewphie/Navbar";
-import { Footer } from "@/components/sewphie/Footer";
-import { CustomCursor } from "@/components/sewphie/CustomCursor";
-import { ScrollProgress } from "@/components/sewphie/ScrollProgress";
-import { ShieldCheck, Sparkles, Scissors, Layers, CheckCircle2, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
+import { ShieldCheck, Sparkles, Scissors, Layers, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
 import { useShopStore } from "@/store/useShopStore";
+import { SectionHeader } from "@/components/sewphie/SectionHeader";
 
 import heroImg from "@/assets/A1.jpeg";
 import studio1 from "@/assets/img_6887.jpg";
 import studio2 from "@/assets/img_7700.jpg";
 import studio3 from "@/assets/img_5430.png";
 import studio4 from "@/assets/img_9685.jpg";
-import logoDarkImg from "@/assets/logo-dark.png";
 
 export default function AcademyPage() {
   const { scrollYProgress } = useScroll();
@@ -23,25 +17,6 @@ export default function AcademyPage() {
 
   useEffect(() => {
     document.title = "Sewphie Academy — Luxury Fashion Mastery";
-    window.scrollTo(0, 0);
-
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-    });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    return () => lenis.destroy();
   }, []);
 
   const curriculum = [
@@ -64,19 +39,12 @@ export default function AcademyPage() {
   };
 
   return (
-    <div className="min-h-screen bg-cream text-bottle-deep font-sans selection:bg-gold/30">
-      <CustomCursor />
-      <ScrollProgress />
-      <Navbar />
-
+    <div className="selection:bg-gold/30">
       <main>
         {/* SECTION 1: HERO */}
         <section className="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-bottle-deep">
           <div className="absolute inset-0 z-0 grid grid-cols-1 lg:grid-cols-2">
-            {/* LEFT SIDE — logo as large muted background */}
-            <div className="hidden lg:flex bg-bottle-deep items-center justify-center relative overflow-hidden">
-            </div>
-            {/* RIGHT SIDE — hero image */}
+            <div className="hidden lg:flex bg-bottle-deep items-center justify-center relative overflow-hidden" />
             <div className="relative h-full w-full overflow-hidden">
               <motion.div style={{ y: heroY }} className="absolute inset-x-0 -top-24 -bottom-24">
                 <img
@@ -134,16 +102,15 @@ export default function AcademyPage() {
 
         {/* SECTION 2: PROGRAM OVERVIEW */}
         <section id="curriculum" className="py-24 md:py-32 relative z-20 bg-cream overflow-hidden">
-
-          
           <div className="container max-w-6xl relative z-10">
-            <p className="text-[0.65rem] uppercase tracking-luxury text-gold mb-3">The Blueprint</p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-bottle-deep">
-              What You’ll <span className="italic text-bottle-soft">Learn.</span>
-            </h2>
-            <p className="mt-6 text-bottle-deep/60 text-lg max-w-2xl mx-auto font-light">
-              This isn’t basic training. This is where skill meets precision.
-            </p>
+            <div className="mb-16">
+              <SectionHeader 
+                align="left"
+                eyebrow="The Blueprint"
+                title={<>What You’ll <span className="italic text-bottle-soft">Learn.</span></>}
+                description="This isn’t basic training. This is where skill meets precision."
+              />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 lg:gap-y-12">
               {curriculum.map((item, i) => (
@@ -169,16 +136,15 @@ export default function AcademyPage() {
 
         {/* SECTION 3: COURSE LEVELS */}
         <section className="py-24 md:py-32 bg-bottle-deep relative overflow-hidden text-cream">
-          {/* Subtle bg decorations */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-[100px] pointer-events-none transform translate-x-1/2 -translate-y-1/2" />
           
           <div className="container relative z-10">
-            <div className="text-center mb-20 animate-fade-up">
-              <p className="text-[0.65rem] uppercase tracking-luxury text-gold mb-3">Tailored Progression</p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white">
-                Programs Designed <br/>
-                <span className="italic text-gold">for Growth.</span>
-              </h2>
+            <div className="mb-20">
+              <SectionHeader 
+                tone="light"
+                eyebrow="Tailored Progression"
+                title={<>Programs Designed <br/><span className="italic text-gold">for Growth.</span></>}
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -211,7 +177,7 @@ export default function AcademyPage() {
           </div>
         </section>
 
-        {/* SECTION 4: PRICING / OFFER (ELEVATED) */}
+        {/* SECTION 4: PRICING / OFFER */}
         <section className="relative z-20 py-12 bg-cream">
           <div className="container max-w-4xl">
             <motion.div 
@@ -220,14 +186,13 @@ export default function AcademyPage() {
               viewport={{ once: true }}
               className="bg-white p-10 md:p-16 shadow-2xl border border-cream-deep/50 text-center relative overflow-hidden"
             >
-              {/* Elegant Border Details */}
               <div className="absolute top-2 left-2 right-2 bottom-2 border border-gold/20 pointer-events-none" />
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-10 bg-gradient-to-b from-transparent to-gold/40 pointer-events-none" />
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-10 bg-gradient-to-t from-transparent to-gold/40 pointer-events-none" />
 
-              <h2 className="font-display text-3xl md:text-5xl text-bottle-deep mb-8 relative z-10">
-                Enrollment <span className="italic text-bottle-soft">Details.</span>
-              </h2>
+              <SectionHeader 
+                title={<>Enrollment <span className="italic text-bottle-soft">Details.</span></>}
+              />
               
               <div className="mb-10 text-bottle-deep/80 text-lg md:text-xl font-light space-y-4">
                 <p>Registration Fee: <strong className="text-bottle-deep font-normal text-2xl ml-2">₦10,000</strong></p>
@@ -255,16 +220,18 @@ export default function AcademyPage() {
         {/* SECTION: PROVEN EXCELLENCE */}
         <section className="py-24 md:py-32 bg-cream overflow-hidden">
           <div className="container mb-16">
+            <div className="mb-10">
+              <SectionHeader 
+                eyebrow="Excellence in Craft"
+                title={<>Trained. Tested. <span className="italic text-bottle-soft">Recognized.</span></>}
+              />
+            </div>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-center max-w-3xl mx-auto"
             >
-              <p className="text-[0.65rem] uppercase tracking-luxury text-gold mb-3">Excellence in Craft</p>
-              <h2 className="font-display text-4xl md:text-6xl text-bottle-deep mb-6">
-                Trained. Tested. <span className="italic text-bottle-soft">Recognized.</span>
-              </h2>
               <div className="space-y-4 text-bottle-deep/70 text-lg font-light leading-relaxed">
                 <p>Excellence here is not assumed—it’s proven.</p>
                 <p>
@@ -307,7 +274,7 @@ export default function AcademyPage() {
                   <img 
                     src={item.src} 
                     alt={item.caption} 
-                    className="w-full h-full object-cover transition-transform duration-&lsqb;2000ms&rsqb; ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-[2000ms] ease-out group-hover:scale-110"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bottle-deep/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -331,21 +298,12 @@ export default function AcademyPage() {
 
         {/* SECTION: STUDENT SHOWCASE */}
         <section className="py-24 md:py-32 bg-white relative overflow-hidden">
-          <div className="container mb-16 text-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="max-w-3xl mx-auto"
-            >
-              <p className="text-[0.65rem] uppercase tracking-luxury text-gold mb-3">From Learning to Mastery</p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-bottle-deep mb-6">
-                Our Students’ <span className="italic text-bottle-soft">Work.</span>
-              </h2>
-              <p className="text-bottle-deep/60 text-lg font-light leading-relaxed max-w-xl mx-auto">
-                See what our students are able to create through structured training and hands-on guidance.
-              </p>
-            </motion.div>
+          <div className="container mb-16">
+            <SectionHeader 
+              eyebrow="From Learning to Mastery"
+              title={<>Our Students’ <span className="italic text-bottle-soft">Work.</span></>}
+              description="See what our students are able to create through structured training and hands-on guidance."
+            />
           </div>
 
           <div className="container">
@@ -406,16 +364,11 @@ export default function AcademyPage() {
         {/* SECTION 5: STUDIO EXPERIENCE */}
         <section className="py-24 bg-cream overflow-hidden">
           <div className="container mb-16">
-            <div className="text-left animate-fade-up">
-              <h2 className="font-display text-4xl md:text-5xl text-bottle-deep max-w-2xl">
-                Train Like a<br />
-                <span className="italic text-bottle-soft">Professional.</span>
-              </h2>
-              <p className="mt-8 text-bottle-deep/60 text-lg max-w-xl font-light leading-relaxed">
-                Work in a structured, hands-on environment designed to prepare you for real-world fashion design. 
-                From concept development to final finishing, you’ll gain the skills needed to create pieces that stand out.
-              </p>
-            </div>
+            <SectionHeader 
+              align="left"
+              title={<>Train Like a<br /><span className="italic text-bottle-soft">Professional.</span></>}
+              description="Work in a structured, hands-on environment designed to prepare you for real-world fashion design. From concept development to final finishing, you’ll gain the skills needed to create pieces that stand out."
+            />
           </div>
 
           <div className="relative w-full overflow-hidden flex gap-6 px-4 md:px-12 pb-10 hide-scrollbar">
@@ -433,7 +386,7 @@ export default function AcademyPage() {
                   alt="Atelier Studio" 
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-&lsqb;2000ms&rsqb; ease-out" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2000ms] ease-out" 
                 />
                 <div className="absolute inset-0 bg-bottle-deep/10 group-hover:bg-transparent transition-colors duration-700" />
               </motion.div>
@@ -445,10 +398,10 @@ export default function AcademyPage() {
         <section className="py-24 md:py-32 bg-cream text-bottle-deep relative">
           <div className="container max-w-5xl text-center">
             <div className="mb-20">
-              <p className="text-[0.65rem] uppercase tracking-luxury text-gold mb-3">Student Voice</p>
-              <h2 className="font-display text-4xl md:text-5xl text-bottle-deep">
-                What Our <span className="italic text-bottle-soft">Students Say.</span>
-              </h2>
+              <SectionHeader 
+                eyebrow="Student Voice"
+                title={<>What Our <span className="italic text-bottle-soft">Students Say.</span></>}
+              />
               <ShieldCheck className="w-8 h-8 text-gold mx-auto mt-10 opacity-80" />
             </div>
             
@@ -491,9 +444,8 @@ export default function AcademyPage() {
           </div>
         </section>
 
-        {/* SECTION: VISIT OUR STUDIO (GOOGLE MAPS) */}
+        {/* SECTION: VISIT OUR STUDIO */}
         <section className="py-24 md:py-32 bg-bottle text-cream relative overflow-hidden">
-          {/* Subtle bg effects */}
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
           
@@ -505,17 +457,15 @@ export default function AcademyPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
               >
-                <p className="text-[0.65rem] uppercase tracking-luxury text-gold mb-3">Our Location</p>
-                <h2 className="font-display text-4xl md:text-6xl text-white mb-8">
-                  Visit Our <span className="italic text-gold">Studio.</span>
-                </h2>
-                <p className="text-cream/70 text-lg font-light leading-relaxed mb-12 max-w-xl">
-                  Experience fashion training in a professional, hands-on environment. 
-                  Locate and visit Sewphie Stitches Fashion Academy with ease. 
-                  We invite you to tour our workspace and see excellence in action.
-                </p>
+                <SectionHeader 
+                  align="left"
+                  tone="light"
+                  eyebrow="Our Location"
+                  title={<>Visit Our <span className="italic text-gold">Studio.</span></>}
+                  description="Experience fashion training in a professional, hands-on environment. Locate and visit Sewphie Stitches Fashion Academy with ease. We invite you to tour our workspace and see excellence in action."
+                />
 
-                <div className="space-y-8 mb-12">
+                <div className="space-y-8 mb-12 mt-12">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 border border-gold/20">
                       <MapPin className="w-5 h-5 text-gold" />
@@ -565,9 +515,7 @@ export default function AcademyPage() {
                 transition={{ duration: 1 }}
                 className="relative"
               >
-                {/* Decorative border */}
                 <div className="absolute -inset-4 border border-gold/10 rounded-[2.5rem] pointer-events-none" />
-                
                 <div className="relative aspect-square md:aspect-video lg:aspect-square w-full rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 group">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.080835887785!2d4.557625300000001!3d8.4915214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103652835a6572bf%3A0x8cc5e4e1e37d8fa8!2sBalogun%20Fulani%20Rd%20%26%20Emirs%20Rd%2C%20Oko%20Erin%20240101%2C%20Kwara!5e0!3m2!1sen!2sng!4v1776841923517!5m2!1sen!2sng" 
@@ -596,26 +544,21 @@ export default function AcademyPage() {
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-gold" />
               
-              <h2 className="font-display text-4xl md:text-5xl text-bottle-deep mb-6">
-                Start Your <span className="italic text-bottle-soft">Journey.</span>
-              </h2>
-              <p className="text-bottle-deep/60 text-lg font-light mb-12 max-w-xl mx-auto">
-                The next chapter of your fashion career is one decision away. Join an elite community where precision meets passion.
-              </p>
+              <SectionHeader 
+                title={<>Start Your <span className="italic text-bottle-soft">Journey.</span></>}
+                description="The next chapter of your fashion career is one decision away. Join an elite community where precision meets passion."
+              />
               
               <button
                 onClick={() => handleEnrollClick()}
-                className="inline-flex items-center justify-center bg-bottle-deep text-cream px-12 py-5 text-sm uppercase tracking-luxury hover:bg-gold hover:text-bottle-deep transition-all duration-500 shadow-xl"
+                className="mt-12 inline-flex items-center justify-center bg-bottle-deep text-cream px-12 py-5 text-sm uppercase tracking-luxury hover:bg-gold hover:text-bottle-deep transition-all duration-500 shadow-xl"
               >
                 Enroll Now
               </button>
             </motion.div>
           </div>
         </section>
-
       </main>
-
-      <Footer />
     </div>
   );
 }
