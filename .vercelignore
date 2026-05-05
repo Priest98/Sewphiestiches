@@ -1,0 +1,9 @@
+IMAGES
+scratch
+optimize-images.cjs
+script.cjs
+supabase_security_setup.sql
+gemini.md
+audit_report.md
+.env
+.env.example

@@ -4,7 +4,13 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "https://sewphiestitches.com/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "sewphiestitches.com"
+        }
+      ],
       "destination": "https://www.sewphiestitches.com/:path*",
       "permanent": true
     }
