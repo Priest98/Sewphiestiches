@@ -31,7 +31,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "aso-oke-3",
     name: "Aso oke 3",
-    price: 250000,
+    price: 150000,
     category: "Aso oke" as Category,
     isCustom: true,
     description: "Luxury aso oke crafted to perfection.",
@@ -44,7 +44,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "aso-oke-4",
     name: "Aso oke 4",
-    price: 250000,
+    price: 400000,
     category: "Aso oke" as Category,
     isCustom: true,
     description: "Luxury aso oke crafted to perfection.",
@@ -60,7 +60,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-1",
     name: "Asoebi 1",
-    price: 75000,
+    price: 100000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Luxury asoebi crafted to perfection.",
@@ -84,7 +84,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-3",
     name: "Asoebi 3",
-    price: 75000,
+    price: 50000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Luxury asoebi crafted to perfection.",
@@ -96,7 +96,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-4",
     name: "Asoebi 4",
-    price: 75000,
+    price: 50000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Luxury asoebi crafted to perfection.",
@@ -121,7 +121,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-6",
     name: "Asoebi 6",
-    price: 75000,
+    price: 250000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Luxury asoebi crafted to perfection.",
@@ -134,7 +134,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-7",
     name: "Asoebi 7",
-    price: 75000,
+    price: 150000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Luxury asoebi crafted to perfection.",
@@ -147,7 +147,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "asoebi-8",
     name: "Asoebi 8",
-    price: 75000,
+    price: 220000,
     category: "Asoebi" as Category,
     isCustom: true,
     description: "Luxury asoebi crafted to perfection.",
@@ -364,7 +364,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-2",
     name: "Reception Dress 2",
-    price: 300000,
+    price: 500000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
@@ -379,7 +379,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-3",
     name: "Reception Dress 3",
-    price: 700000,
+    price: 750000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
@@ -394,7 +394,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "reception-dress-4",
     name: "Reception Dress 4",
-    price: 500000,
+    price: 750000,
     category: "Reception Dress" as Category,
     isCustom: true,
     description: "Luxury reception dress crafted to perfection.",
@@ -441,7 +441,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "wedding-look-1",
     name: "Wedding Look 1",
-    price: 200000,
+    price: 700000,
     category: "Wedding Look" as Category,
     isCustom: true,
     description: "Luxury wedding look crafted to perfection.",
@@ -546,7 +546,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-1",
     name: "Birthday Outfit 1",
-    price: 130000,
+    price: 70000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -576,7 +576,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-3",
     name: "Birthday Outfit 3",
-    price: 130000,
+    price: 60000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -604,7 +604,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-5",
     name: "Birthday Outfit 5",
-    price: 150000,
+    price: 200000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -617,7 +617,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-6",
     name: "Birthday Outfit 6",
-    price: 130000,
+    price: 80000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -631,7 +631,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "birthday-outfit-7",
     name: "Birthday Outfit 7",
-    price: 130000,
+    price: 65000,
     category: "Birthday Outfit" as Category,
     isCustom: true,
     description: "Luxury birthday outfit crafted to perfection.",
@@ -660,7 +660,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: "street-wear-1",
     name: "Street Wear 1",
-    price: 200000,
+    price: 120000,
     category: "Street Wear" as Category,
     isCustom: true,
     description: "Luxury street wear crafted to perfection.",
