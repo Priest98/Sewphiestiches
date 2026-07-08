@@ -107,7 +107,7 @@ Please confirm my admission slot. Thank you!`;
 - Email: ${data.email}
 - Phone: ${data.phone}
 
-I have made the transfer to Access Bank (1915543110). Please verify my payment.`;
+I have made the transfer to Access Bank (1915543110). I have attached my transfer receipt to this message. Please verify my payment.`;
 
     const whatsappUrl = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
     
@@ -312,7 +312,7 @@ I have made the transfer to Access Bank (1915543110). Please verify my payment.`
                             <p>Bank: <strong className="font-semibold text-bottle-deep">Access Bank</strong></p>
                           </div>
                           <p className="text-[0.6rem] text-bottle-soft/85 italic leading-relaxed pt-2 border-t border-bottle-deep/5">
-                            Please transfer exactly **₦{amountToPay.toLocaleString()}** to the account details above, then click the confirmation button below to send your transfer receipt.
+                            Please transfer exactly **₦{amountToPay.toLocaleString()}** to the account details above, then click the confirmation button below. **Please attach your transfer receipt to the WhatsApp message.**
                           </p>
                         </div>
                         <button 
@@ -382,7 +382,7 @@ Please confirm my admission slot. Thank you!`
 - Email: ${data.email}
 - Phone: ${data.phone}
 
-I have made the transfer to Access Bank (1915543110). Please verify my payment.`;
+I have made the transfer to Access Bank (1915543110). I have attached my transfer receipt to this message. Please verify my payment.`;
 
                           window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
                         }}
