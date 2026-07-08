@@ -8,8 +8,6 @@ import { AnimatePresence } from "framer-motion";
 import { CheckoutModal } from "./components/shop/CheckoutModal.tsx";
 import { PageTransition } from "./components/ui/PageTransition.tsx";
 import { AiConcierge } from "@/components/sewphie/AiConcierge";
-import { WaitlistPopup } from "@/components/sewphie/WaitlistPopup";
-import { Loader2 } from "lucide-react";
 import { Layout } from "./components/sewphie/Layout";
 
 // Lazy loaded pages
@@ -28,7 +26,6 @@ const AnimatedRoutes = () => {
   
   return (
     <Layout>
-      <WaitlistPopup />
       <AnimatePresence mode="wait">
         <Suspense fallback={null}>
           <Routes location={location} key={location.pathname}>

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ShieldCheck, Sparkles, Scissors, Layers, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
-import { useShopStore } from "@/store/useShopStore";
 import { SectionHeader } from "@/components/sewphie/SectionHeader";
 
 import heroImg from "@/assets/A1.jpeg";
@@ -13,7 +12,6 @@ import studio4 from "@/assets/img_9685.jpg";
 export default function AcademyPage() {
   const { scrollYProgress } = useScroll();
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const { setWaitlistOpen } = useShopStore();
 
   useEffect(() => {
     document.title = "Sewphie Academy — Luxury Fashion Mastery";
@@ -35,7 +33,7 @@ export default function AcademyPage() {
   ];
 
   const handleEnrollClick = () => {
-    setWaitlistOpen(true);
+    window.open("https://wa.me/2349065368362?text=Hello%20Sewphie%20Stitches%2C%20I'd%20like%20to%20enroll%20in%20the%20Fashion%20Academy.", "_blank");
   };
 
   return (
@@ -67,7 +65,10 @@ export default function AcademyPage() {
               >
                 <div className="inline-flex items-center gap-4 text-gold text-xs uppercase tracking-[0.3em] font-medium mb-8">
                   <span className="w-10 h-px bg-gold/50" />
-                  <span>Fashion Academy</span>
+                  <span className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                    Admission Ongoing 2026/2027
+                  </span>
                 </div>
                 
                 <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-6">
@@ -437,7 +438,7 @@ export default function AcademyPage() {
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-px bg-gold" />
-                  <p className="text-sm uppercase tracking-widest text-gold font-medium">Academy Selection <span className="text-bottle-deep/40 font-normal">· 2024 Enrollment</span></p>
+                  <p className="text-sm uppercase tracking-widest text-gold font-medium">Academy Selection <span className="text-bottle-deep/40 font-normal">· 2026/2027 Enrollment (Admission Ongoing)</span></p>
                 </div>
               </motion.div>
             </div>

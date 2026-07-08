@@ -36,11 +36,22 @@ export const Navbar = () => {
     <header
       className={`fixed top-0 inset-x-0 z-[100] transition-all duration-700 ${
         scrolled
-          ? "glass-luxury-dark py-3 shadow-luxury"
-          : "bg-transparent py-6"
+          ? "glass-luxury-dark shadow-luxury"
+          : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between">
+      {/* Announcement Bar */}
+      <div className="w-full bg-gradient-gold text-bottle-deep py-2 px-4 text-center text-[0.55rem] md:text-[0.65rem] uppercase tracking-[0.25em] font-semibold flex items-center justify-center gap-2 relative z-50 shadow-sm">
+        <span className="flex items-center gap-1.5">
+          <span className="w-1.5 h-1.5 rounded-full bg-bottle-deep animate-pulse" />
+          Admission Ongoing — 2026/2027 Session
+        </span>
+        <Link to="/academy" className="underline hover:opacity-80 transition-opacity font-extrabold ml-1.5">Enroll Now</Link>
+      </div>
+
+      <div className={`container flex items-center justify-between transition-all duration-700 ${
+        scrolled ? "py-3" : "py-4 md:py-5"
+      }`}>
         <Logo variant="light" size={scrolled ? "sm" : "md"} />
 
         {/* Desktop nav */}
