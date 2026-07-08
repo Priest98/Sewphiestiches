@@ -37,14 +37,22 @@ export const EnrollmentModal = () => {
   const selectedPlan = watch("paymentPlan");
   const selectedProgram = watch("program");
 
-  // Price calculations: Registration Fee = 10,000; Training Fee = 300,000
-  // 100% Plan = 310,000 (Tuition 300k + Reg 10k)
-  // 70% Plan = 220,000 (Tuition 210k + Reg 10k)
-  const getAmount = (plan: "100" | "70") => {
-    return plan === "100" ? 310000 : 220000;
+  // Price calculations: Registration Fee = 10,000; Training Fee varies by program
+  // Beginners: 400,000; Others: 300,000
+  const getTuitionFee = (program: string) => {
+    return program === "Beginner's Program" ? 400000 : 300000;
   };
 
-  const amountToPay = getAmount(selectedPlan);
+  const tuition = getTuitionFee(selectedProgram);
+  const fullPaymentTotal = tuition + 10000;
+  const partPaymentTotal = (tuition * 0.7) + 10000;
+
+  const getAmount = (plan: "100" | "70", program: string) => {
+    const fee = getTuitionFee(program);
+    return plan === "100" ? (fee + 10000) : (fee * 0.7 + 10000);
+  };
+
+  const amountToPay = getAmount(selectedPlan, selectedProgram);
 
   if (!isEnrollmentOpen) return null;
 
@@ -207,9 +215,9 @@ I have made the transfer to Access Bank (1915543110). I have attached my transfe
                               <input type="radio" value="100" {...register("paymentPlan")} className="accent-gold" />
                             </div>
                             <span className="text-[0.65rem] text-bottle-soft font-light leading-relaxed">
-                              Pay Registration Fee (₦10k) + Full Tuition (₦300k).
+                              Pay Registration Fee (₦10k) + Full Tuition (₦${(tuition / 1000)}k).
                             </span>
-                            <span className="text-lg font-display text-gold mt-4">₦310,000</span>
+                            <span className="text-lg font-display text-gold mt-4">₦{fullPaymentTotal.toLocaleString()}</span>
                           </label>
 
                           <label className={`border p-5 flex flex-col justify-between cursor-pointer transition-all ${
@@ -220,9 +228,9 @@ I have made the transfer to Access Bank (1915543110). I have attached my transfe
                               <input type="radio" value="70" {...register("paymentPlan")} className="accent-gold" />
                             </div>
                             <span className="text-[0.65rem] text-bottle-soft font-light leading-relaxed">
-                              Pay Registration Fee (₦10k) + 70% of Tuition (₦210k). Balance due mid-session.
+                              Pay Registration Fee (₦10k) + 70% of Tuition (₦${((tuition * 0.7) / 1000)}k). Balance due mid-session.
                             </span>
-                            <span className="text-lg font-display text-gold mt-4">₦220,000</span>
+                            <span className="text-lg font-display text-gold mt-4">₦{partPaymentTotal.toLocaleString()}</span>
                           </label>
                         </div>
                       </div>
@@ -258,7 +266,7 @@ I have made the transfer to Access Bank (1915543110). I have attached my transfe
                         <div>
                           <span className="text-[0.55rem] uppercase text-bottle-soft">Training Tuition Deposit</span>
                           <p className="text-sm font-medium text-bottle-deep">
-                            {selectedPlan === "100" ? "₦300,000 (100%)" : "₦210,000 (70%)"}
+                            {selectedPlan === "100" ? `₦${tuition.toLocaleString()} (100%)` : `₦${(tuition * 0.7).toLocaleString()} (70%)`}
                           </p>
                         </div>
                       </div>
