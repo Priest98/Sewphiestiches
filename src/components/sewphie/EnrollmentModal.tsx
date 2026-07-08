@@ -1,151 +1,323 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Send, CheckCircle2, Loader2, Sparkles } from "lucide-react";
-import { supabase } from "@/lib/supabase";
+import { useShopStore } from "@/store/useShopStore";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { X, CreditCard, CheckCircle2, Loader2, ArrowRight } from "lucide-react";
+import { usePaystackPayment } from "react-paystack";
 import { toast } from "sonner";
 
-interface EnrollmentModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  selectedCourse?: string;
-}
+const schema = z.object({
+  fullName: z.string().min(3, "Full name required"),
+  email: z.string().email("Invalid email"),
+  phone: z.string().min(10, "Valid phone required"),
+  program: z.string(),
+  paymentPlan: z.enum(["100", "70"]),
+});
 
-export const EnrollmentModal = ({ isOpen, onClose, selectedCourse }: EnrollmentModalProps) => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+type FormData = z.infer<typeof schema>;
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+export const EnrollmentModal = () => {
+  const { isEnrollmentOpen, setEnrollmentOpen } = useShopStore();
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [step, setStep] = useState(1); // 1 = Form, 2 = Payment summary, 3 = Success
+  const [paystackRef, setPaystackRef] = useState<string | null>(null);
 
-    // Show loading state briefly before redirect
+  const { register, handleSubmit, watch, getValues, formState: { errors, isValid } } = useForm<FormData>({
+    resolver: zodResolver(schema),
+    defaultValues: {
+      program: "Beginner's Program",
+      paymentPlan: "100"
+    },
+    mode: "onChange"
+  });
+
+  const selectedPlan = watch("paymentPlan");
+  const selectedProgram = watch("program");
+
+  // Price calculations: Registration Fee = 10,000; Training Fee = 300,000
+  // 100% Plan = 310,000 (Tuition 300k + Reg 10k)
+  // 70% Plan = 220,000 (Tuition 210k + Reg 10k)
+  const getAmount = (plan: "100" | "70") => {
+    return plan === "100" ? 310000 : 220000;
+  };
+
+  const amountToPay = getAmount(selectedPlan);
+
+  if (!isEnrollmentOpen) return null;
+
+  // Generate reference on the fly for Paystack
+  const reference = (new Date()).getTime().toString();
+
+  // Paystack Config
+  const paystackConfig = {
+    reference,
+    email: getValues("email") || "student@sewphiestitches.com",
+    amount: amountToPay * 100, // Paystack expects amount in kobo
+    publicKey: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY,
+  };
+
+  const handleSuccessRedirect = (referenceObj: any) => {
+    setIsVerifying(true);
+    setPaystackRef(referenceObj.reference);
+
+    const data = getValues();
+    const planLabel = data.paymentPlan === "100" ? "100% Full Payment" : "70% Part Payment";
+    
+    // Format WhatsApp Message with full registration and payment info
+    const message = `Hello Sewphie Stitches! I have successfully completed my Academy Enrollment payment.
+
+*Payment Status:* Paid (Paystack Ref: ${referenceObj.reference})
+*Paid Amount:* ₦${amountToPay.toLocaleString()} (${planLabel})
+*Program:* ${data.program}
+
+*Student Details:*
+- Name: ${data.fullName}
+- Email: ${data.email}
+- Phone: ${data.phone}
+
+Please confirm my admission slot. Thank you!`;
+
+    const whatsappUrl = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+    
     setTimeout(() => {
-      const formData = new FormData(e.currentTarget);
-      const name = formData.get("name") as string;
-      const email = formData.get("email") as string;
-      const phone = formData.get("phone") as string;
-      const program = selectedCourse || formData.get("course") as string;
-      const notes = formData.get("notes") as string;
-
-      // Format WhatsApp message
-      const message = `Hello, I just joined the waitlist. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nProgram: ${program}${notes ? `\nAdditional Info: ${notes}` : ''}\n\nI would like more information.`;
-
-      // Redirect to WhatsApp
-      const whatsappUrl = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+      setIsVerifying(false);
+      setStep(3);
+      // Redirect student to WhatsApp
       window.location.href = whatsappUrl;
     }, 1500);
   };
 
+  const onSuccess = (referenceObj: any) => {
+    handleSuccessRedirect(referenceObj);
+  };
+
+  const onClose = () => {
+    toast.info("Payment sequence cancelled.");
+  };
+
+  const initializePayment = usePaystackPayment(paystackConfig);
+
+  const handleNextStep = () => {
+    if (isValid) {
+      setStep(2);
+    }
+  };
+
   return (
     <AnimatePresence>
-      {isOpen && (
-        <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4 md:p-6">
-          {/* Backdrop */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose}
-            className="absolute inset-0 bg-bottle-deep/40 backdrop-blur-md"
-          />
+      <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4">
+        {/* Backdrop */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="absolute inset-0 bg-bottle-deep/90 backdrop-blur-md"
+          onClick={() => setEnrollmentOpen(false)}
+        />
 
-          {/* Modal Content */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-lg bg-white rounded-[2rem] overflow-hidden shadow-luxury border border-gold/10"
-          >
-            <div className="p-8 md:p-12">
-              <button
-                onClick={onClose}
-                className="absolute top-6 right-6 text-bottle-deep/40 hover:text-bottle-deep transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
+        {/* Modal */}
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0, y: 20 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          exit={{ scale: 0.9, opacity: 0, y: 20 }}
+          className="relative bg-white w-full max-w-2xl overflow-hidden shadow-2xl rounded-sm z-10"
+        >
+          {/* Header */}
+          <div className="bg-bottle-deep p-8 text-cream flex justify-between items-center border-b border-gold/20">
+            <div>
+              <p className="text-[0.6rem] uppercase tracking-widest text-gold mb-1">Sewphie Fashion Academy</p>
+              <h2 className="font-display text-2xl">Secure Your Admission</h2>
+              <p className="text-[0.65rem] text-gold/60 mt-1 font-light">Complete the form below to enroll and make your tuition deposit.</p>
+            </div>
+            <button onClick={() => setEnrollmentOpen(false)} className="hover:rotate-90 transition-transform">
+              <X className="w-6 h-6 text-gold" />
+            </button>
+          </div>
 
-              {isSuccess ? (
-                <div className="py-12 text-center space-y-6">
-                  <motion.div 
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    className="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto"
-                  >
-                    <CheckCircle2 className="w-10 h-10 text-gold" />
-                  </motion.div>
-                  <h3 className="font-display text-3xl text-bottle-deep">Request Received!</h3>
-                  <p className="text-bottle-deep/60 font-light">
-                    Your enrollment request for <span className="text-gold font-medium">{selectedCourse}</span> has been received. Our admission team will contact you shortly.
-                  </p>
-                </div>
-              ) : (
-                <>
-                  <div className="inline-flex items-center gap-3 text-gold text-[0.6rem] uppercase tracking-luxury font-medium mb-6">
-                    <span className="w-8 h-px bg-gold/50" />
-                    <span>Sewphie Academy Enrollment</span>
-                  </div>
-                  
-                  <h2 className="font-display text-3xl text-bottle-deep leading-tight mb-8">
-                    Secure Your <span className="italic text-bottle-soft">Slot.</span>
-                  </h2>
-
-                  <form className="space-y-5" onSubmit={handleSubmit}>
-                    <div className="space-y-1">
-                      <label className="text-[0.6rem] uppercase tracking-widest text-bottle-deep/50">Full Name</label>
-                      <input name="name" type="text" required className="w-full bg-transparent border-b border-bottle-deep/20 py-2 text-sm focus:outline-none focus:border-gold transition-colors" placeholder="Your full name" />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-1">
-                        <label className="text-[0.6rem] uppercase tracking-widest text-bottle-deep/50">Email</label>
-                        <input name="email" type="email" required className="w-full bg-transparent border-b border-bottle-deep/20 py-2 text-sm focus:outline-none focus:border-gold transition-colors" placeholder="email@example.com" />
-                      </div>
-                      <div className="space-y-1">
-                        <label className="text-[0.6rem] uppercase tracking-widest text-bottle-deep/50">Phone</label>
-                        <input name="phone" type="tel" required className="w-full bg-transparent border-b border-bottle-deep/20 py-2 text-sm focus:outline-none focus:border-gold transition-colors" placeholder="Phone number" />
-                      </div>
-                    </div>
-
-                    {!selectedCourse && (
-                      <div className="space-y-1">
-                        <label className="text-[0.6rem] uppercase tracking-widest text-bottle-deep/50">Interested Program</label>
-                        <select name="course" className="w-full bg-transparent border-b border-bottle-deep/20 py-2 text-sm focus:outline-none focus:border-gold transition-colors">
-                          <option>Beginner Program</option>
-                          <option>Intermediate Program</option>
-                          <option>Advanced/Bridal Masterclass</option>
+          <div className="p-8 md:p-12 max-h-[75vh] overflow-y-auto">
+            {isVerifying ? (
+              <div className="flex flex-col items-center justify-center py-20 animate-pulse text-center space-y-4">
+                <Loader2 className="w-12 h-12 text-gold animate-spin" />
+                <p className="text-[0.7rem] uppercase tracking-widest text-gold">Verifying Payment & Generating Receipt...</p>
+              </div>
+            ) : (
+              <>
+                {step === 1 && (
+                  <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <InputField label="Full Name" name="fullName" register={register} error={errors.fullName} />
+                      <InputField label="Email Address" name="email" type="email" register={register} error={errors.email} />
+                      <InputField label="Phone Number" name="phone" placeholder="E.g. 090..." register={register} error={errors.phone} />
+                      
+                      {/* Program Select */}
+                      <div>
+                        <label className="text-[0.6rem] uppercase tracking-widest text-gold block mb-2">Program of Interest</label>
+                        <select 
+                          {...register("program")}
+                          className="w-full bg-cream border-b border-bottle-deep/10 p-4 focus:border-gold outline-none text-sm transition-all text-bottle-deep"
+                        >
+                          <option value="Beginner's Program">Beginner's Program</option>
+                          <option value="Intermediate Level">Intermediate Level</option>
+                          <option value="Advanced / Bridal Masterclass">Advanced / Bridal Masterclass</option>
                         </select>
                       </div>
-                    )}
 
-                    <div className="space-y-1 pt-2">
-                      <label className="text-[0.6rem] uppercase tracking-widest text-bottle-deep/50">Notes (Optional)</label>
-                      <textarea name="notes" rows={2} className="w-full bg-transparent border-b border-bottle-deep/20 py-2 text-sm focus:outline-none focus:border-gold transition-colors resize-none" placeholder="Any specific requirements?" />
+                      {/* Payment Plan Select */}
+                      <div className="md:col-span-2">
+                        <label className="text-[0.6rem] uppercase tracking-widest text-gold block mb-3">Select Payment Plan</label>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          <label className={`border p-5 flex flex-col justify-between cursor-pointer transition-all ${
+                            selectedPlan === "100" ? "border-gold bg-gold/5" : "border-bottle-deep/10 bg-white"
+                          }`}>
+                            <div className="flex justify-between items-center mb-2">
+                              <span className="text-sm font-semibold uppercase text-bottle-deep">100% Full Payment</span>
+                              <input type="radio" value="100" {...register("paymentPlan")} className="accent-gold" />
+                            </div>
+                            <span className="text-[0.65rem] text-bottle-soft font-light leading-relaxed">
+                              Pay Registration Fee (₦10k) + Full Tuition (₦300k).
+                            </span>
+                            <span className="text-lg font-display text-gold mt-4">₦310,000</span>
+                          </label>
+
+                          <label className={`border p-5 flex flex-col justify-between cursor-pointer transition-all ${
+                            selectedPlan === "70" ? "border-gold bg-gold/5" : "border-bottle-deep/10 bg-white"
+                          }`}>
+                            <div className="flex justify-between items-center mb-2">
+                              <span className="text-sm font-semibold uppercase text-bottle-deep">70% Part Payment</span>
+                              <input type="radio" value="70" {...register("paymentPlan")} className="accent-gold" />
+                            </div>
+                            <span className="text-[0.65rem] text-bottle-soft font-light leading-relaxed">
+                              Pay Registration Fee (₦10k) + 70% of Tuition (₦210k). Balance due mid-session.
+                            </span>
+                            <span className="text-lg font-display text-gold mt-4">₦220,000</span>
+                          </label>
+                        </div>
+                      </div>
                     </div>
 
-                    <button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="w-full bg-bottle-deep text-gold py-4 text-[0.65rem] uppercase tracking-luxury shadow-luxury hover:bg-gold hover:text-bottle-deep transition-all duration-500 mt-4 disabled:opacity-50 flex items-center justify-center gap-2"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="w-4 h-4 animate-spin" />
-                          Processing...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="w-4 h-4" />
-                          Submit Application
-                        </>
-                      )}
-                    </button>
-                  </form>
-                </>
-              )}
-            </div>
-          </motion.div>
-        </div>
-      )}
+                    <div className="pt-8">
+                      <button 
+                        disabled={!isValid}
+                        onClick={handleNextStep}
+                        className="w-full bg-bottle-deep text-cream py-5 flex items-center justify-center gap-4 text-[0.65rem] uppercase tracking-luxury hover:bg-bottle-deep/90 disabled:opacity-50 transition-all font-semibold"
+                      >
+                        Review Enrollment
+                      </button>
+                    </div>
+                  </motion.div>
+                )}
+
+                {step === 2 && (
+                  <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-8 text-center">
+                    <div className="bg-cream p-8 text-bottle-deep space-y-4 border border-gold/10">
+                      <p className="text-[0.65rem] uppercase tracking-luxury text-gold">Admissions Summary</p>
+                      
+                      <div className="space-y-1">
+                        <span className="text-xs uppercase tracking-widest text-bottle-soft font-medium">Selected Course</span>
+                        <h3 className="font-display text-2xl md:text-3xl text-bottle-deep">{selectedProgram}</h3>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 gap-4 pt-4 border-t border-bottle-deep/10 text-left">
+                        <div>
+                          <span className="text-[0.55rem] uppercase text-bottle-soft">Registration Fee</span>
+                          <p className="text-sm font-medium text-bottle-deep">₦10,000</p>
+                        </div>
+                        <div>
+                          <span className="text-[0.55rem] uppercase text-bottle-soft">Training Tuition Deposit</span>
+                          <p className="text-sm font-medium text-bottle-deep">
+                            {selectedPlan === "100" ? "₦300,000 (100%)" : "₦210,000 (70%)"}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="pt-4 border-t border-bottle-deep/10 flex justify-between items-center">
+                        <span className="text-[0.65rem] uppercase tracking-widest text-gold font-bold">Total Due Now</span>
+                        <span className="text-2xl font-display text-bottle-deep">₦{amountToPay.toLocaleString()}</span>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 gap-4">
+                      <button 
+                        onClick={() => initializePayment({ onSuccess, onClose })}
+                        className="w-full bg-gradient-gold text-bottle-deep py-6 flex items-center justify-center gap-4 text-[0.7rem] uppercase tracking-[0.3em] font-bold shadow-luxury transition-all hover:scale-[1.02]"
+                      >
+                        <CreditCard className="w-5 h-5" /> Pay Now with Paystack
+                      </button>
+                    </div>
+                    <div className="flex justify-center gap-4">
+                      <button 
+                        onClick={() => setStep(1)} 
+                        className="text-[0.6rem] uppercase tracking-widest text-gold hover:underline"
+                      >
+                        Edit Details
+                      </button>
+                    </div>
+                  </motion.div>
+                )}
+
+                {step === 3 && (
+                  <motion.div 
+                    initial={{ opacity: 0, scale: 0.9 }} 
+                    animate={{ opacity: 1, scale: 1 }} 
+                    className="flex flex-col items-center justify-center text-center space-y-6 py-12"
+                  >
+                    <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mb-4">
+                      <CheckCircle2 className="w-12 h-12 text-gold animate-pulse" />
+                    </div>
+                    <h2 className="font-display text-4xl text-bottle-deep">Admission Confirmed.</h2>
+                    <p className="text-sm font-light text-bottle-soft max-w-md mx-auto leading-relaxed">
+                      Your payment of **₦{amountToPay.toLocaleString()}** (Ref: {paystackRef}) is complete.
+                      You are now being redirected to WhatsApp to finalize your onboarding.
+                    </p>
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-xs text-bottle-deep/50 font-medium">If redirect doesn't happen automatically, click below:</p>
+                      <button 
+                        onClick={() => {
+                          const data = getValues();
+                          const planLabel = data.paymentPlan === "100" ? "100% Full Payment" : "70% Part Payment";
+                          const message = `Hello Sewphie Stitches! I have successfully completed my Academy Enrollment payment.
+
+*Payment Status:* Paid (Paystack Ref: ${paystackRef})
+*Paid Amount:* ₦${amountToPay.toLocaleString()} (${planLabel})
+*Program:* ${data.program}
+
+*Student Details:*
+- Name: ${data.fullName}
+- Email: ${data.email}
+- Phone: ${data.phone}
+
+Please confirm my admission slot. Thank you!`;
+                          window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+                        }}
+                        className="px-8 py-4 bg-gradient-gold text-bottle-deep text-[0.65rem] uppercase tracking-luxury font-bold flex items-center gap-2"
+                      >
+                        Open WhatsApp <ArrowRight className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </motion.div>
+                )}
+              </>
+            )}
+          </div>
+        </motion.div>
+      </div>
     </AnimatePresence>
   );
 };
+
+const InputField = ({ label, name, type = "text", register, error, placeholder }: any) => (
+  <div>
+    <label className="text-[0.6rem] uppercase tracking-widest text-gold block mb-2">{label}</label>
+    <input 
+      type={type}
+      placeholder={placeholder}
+      {...register(name)}
+      className={`w-full bg-cream border-b p-4 focus:border-gold outline-none text-sm transition-all text-bottle-deep ${
+        error ? "border-red-400" : "border-bottle-deep/10"
+      }`}
+    />
+    {error && <p className="text-[0.5rem] text-red-500 mt-1 uppercase tracking-widest">{error.message}</p>}
+  </div>
+);

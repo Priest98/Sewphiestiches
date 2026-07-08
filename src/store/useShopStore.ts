@@ -17,6 +17,9 @@ interface ShopState {
 
   // Waitlist
   isWaitlistOpen: boolean;
+
+  // Enrollment
+  isEnrollmentOpen: boolean;
   
   setSelectedProduct: (product: Product | null) => void;
   setOrderDetails: (details: Partial<OrderDetails>) => void;
@@ -31,7 +34,11 @@ interface ShopState {
   clearCart: () => void;
 
   // Waitlist Actions
-  setWaitlistOpen: (isOpen: boolean) => void;}
+  setWaitlistOpen: (isOpen: boolean) => void;
+
+  // Enrollment Actions
+  setEnrollmentOpen: (isOpen: boolean) => void;
+}
 
 export const useShopStore = create<ShopState>()(
   persist(
@@ -42,6 +49,7 @@ export const useShopStore = create<ShopState>()(
       cart: [],
       isCartOpen: false,
       isWaitlistOpen: false,
+      isEnrollmentOpen: false,
 
       setSelectedProduct: (product) => set({ selectedProduct: product }),
       setOrderDetails: (details) => set((state) => ({ 
@@ -52,6 +60,7 @@ export const useShopStore = create<ShopState>()(
       
       setCartOpen: (isOpen) => set({ isCartOpen: isOpen }),
       setWaitlistOpen: (isOpen) => set({ isWaitlistOpen: isOpen }),
+      setEnrollmentOpen: (isOpen) => set({ isEnrollmentOpen: isOpen }),
       
       addToCart: (product) => {
         const { cart } = get();

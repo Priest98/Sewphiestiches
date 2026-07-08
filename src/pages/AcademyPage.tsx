@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ShieldCheck, Sparkles, Scissors, Layers, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
 import { SectionHeader } from "@/components/sewphie/SectionHeader";
+import { useShopStore } from "@/store/useShopStore";
 
 import heroImg from "@/assets/A1.jpeg";
 import studio1 from "@/assets/img_6887.jpg";
@@ -12,6 +13,7 @@ import studio4 from "@/assets/img_9685.jpg";
 export default function AcademyPage() {
   const { scrollYProgress } = useScroll();
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const { setEnrollmentOpen } = useShopStore();
 
   useEffect(() => {
     document.title = "Sewphie Academy — Luxury Fashion Mastery";
@@ -33,7 +35,7 @@ export default function AcademyPage() {
   ];
 
   const handleEnrollClick = () => {
-    window.open("https://wa.me/2349065368362?text=Hello%20Sewphie%20Stitches%2C%20I'd%20like%20to%20enroll%20in%20the%20Fashion%20Academy.", "_blank");
+    setEnrollmentOpen(true);
   };
 
   return (

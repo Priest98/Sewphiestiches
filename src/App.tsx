@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AnimatePresence } from "framer-motion";
 import { CheckoutModal } from "./components/shop/CheckoutModal.tsx";
+import { EnrollmentModal } from "./components/sewphie/EnrollmentModal.tsx";
 import { PageTransition } from "./components/ui/PageTransition.tsx";
 import { AiConcierge } from "@/components/sewphie/AiConcierge";
 import { Layout } from "./components/sewphie/Layout";
@@ -50,6 +51,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <CheckoutModal />
+        <EnrollmentModal />
         <AiConcierge />
         <AnimatedRoutes />
       </BrowserRouter>
