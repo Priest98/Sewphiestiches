@@ -4,7 +4,7 @@ import { useShopStore } from "@/store/useShopStore";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { X, CreditCard, CheckCircle2, Loader2, ArrowRight } from "lucide-react";
+import { X, CreditCard, CheckCircle2, Loader2, ArrowRight, Check } from "lucide-react";
 import { usePaystackPayment } from "react-paystack";
 import { toast } from "sonner";
 
@@ -23,6 +23,7 @@ export const EnrollmentModal = () => {
   const [isVerifying, setIsVerifying] = useState(false);
   const [step, setStep] = useState(1); // 1 = Form, 2 = Payment summary, 3 = Success
   const [paystackRef, setPaystackRef] = useState<string | null>(null);
+  const [paymentMethod, setPaymentMethod] = useState<"paystack" | "bank">("paystack");
 
   const { register, handleSubmit, watch, getValues, formState: { errors, isValid } } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -65,7 +66,7 @@ export const EnrollmentModal = () => {
     const data = getValues();
     const planLabel = data.paymentPlan === "100" ? "100% Full Payment" : "70% Part Payment";
     
-    // Format WhatsApp Message with full registration and payment info
+    // Format WhatsApp Message with Paystack details
     const message = `Hello Sewphie Stitches! I have successfully completed my Academy Enrollment payment.
 
 *Payment Status:* Paid (Paystack Ref: ${referenceObj.reference})
@@ -84,7 +85,35 @@ Please confirm my admission slot. Thank you!`;
     setTimeout(() => {
       setIsVerifying(false);
       setStep(3);
-      // Redirect student to WhatsApp
+      window.location.href = whatsappUrl;
+    }, 1500);
+  };
+
+  const handleBankTransferRedirect = () => {
+    setIsVerifying(true);
+
+    const data = getValues();
+    const planLabel = data.paymentPlan === "100" ? "100% Full Payment" : "70% Part Payment";
+    
+    // Format WhatsApp Message with Bank Transfer details
+    const message = `Hello Sewphie Stitches! I have completed my Academy Enrollment payment via Bank Transfer.
+
+*Payment Method:* Bank Transfer
+*Expected Amount:* ₦${amountToPay.toLocaleString()} (${planLabel})
+*Program:* ${data.program}
+
+*Student Details:*
+- Name: ${data.fullName}
+- Email: ${data.email}
+- Phone: ${data.phone}
+
+I have made the transfer to Access Bank (1915543110). Please verify my payment.`;
+
+    const whatsappUrl = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
+    
+    setTimeout(() => {
+      setIsVerifying(false);
+      setStep(3);
       window.location.href = whatsappUrl;
     }, 1500);
   };
@@ -140,7 +169,9 @@ Please confirm my admission slot. Thank you!`;
             {isVerifying ? (
               <div className="flex flex-col items-center justify-center py-20 animate-pulse text-center space-y-4">
                 <Loader2 className="w-12 h-12 text-gold animate-spin" />
-                <p className="text-[0.7rem] uppercase tracking-widest text-gold">Verifying Payment & Generating Receipt...</p>
+                <p className="text-[0.7rem] uppercase tracking-widest text-gold">
+                  {paymentMethod === "paystack" ? "Verifying Payment..." : "Submitting Details..."}
+                </p>
               </div>
             ) : (
               <>
@@ -210,7 +241,7 @@ Please confirm my admission slot. Thank you!`;
                 )}
 
                 {step === 2 && (
-                  <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-8 text-center">
+                  <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
                     <div className="bg-cream p-8 text-bottle-deep space-y-4 border border-gold/10">
                       <p className="text-[0.65rem] uppercase tracking-luxury text-gold">Admissions Summary</p>
                       
@@ -238,15 +269,62 @@ Please confirm my admission slot. Thank you!`;
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-4">
-                      <button 
-                        onClick={() => initializePayment({ onSuccess, onClose })}
-                        className="w-full bg-gradient-gold text-bottle-deep py-6 flex items-center justify-center gap-4 text-[0.7rem] uppercase tracking-[0.3em] font-bold shadow-luxury transition-all hover:scale-[1.02]"
-                      >
-                        <CreditCard className="w-5 h-5" /> Pay Now with Paystack
-                      </button>
+                    {/* Payment Method Tabs */}
+                    <div className="space-y-3 pt-2">
+                      <label className="text-[0.6rem] uppercase tracking-widest text-gold block font-semibold">Choose Payment Method</label>
+                      <div className="grid grid-cols-2 gap-3">
+                        <button
+                          onClick={() => setPaymentMethod("paystack")}
+                          className={`py-3.5 text-[0.65rem] uppercase tracking-widest font-bold border transition-all ${
+                            paymentMethod === "paystack" ? "bg-bottle-deep text-cream border-bottle-deep" : "border-bottle-deep/20 text-bottle-soft"
+                          }`}
+                        >
+                          Pay Online (Paystack)
+                        </button>
+                        <button
+                          onClick={() => setPaymentMethod("bank")}
+                          className={`py-3.5 text-[0.65rem] uppercase tracking-widest font-bold border transition-all ${
+                            paymentMethod === "bank" ? "bg-bottle-deep text-cream border-bottle-deep" : "border-bottle-deep/20 text-bottle-soft"
+                          }`}
+                        >
+                          Bank Transfer
+                        </button>
+                      </div>
                     </div>
-                    <div className="flex justify-center gap-4">
+
+                    {/* Method Content */}
+                    {paymentMethod === "paystack" ? (
+                      <div className="pt-4">
+                        <button 
+                          onClick={() => initializePayment({ onSuccess, onClose })}
+                          className="w-full bg-gradient-gold text-bottle-deep py-6 flex items-center justify-center gap-4 text-[0.7rem] uppercase tracking-[0.3em] font-bold shadow-luxury transition-all hover:scale-[1.02]"
+                        >
+                          <CreditCard className="w-5 h-5" /> Pay Now with Paystack
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="space-y-4 pt-2">
+                        <div className="bg-cream p-6 border border-gold/20 text-left rounded-md space-y-3 text-bottle-deep">
+                          <p className="text-[0.6rem] uppercase tracking-widest text-gold font-bold">Transfer Account Details</p>
+                          <div className="space-y-1 text-sm font-light">
+                            <p>Account Name: <strong className="font-semibold text-bottle-deep">Sewphie Stitches</strong></p>
+                            <p>Account Number: <strong className="font-mono font-bold text-bottle-deep text-base">1915543110</strong></p>
+                            <p>Bank: <strong className="font-semibold text-bottle-deep">Access Bank</strong></p>
+                          </div>
+                          <p className="text-[0.6rem] text-bottle-soft/85 italic leading-relaxed pt-2 border-t border-bottle-deep/5">
+                            Please transfer exactly **₦{amountToPay.toLocaleString()}** to the account details above, then click the confirmation button below to send your transfer receipt.
+                          </p>
+                        </div>
+                        <button 
+                          onClick={handleBankTransferRedirect}
+                          className="w-full bg-gradient-gold text-bottle-deep py-6 flex items-center justify-center gap-4 text-[0.7rem] uppercase tracking-[0.3em] font-bold shadow-luxury transition-all hover:scale-[1.02]"
+                        >
+                          <Check className="w-5 h-5" /> I Have Made The Transfer
+                        </button>
+                      </div>
+                    )}
+
+                    <div className="flex justify-center gap-4 pt-2">
                       <button 
                         onClick={() => setStep(1)} 
                         className="text-[0.6rem] uppercase tracking-widest text-gold hover:underline"
@@ -266,9 +344,12 @@ Please confirm my admission slot. Thank you!`;
                     <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mb-4">
                       <CheckCircle2 className="w-12 h-12 text-gold animate-pulse" />
                     </div>
-                    <h2 className="font-display text-4xl text-bottle-deep">Admission Confirmed.</h2>
+                    <h2 className="font-display text-4xl text-bottle-deep">Admission Submitted.</h2>
                     <p className="text-sm font-light text-bottle-soft max-w-md mx-auto leading-relaxed">
-                      Your payment of **₦{amountToPay.toLocaleString()}** (Ref: {paystackRef}) is complete.
+                      {paymentMethod === "paystack" 
+                        ? `Your payment of **₦${amountToPay.toLocaleString()}** (Ref: ${paystackRef}) is complete.`
+                        : `Your enrollment request of **₦${amountToPay.toLocaleString()}** via Bank Transfer has been sent.`
+                      }
                       You are now being redirected to WhatsApp to finalize your onboarding.
                     </p>
                     <div className="flex flex-col items-center gap-3">
@@ -277,7 +358,8 @@ Please confirm my admission slot. Thank you!`;
                         onClick={() => {
                           const data = getValues();
                           const planLabel = data.paymentPlan === "100" ? "100% Full Payment" : "70% Part Payment";
-                          const message = `Hello Sewphie Stitches! I have successfully completed my Academy Enrollment payment.
+                          const message = paymentMethod === "paystack" 
+                            ? `Hello Sewphie Stitches! I have successfully completed my Academy Enrollment payment.
 
 *Payment Status:* Paid (Paystack Ref: ${paystackRef})
 *Paid Amount:* ₦${amountToPay.toLocaleString()} (${planLabel})
@@ -288,7 +370,20 @@ Please confirm my admission slot. Thank you!`;
 - Email: ${data.email}
 - Phone: ${data.phone}
 
-Please confirm my admission slot. Thank you!`;
+Please confirm my admission slot. Thank you!`
+                            : `Hello Sewphie Stitches! I have completed my Academy Enrollment payment via Bank Transfer.
+
+*Payment Method:* Bank Transfer
+*Expected Amount:* ₦${amountToPay.toLocaleString()} (${planLabel})
+*Program:* ${data.program}
+
+*Student Details:*
+- Name: ${data.fullName}
+- Email: ${data.email}
+- Phone: ${data.phone}
+
+I have made the transfer to Access Bank (1915543110). Please verify my payment.`;
+
                           window.location.href = `https://wa.me/2349065368362?text=${encodeURIComponent(message)}`;
                         }}
                         className="px-8 py-4 bg-gradient-gold text-bottle-deep text-[0.65rem] uppercase tracking-luxury font-bold flex items-center gap-2"
