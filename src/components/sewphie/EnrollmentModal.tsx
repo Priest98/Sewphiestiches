@@ -215,7 +215,7 @@ I have made the transfer to Access Bank (1915543110). I have attached my transfe
                               <input type="radio" value="100" {...register("paymentPlan")} className="accent-gold" />
                             </div>
                             <span className="text-[0.65rem] text-bottle-soft font-light leading-relaxed">
-                              Pay Registration Fee (₦10k) + Full Tuition (₦${(tuition / 1000)}k).
+                              Pay Registration Fee (₦10k) + Full Tuition (₦{(tuition / 1000)}k).
                             </span>
                             <span className="text-lg font-display text-gold mt-4">₦{fullPaymentTotal.toLocaleString()}</span>
                           </label>
@@ -228,7 +228,7 @@ I have made the transfer to Access Bank (1915543110). I have attached my transfe
                               <input type="radio" value="70" {...register("paymentPlan")} className="accent-gold" />
                             </div>
                             <span className="text-[0.65rem] text-bottle-soft font-light leading-relaxed">
-                              Pay Registration Fee (₦10k) + 70% of Tuition (₦${((tuition * 0.7) / 1000)}k). Balance due mid-session.
+                              Pay Registration Fee (₦10k) + 70% of Tuition (₦{((tuition * 0.7) / 1000)}k). Balance due mid-session.
                             </span>
                             <span className="text-lg font-display text-gold mt-4">₦{partPaymentTotal.toLocaleString()}</span>
                           </label>
